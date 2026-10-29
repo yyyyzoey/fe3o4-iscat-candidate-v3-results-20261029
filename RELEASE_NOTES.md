@@ -29,6 +29,7 @@ Contents: 139 ZIP members rooted at `release/`, including three complete `(171,2
 
 - 83 release assets re-read through the GitHub API; all 76 part assets are `uploaded` with server-side size and digest matching the manifest.
 - The published `download_results.py` was run end-to-end: all 76 parts downloaded and verified, the ZIP was reassembled, and the final size/SHA256 plus ZIP integrity test passed.
+- After the repository was made public, the published downloader was re-run with `GITHUB_TOKEN` unset: anonymous access to all 76 parts, reassembly, ZIP integrity, and the final SHA256 all passed.
 - See `verification/github_release_audit.md` and `verification/github_e2e_download.json`.
 
 ## Status

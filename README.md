@@ -47,6 +47,7 @@ python .\scripts\download_results.py --tag v1.0.0 --out .\download
 - `result_class = CANDIDATE`
 - `github_release_assets = PASS`（83 个正式资产；76 个分片的服务端 size/digest 全部匹配）
 - `github_e2e_download = PASS`（全部 76 个分片下载、逐片校验并重组；最终 ZIP SHA256 匹配）
+- `github_public_access = PASS`（2026-10-30 仓库公开后，匿名读取仓库与 Release，并在无 token 情况下端到端下载 76 个分片、重组并校验通过）
 
 现行测试 **31/31 PASS**，legacy 测试 **7/7 PASS**。压缩包生成后独立复核 **20/20 PASS**。这些通过项不能覆盖下列保留项：
 

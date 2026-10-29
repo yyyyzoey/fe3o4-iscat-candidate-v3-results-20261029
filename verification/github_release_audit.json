@@ -1,9 +1,14 @@
 {
-  "audit_time_utc": "2026-10-29T15:19:15.997603+00:00",
+  "audit_time_utc": "2026-10-29T16:08:46.458141+00:00",
   "repository": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
   "release_url": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/releases/tag/v1.0.0",
   "release_id": 427999383,
   "release_tag": "v1.0.0",
+  "release_target_commitish": "f0f9959db144b01b6e0c6cf82f4a030df6515127",
+  "main_commit_at_audit": "e55349a6c06279c6cdba20dd2a1a05b60f58eb0e",
+  "repository_visibility": "public",
+  "repository_private": false,
+  "anonymous_read_verified": true,
   "asset_count": 83,
   "archive_name": "results_bundle.zip",
   "archive_total_bytes": 1273486344,
@@ -28,12 +33,28 @@
       "remote_digest": "sha256:b8fb6fb9079fac040121396de53eacaba4a30379dc514ae7a8994bd7c6e84f44",
       "verified": true
     },
-    "download_results.py": {
-      "bytes": 7492,
-      "sha256": "18b3b39cc2047d887bcc3c3846717bc88b0fecd62e7f21c68ed8cbc93f095b76",
-      "asset_id": 688966017,
+    "results_bundle.zip.sha256": {
+      "bytes": 86,
+      "sha256": "9412d25a7336d38ed4552bf459835e4154aee635512a467121f31060b5198ec4",
+      "asset_id": 688882614,
       "state": "uploaded",
-      "remote_digest": "sha256:18b3b39cc2047d887bcc3c3846717bc88b0fecd62e7f21c68ed8cbc93f095b76",
+      "remote_digest": "sha256:9412d25a7336d38ed4552bf459835e4154aee635512a467121f31060b5198ec4",
+      "verified": true
+    },
+    "download_results.py": {
+      "bytes": 7674,
+      "sha256": "61a1fe3168b3fd12b44deb8b5094a63d6d7b88c4b0ff0c870724d1f71dd7b8a1",
+      "asset_id": 689086605,
+      "state": "uploaded",
+      "remote_digest": "sha256:61a1fe3168b3fd12b44deb8b5094a63d6d7b88c4b0ff0c870724d1f71dd7b8a1",
+      "verified": true
+    },
+    "DOWNLOAD_RESULTS.md": {
+      "bytes": 3376,
+      "sha256": "f03068147ccce438592524bba686e99a4cf1d8d1f5779daabb4d27bd6e17760d",
+      "asset_id": 689086635,
+      "state": "uploaded",
+      "remote_digest": "sha256:f03068147ccce438592524bba686e99a4cf1d8d1f5779daabb4d27bd6e17760d",
       "verified": true
     },
     "reassemble_results.ps1": {
@@ -51,18 +72,26 @@
       "state": "uploaded",
       "remote_digest": "sha256:25373736a5bcba293a2bc578606677118901d45f3cff28133df058a6f9d36c24",
       "verified": true
-    },
-    "DOWNLOAD_RESULTS.md": {
-      "bytes": 3362,
-      "sha256": "a828ef06997c69b41dae8ba4b522d4e576cfaf8a52afba0694702d70b91be9be",
-      "asset_id": 688966089,
-      "state": "uploaded",
-      "remote_digest": "sha256:a828ef06997c69b41dae8ba4b522d4e576cfaf8a52afba0694702d70b91be9be",
-      "verified": true
     }
   },
   "unexpected_assets": [],
   "problems": [],
+  "anonymous_e2e": {
+    "test_time_utc": "2026-10-29T16:08:46.457141+00:00",
+    "release_url": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/releases/tag/v1.0.0",
+    "method": "Published release asset download_results.py run with GITHUB_TOKEN unset, anonymous browser_download_url path, 8 parallel workers",
+    "manifest_sha256": "07b8d5a19ce260b4f7e57898e16b7a978c82b94cdf384e628f682a08700188df",
+    "part_count": 76,
+    "all_part_sha256_verified": true,
+    "reassembled_name": "results_bundle.zip",
+    "reassembled_bytes": 1273486344,
+    "reassembled_sha256": "fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7",
+    "zip_entries": 139,
+    "zip_test_result": "PASS",
+    "zip_member_list_matches_original": true,
+    "final_verification_line": "FINAL ARCHIVE VERIFICATION PASSED",
+    "result": "PASS"
+  },
   "result": "PASS",
   "parts": [
     {

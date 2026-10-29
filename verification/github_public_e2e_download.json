@@ -1,0 +1,16 @@
+{
+  "test_time_utc": "2026-10-29T16:08:46.457141+00:00",
+  "release_url": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/releases/tag/v1.0.0",
+  "method": "Published release asset download_results.py run with GITHUB_TOKEN unset, anonymous browser_download_url path, 8 parallel workers",
+  "manifest_sha256": "07b8d5a19ce260b4f7e57898e16b7a978c82b94cdf384e628f682a08700188df",
+  "part_count": 76,
+  "all_part_sha256_verified": true,
+  "reassembled_name": "results_bundle.zip",
+  "reassembled_bytes": 1273486344,
+  "reassembled_sha256": "fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7",
+  "zip_entries": 139,
+  "zip_test_result": "PASS",
+  "zip_member_list_matches_original": true,
+  "final_verification_line": "FINAL ARCHIVE VERIFICATION PASSED",
+  "result": "PASS"
+}
