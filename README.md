@@ -24,7 +24,7 @@
 python .\scripts\download_results.py --tag v1.0.0 --out .\download
 ```
 
-仓库已于 2026-10-29 设为公开，脚本默认匿名下载，无需 GitHub token。只有脚本输出 `FINAL ARCHIVE VERIFICATION PASSED` 才表示完整包下载成功。手工重组与校验步骤见 [data/DOWNLOAD_RESULTS.md](data/DOWNLOAD_RESULTS.md)。
+仓库已于 2026-10-30 设为公开，脚本默认匿名下载，无需 GitHub token。只有脚本输出 `FINAL ARCHIVE VERIFICATION PASSED` 才表示完整包下载成功。手工重组与校验步骤见 [data/DOWNLOAD_RESULTS.md](data/DOWNLOAD_RESULTS.md)。
 
 ## 实际主数据
 

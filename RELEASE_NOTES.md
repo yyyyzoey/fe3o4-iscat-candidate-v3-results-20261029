@@ -21,7 +21,7 @@ The parts are not independent datasets. Concatenate them in numeric order, then 
 python .\download_results.py --tag v1.0.0 --out .\download
 ```
 
-The repository is public (since 2026-10-29); the downloader works anonymously and no GitHub token is required.
+The repository is public (since 2026-10-30); the downloader works anonymously and no GitHub token is required.
 
 Contents: 139 ZIP members rooted at `release/`, including three complete `(171,241,241)` HDF5 cubes, XDMF files, figures, diagnostics, source/configuration, and SHA256 manifests.
 
