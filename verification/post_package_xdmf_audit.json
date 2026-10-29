@@ -1,0 +1,331 @@
+{
+  "directory": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\release",
+  "pass": true,
+  "files": {
+    "30": {
+      "xdmf": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\release\\D030_focus_stack.xdmf",
+      "exists": true,
+      "grid_name": "D30_CANDIDATE_focus_stack",
+      "grid_type": "Uniform",
+      "dimensions": "171 241 241",
+      "geometry": {
+        "x_object_nm": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/coords/x_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "y_object_nm": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/coords/y_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "zeta_nm": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/coords/zeta_nm",
+          "shape": [
+            171
+          ],
+          "dtype": "float64",
+          "n": 171
+        }
+      },
+      "attributes": {
+        "I_cross": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/signals/I_cross",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_total": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/signals/I_total",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_ref": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/signals/I_ref",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_scat": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/signals/I_scat",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_fixed_reference": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/signals/contrast_fixed_reference",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_local": {
+          "hdf": "D030nm/cube.h5",
+          "dataset": "/signals/contrast_local",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        }
+      },
+      "information": [
+        "z axis is zeta focus scan; not a spatial near-field distribution"
+      ],
+      "file_bytes": 2178
+    },
+    "100": {
+      "xdmf": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\release\\D100_focus_stack.xdmf",
+      "exists": true,
+      "grid_name": "D100_CANDIDATE_focus_stack",
+      "grid_type": "Uniform",
+      "dimensions": "171 241 241",
+      "geometry": {
+        "x_object_nm": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/coords/x_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "y_object_nm": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/coords/y_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "zeta_nm": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/coords/zeta_nm",
+          "shape": [
+            171
+          ],
+          "dtype": "float64",
+          "n": 171
+        }
+      },
+      "attributes": {
+        "I_cross": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/signals/I_cross",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_total": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/signals/I_total",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_ref": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/signals/I_ref",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_scat": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/signals/I_scat",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_fixed_reference": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/signals/contrast_fixed_reference",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_local": {
+          "hdf": "D100nm/cube.h5",
+          "dataset": "/signals/contrast_local",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        }
+      },
+      "information": [
+        "z axis is zeta focus scan; not a spatial near-field distribution"
+      ],
+      "file_bytes": 2179
+    },
+    "200": {
+      "xdmf": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\release\\D200_focus_stack.xdmf",
+      "exists": true,
+      "grid_name": "D200_CANDIDATE_focus_stack",
+      "grid_type": "Uniform",
+      "dimensions": "171 241 241",
+      "geometry": {
+        "x_object_nm": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/coords/x_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "y_object_nm": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/coords/y_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "zeta_nm": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/coords/zeta_nm",
+          "shape": [
+            171
+          ],
+          "dtype": "float64",
+          "n": 171
+        }
+      },
+      "attributes": {
+        "I_cross": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/signals/I_cross",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_total": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/signals/I_total",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_ref": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/signals/I_ref",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_scat": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/signals/I_scat",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_fixed_reference": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/signals/contrast_fixed_reference",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_local": {
+          "hdf": "D200nm/cube.h5",
+          "dataset": "/signals/contrast_local",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        }
+      },
+      "information": [
+        "z axis is zeta focus scan; not a spatial near-field distribution"
+      ],
+      "file_bytes": 2179
+    }
+  },
+  "failures": []
+}

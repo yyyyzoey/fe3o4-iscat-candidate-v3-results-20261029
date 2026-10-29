@@ -1,0 +1,48 @@
+# Commands executed - Fe3O4 iSCAT execution_20261029
+# cwd: C:\Users\PC\Downloads\Fe3O4_iSCAT_Codex_Handoff_v3\Fe3O4_iSCAT_Codex_Handoff_v3
+# shell: PowerShell; interpreter: .\.venv\Scripts\python.exe
+# Paths below are relative to cwd. "exit=0" means the process returned 0.
+
+# --- S0: environment / baseline ---
+01  .\.venv\Scripts\python.exe tools/preflight.py --verify-manifest --out results/execution_20261029/preflight.json            exit=0  (logs/preflight.stdout.txt)
+02  .\.venv\Scripts\python.exe tools/verify_handoff_hashes.py --out results/execution_20261029/handoff_hash_check.json          exit=0  (72 manifest entries; only tools/fetch_sources.py and tools/numerical_audit.py changed)
+03  .\.venv\Scripts\python.exe tools/audit_legacy.py --out results/execution_20261029/legacy_audit.json                          exit=0
+04  .\.venv\Scripts\python.exe -m unittest discover -s legacy\tests -v                                                        exit=0  (7/7 OK; logs/final_legacy_tests.stdout.txt)
+05  .\.venv\Scripts\python.exe -m unittest discover -s tests -v                                                               exit=0  (31/31 OK; logs/final_tests.stdout.txt)
+
+# --- S1: source retrieval (first attempt recorded a real failure, second succeeded) ---
+06  .\.venv\Scripts\python.exe tools/fetch_sources.py --output results/execution_20261029/sources_retrieval                       exit=1 for exact file 52761698 (retained in logs/fetch_sources.stdout.txt); preprint/metadata/Querry OK
+07  .\.venv\Scripts\python.exe tools/fetch_sources.py --output results/execution_20261029/sources_retrieval                       exit=0 after fetch-tool repair (logs/fetch_sources_2.stdout.txt; exact file HTTP 200, 2,821,576 bytes)
+
+# --- S4: numerical audit and long-range diagnostics ---
+08  .\.venv\Scripts\python.exe tools/numerical_audit.py --out results/execution_20261029/numerical_audit.json                   exit=0  (logs/numerical_audit.stdout.txt)
+09  .\.venv\Scripts\python.exe tools/long_profile.py --config configs/paper_control_NA135.json --output results/execution_20261029/paper_control_long   exit=0
+10  .\.venv\Scripts\python.exe tools/long_profile.py --config configs/target_Fe3O4_NA145.json --output results/execution_20261029/target_long           exit=0
+
+# --- S5: full target grid ---
+11  .\.venv\Scripts\python.exe src/run_dataset.py --config configs/target_Fe3O4_NA145.json --output results/execution_20261029/full --accept-candidate-model   exit=0  (logs/full_run_1.stdout.txt)
+12  .\.venv\Scripts\python.exe tools/validate_output.py results/execution_20261029/full --out results/execution_20261029/full_validation.json             exit=0  (logs/full_validation.stdout.txt; rerun logs/full_validation_rerun.stdout.txt)
+
+# --- S6: figures, XDMF, saved-data audits ---
+13  .\.venv\Scripts\python.exe tools/render_figures.py results/execution_20261029/full --output results/execution_20261029/figures          exit=0  (logs/render_figures.stdout.txt)
+14  .\.venv\Scripts\python.exe tools/export_xdmf.py results/execution_20261029/full                                                          exit=0  (logs/export_xdmf.stdout.txt)
+15  .\.venv\Scripts\python.exe tools/export_axis_profiles.py results/execution_20261029/full                                                exit=0
+16  .\.venv\Scripts\python.exe tools/audit_saved_cubes.py results/execution_20261029/full --out results/execution_20261029/saved_cube_audit.json   exit=0  (logs/saved_cube_audit.stdout.txt)
+17  .\.venv\Scripts\python.exe tools/audit_figures.py results/execution_20261029/figures --out results/execution_20261029/figure_audit.json          exit=0
+18  .\.venv\Scripts\python.exe tools/verify_xdmf.py results/execution_20261029/full --out results/execution_20261029/xdmf_audit.json                 exit=0
+
+# --- final recheck immediately before packaging ---
+19  .\.venv\Scripts\python.exe -m unittest discover -s tests -v                                                               exit=0  (31/31 OK; logs/final_recheck_tests.stdout.txt)
+20  .\.venv\Scripts\python.exe -m unittest discover -s legacy\tests -v                                                        exit=0  (7/7 OK; logs/final_recheck_legacy.stdout.txt)
+21  .\.venv\Scripts\python.exe tools/audit_saved_cubes.py results/execution_20261029/full --out work/final_saved_cube_audit.json                    exit=0  (171 layers per file, 13 manifest entries)
+22  .\.venv\Scripts\python.exe -c "<sha256 + per-layer HDF5 read of the three cubes>"                                                               exit=0  (work/final_cube_hashes.json)
+
+# --- packaging (executed after this file was assembled) ---
+23  .\.venv\Scripts\python.exe tools/package_results.py --data results/execution_20261029/full --review-dir results/execution_20261029/review --output <outputs>/release --zip <outputs>/results_bundle.zip
+24  .\.venv\Scripts\python.exe tools/audit_saved_cubes.py <outputs>/release --out <outputs>/post_package_saved_cube_audit.json
+25  .\.venv\Scripts\python.exe -c "<SHA256SUMS + ZIP member + ZIP sha256 verification>"                                                              (output: outputs/post_package_verification.json)
+
+# Notes
+# - The first fetch attempt (line 06) is a genuine failure record, kept verbatim; it is not reported as success.
+# - No command lowered NA, reduced the main grid, or used pilot interpolation as full data.
+# - ParaView was not opened; XDMF was checked structurally only (tools/verify_xdmf.py).

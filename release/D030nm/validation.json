@@ -1,0 +1,18 @@
+{
+  "numerical_storage_pass": true,
+  "shape": [
+    171,
+    241,
+    241
+  ],
+  "max_normalized_signal_error": 1.1117754180644078e-07,
+  "max_normalized_local_contrast_error": 3.190442566735017e-07,
+  "defined_voxels": 9931851,
+  "stable_voxels": 968715,
+  "total_voxels": 9931851,
+  "physical_validation": "NOT_ESTABLISHED",
+  "diameter_nm": 30.0,
+  "NA": 1.45,
+  "sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+  "mie_size_parameter": 0.2356194490192345
+}

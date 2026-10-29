@@ -1,0 +1,104 @@
+{
+  "figshare_supplement_file52761698.pdf": {
+    "pages": 12,
+    "marker_pages": [
+      {
+        "page": 2,
+        "markers": [
+          "figS2"
+        ]
+      },
+      {
+        "page": 4,
+        "markers": [
+          "figS2",
+          "supp_S1"
+        ]
+      },
+      {
+        "page": 5,
+        "markers": [
+          "eqS6",
+          "supp_S4",
+          "supp_S5"
+        ]
+      },
+      {
+        "page": 6,
+        "markers": [
+          "eqS12",
+          "eqS13"
+        ]
+      },
+      {
+        "page": 12,
+        "markers": [
+          "eq4",
+          "eq11"
+        ]
+      }
+    ]
+  },
+  "author_preprint_including_supplement.pdf": {
+    "pages": 20,
+    "marker_pages": [
+      {
+        "page": 3,
+        "markers": [
+          "eq4",
+          "figS2"
+        ]
+      },
+      {
+        "page": 4,
+        "markers": [
+          "eq4",
+          "eq7",
+          "eq9",
+          "eq10",
+          "eq11"
+        ]
+      },
+      {
+        "page": 5,
+        "markers": [
+          "eq7"
+        ]
+      },
+      {
+        "page": 6,
+        "markers": [
+          "eq7"
+        ]
+      },
+      {
+        "page": 9,
+        "markers": [
+          "figS2"
+        ]
+      },
+      {
+        "page": 11,
+        "markers": [
+          "figS2",
+          "supp_S1"
+        ]
+      },
+      {
+        "page": 12,
+        "markers": [
+          "eqS6",
+          "supp_S4",
+          "supp_S5"
+        ]
+      },
+      {
+        "page": 13,
+        "markers": [
+          "eqS12",
+          "eqS13"
+        ]
+      }
+    ]
+  }
+}

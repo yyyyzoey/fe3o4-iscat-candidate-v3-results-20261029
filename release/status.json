@@ -1,0 +1,66 @@
+{
+  "task": "Fe3O4_surface_bound_three_diameter_through_focus",
+  "data_generation": "COMPLETE",
+  "numerical_validation": "PARTIAL",
+  "source_version_audit": "VERIFIED",
+  "formula_fidelity": "UNVERIFIED",
+  "high_na_model_validation": "UNVERIFIED",
+  "absolute_calibration": false,
+  "result_class": "CANDIDATE",
+  "target_shapes": {
+    "30": [
+      171,
+      241,
+      241
+    ],
+    "100": [
+      171,
+      241,
+      241
+    ],
+    "200": [
+      171,
+      241,
+      241
+    ]
+  },
+  "actual_shapes": {
+    "30": [
+      171,
+      241,
+      241
+    ],
+    "100": [
+      171,
+      241,
+      241
+    ],
+    "200": [
+      171,
+      241,
+      241
+    ]
+  },
+  "blockers": [
+    "full_Jones_chain",
+    "supercritical_high_NA_physical_validation",
+    "relative_complex_amplitude",
+    "linear_midpoint_reconstruction"
+  ],
+  "evidence_paths": {
+    "review": "review.md",
+    "sources": "source_audit.md",
+    "formulas": "formula_audit.md",
+    "tests": "tests.json",
+    "convergence": "convergence.json",
+    "storage_audit": "diagnostics/saved_cube_audit.json",
+    "full_validation": "diagnostics/full_validation.json",
+    "xdmf_audit": "diagnostics/xdmf_audit.json",
+    "figure_audit": "diagnostics/figure_audit.json",
+    "source_retrieval": "diagnostics/sources_retrieval/retrieval_report.json",
+    "target_long": "diagnostics/target_long/status.json",
+    "paper_control_long": "diagnostics/paper_control_long/status.json"
+  },
+  "dataset_notes": "through_focus_image_response_not_sample_space_near_field; fixed zeta window, not measured depth of field; gamma=0.5+0i is a demonstration convention, not a calibrated value.",
+  "generated_utc": "2026-10-29T14:18:23.032941+00:00"
+}

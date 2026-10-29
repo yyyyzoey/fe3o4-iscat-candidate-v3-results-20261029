@@ -1,0 +1,83 @@
+{
+  "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+  "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+  "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+  "mode": "full",
+  "grid_shape": [
+    171,
+    241,
+    241
+  ],
+  "calculation_precision": "complex128,float64",
+  "stored_precision": "float32",
+  "expected_uncompressed_array_bytes": 2085688710,
+  "reference_field_scale": 9.422632737507974e-08,
+  "absolute_calibration": false,
+  "cases": {
+    "30": {
+      "numerical_storage_pass": true,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "max_normalized_signal_error": 1.1117754180644078e-07,
+      "max_normalized_local_contrast_error": 3.190442566735017e-07,
+      "defined_voxels": 9931851,
+      "stable_voxels": 968715,
+      "total_voxels": 9931851,
+      "physical_validation": "NOT_ESTABLISHED",
+      "diameter_nm": 30.0,
+      "NA": 1.45,
+      "sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "mie_size_parameter": 0.2356194490192345
+    },
+    "100": {
+      "numerical_storage_pass": true,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "max_normalized_signal_error": 1.3691220444576837e-07,
+      "max_normalized_local_contrast_error": 3.6091304046517433e-07,
+      "defined_voxels": 9931851,
+      "stable_voxels": 968715,
+      "total_voxels": 9931851,
+      "physical_validation": "NOT_ESTABLISHED",
+      "diameter_nm": 100.0,
+      "NA": 1.45,
+      "sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "mie_size_parameter": 0.7853981633974484
+    },
+    "200": {
+      "numerical_storage_pass": true,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "max_normalized_signal_error": 1.3041943196155156e-07,
+      "max_normalized_local_contrast_error": 3.828350047331291e-07,
+      "defined_voxels": 9931851,
+      "stable_voxels": 968715,
+      "total_voxels": 9931851,
+      "physical_validation": "NOT_ESTABLISHED",
+      "diameter_nm": 200.0,
+      "NA": 1.45,
+      "sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "mie_size_parameter": 1.5707963267948968
+    }
+  },
+  "dataset_complete": true,
+  "open_gates": [
+    "published_supplement_version",
+    "full_Jones_chain",
+    "supercritical_sector",
+    "relative_complex_amplitude"
+  ],
+  "data_semantics": "through_focus_image_response_not_sample_space_near_field",
+  "NA_requested": 1.45,
+  "NA_integrated": 1.45,
+  "created_utc": "2026-10-29T13:52:11.002929+00:00"
+}

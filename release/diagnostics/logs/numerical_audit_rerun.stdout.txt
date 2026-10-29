@@ -1,0 +1,6 @@
+{
+  "numerical_audit_pass": true,
+  "linear_midpoint_reconstruction_all_pass": false,
+  "strict_all_including_linear_reconstruction": false,
+  "report": "results\\execution_20261029\\numerical_audit.json"
+}

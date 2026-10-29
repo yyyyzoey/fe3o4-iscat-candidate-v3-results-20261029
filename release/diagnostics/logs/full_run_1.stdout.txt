@@ -1,0 +1,3 @@
+D=30nm; starting slice 0/171; candidate model
+D=100nm; starting slice 0/171; candidate model
+D=200nm; starting slice 0/171; candidate model

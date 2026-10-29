@@ -1,0 +1,48 @@
+test_axis_rejects_invalid_endpoints (test_handoff.CoreChecks.test_axis_rejects_invalid_endpoints) ... ok
+test_azimuthal_direct_integral_sign (test_handoff.CoreChecks.test_azimuthal_direct_integral_sign) ... ok
+test_backscatter_returning_p_basis (test_handoff.CoreChecks.test_backscatter_returning_p_basis) ... ok
+test_branch_passive_decay (test_handoff.CoreChecks.test_branch_passive_decay) ... ok
+test_complex_amplitude_basis_identity (test_handoff.CoreChecks.test_complex_amplitude_basis_identity) ... ok
+test_fresnel_normal (test_handoff.CoreChecks.test_fresnel_normal) ... ok
+test_fresnel_s_power_conservation_below_critical (test_handoff.CoreChecks.test_fresnel_s_power_conservation_below_critical) ... ok
+test_homogeneous_OPD_identity (test_handoff.CoreChecks.test_homogeneous_OPD_identity) ... ok
+test_material_interpolation (test_handoff.CoreChecks.test_material_interpolation) ... ok
+test_mie_angular_legendre_polynomial_oracle (test_handoff.CoreChecks.test_mie_angular_legendre_polynomial_oracle) ... ok
+test_mie_high_precision_cylindrical_bessel_oracle (test_handoff.CoreChecks.test_mie_high_precision_cylindrical_bessel_oracle) ... ok
+test_mie_passivity_and_lossless (test_handoff.CoreChecks.test_mie_passivity_and_lossless) ... ok
+test_mie_rayleigh_amplitude_phase (test_handoff.CoreChecks.test_mie_rayleigh_amplitude_phase) ... ok
+test_phase_flip_only_cross_changes (test_handoff.CoreChecks.test_phase_flip_only_cross_changes) ... ok
+test_pupil_candidate_uses_returning_p_basis (test_handoff.CoreChecks.test_pupil_candidate_uses_returning_p_basis) ... ok
+test_reduced_RW_against_direct_phi (test_handoff.CoreChecks.test_reduced_RW_against_direct_phi) ... ok
+test_reference_magnitude_scan_invariant (test_handoff.CoreChecks.test_reference_magnitude_scan_invariant) ... ok
+test_reference_null_mask (test_handoff.CoreChecks.test_reference_null_mask) ... ok
+test_target_parameters_locked (test_handoff.CoreChecks.test_target_parameters_locked) ... ok
+test_zero_scattering_matched_index (test_handoff.CoreChecks.test_zero_scattering_matched_index) ... ok
+D=30nm; starting slice 0/3; candidate model
+test_tiny_roundtrip_resume_and_refusal (test_handoff.IOChecks.test_tiny_roundtrip_resume_and_refusal) ... ok
+test_backward_spherical_basis_equals_p_s_basis (test_jones_chain.JonesChainConsistency.test_backward_spherical_basis_equals_p_s_basis)
+At the returning direction e_theta = p_hat and e_phi = -s_hat. ... ok
+test_candidate_pupil_matches_chain_result (test_jones_chain.JonesChainConsistency.test_candidate_pupil_matches_chain_result) ... ok
+test_chain_consistent_s6_sign (test_jones_chain.JonesChainConsistency.test_chain_consistent_s6_sign)
+Linear response fixed by S2 gives S1 t_s - S2 t_p, not S1 t_s + S2 t_p. ... ok
+test_literal_printed_S6_requires_contradictory_S2 (test_jones_chain.JonesChainConsistency.test_literal_printed_S6_requires_contradictory_S2)
+If S6 had +S2 t_p, the same chain would make S2 proportional to r_p-r_s. ... ok
+test_rayleigh_backscatter_does_not_vanish (test_jones_chain.JonesChainConsistency.test_rayleigh_backscatter_does_not_vanish)
+At theta=pi a pure electric dipole has S2=-S1; literal S6 would cancel. ... ok
+test_scattered_ps_content_is_minus_S2_and_iS1 (test_jones_chain.JonesChainConsistency.test_scattered_ps_content_is_minus_S2_and_iS1) ... ok
+D=30nm; starting slice 0/3; candidate model
+test_config_hash_mismatch_is_rejected (test_robustness.Robustness.test_config_hash_mismatch_is_rejected) ... ok
+D=30nm; starting slice 0/3; candidate model
+D=100nm; starting slice 0/3; candidate model
+D=100nm; starting slice 0/3; candidate model
+D=30nm; starting slice 0/3; candidate model
+test_diameter_order_invariance (test_robustness.Robustness.test_diameter_order_invariance) ... ok
+D=30nm; starting slice 0/3; candidate model
+test_truncated_and_tampered_cubes_are_rejected (test_robustness.Robustness.test_truncated_and_tampered_cubes_are_rejected) ... ok
+D=30nm; starting slice 0/3; candidate model
+test_truncated_file_is_rejected (test_robustness.Robustness.test_truncated_file_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.387s
+
+OK

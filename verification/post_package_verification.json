@@ -1,0 +1,423 @@
+{
+  "verification_version": "post-package-v1",
+  "started_utc": "2026-10-29T14:33:18.210123+00:00",
+  "release_root": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\release",
+  "zip_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\results_bundle.zip",
+  "checks": {
+    "manifest_parse": {
+      "pass": true,
+      "detail": {
+        "entries": 138,
+        "errors": []
+      }
+    },
+    "release_inventory_matches_manifest": {
+      "pass": true,
+      "detail": {
+        "release_files": 139,
+        "manifest_entries": 138,
+        "unlisted": [],
+        "missing_files": []
+      }
+    },
+    "manifest_all_sha256": {
+      "pass": true,
+      "detail": {
+        "entries_verified": 138,
+        "mismatches": []
+      }
+    },
+    "zip_sha256": {
+      "pass": true,
+      "detail": {
+        "declared": "fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7",
+        "actual": "fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7",
+        "bytes": 1273486344
+      }
+    },
+    "zip_crc_testzip": {
+      "pass": true,
+      "detail": {
+        "first_bad_member": null
+      }
+    },
+    "zip_member_inventory": {
+      "pass": true,
+      "detail": {
+        "members": 139,
+        "expected_members": 139,
+        "duplicates": [],
+        "unexpected": [],
+        "missing": []
+      }
+    },
+    "zip_member_hashes": {
+      "pass": true,
+      "detail": {
+        "members_verified": 139,
+        "errors": []
+      }
+    },
+    "required_release_files": {
+      "pass": true,
+      "detail": {
+        "missing": []
+      }
+    },
+    "status_semantics": {
+      "pass": true,
+      "detail": {
+        "expected": {
+          "data_generation": "COMPLETE",
+          "numerical_validation": "PARTIAL",
+          "source_version_audit": "VERIFIED",
+          "formula_fidelity": "UNVERIFIED",
+          "high_na_model_validation": "UNVERIFIED",
+          "absolute_calibration": false,
+          "result_class": "CANDIDATE"
+        },
+        "actual": {
+          "data_generation": "COMPLETE",
+          "numerical_validation": "PARTIAL",
+          "source_version_audit": "VERIFIED",
+          "formula_fidelity": "UNVERIFIED",
+          "high_na_model_validation": "UNVERIFIED",
+          "absolute_calibration": false,
+          "result_class": "CANDIDATE"
+        }
+      }
+    },
+    "config_task_parameters": {
+      "pass": true,
+      "detail": {
+        "diameters": true,
+        "wavelength": true,
+        "NA": true,
+        "xy_bounds": true,
+        "xy_step": true,
+        "zeta_bounds": true,
+        "zeta_step": true,
+        "single_particle": true,
+        "surface_bound": true,
+        "no_brownian": true,
+        "no_camera": true,
+        "no_background": true,
+        "absolute_calibration": true
+      }
+    },
+    "exactly_three_cubes": {
+      "pass": true,
+      "detail": {
+        "expected": [
+          "D030nm/cube.h5",
+          "D100nm/cube.h5",
+          "D200nm/cube.h5"
+        ],
+        "actual": [
+          "D030nm/cube.h5",
+          "D100nm/cube.h5",
+          "D200nm/cube.h5"
+        ]
+      }
+    },
+    "cube_D030": {
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    "cube_D100": {
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    "cube_D200": {
+      "pass": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    "shared_reference_scale": {
+      "pass": true,
+      "detail": {
+        "scales": [
+          9.422632737507974e-08,
+          9.422632737507974e-08,
+          9.422632737507974e-08
+        ]
+      }
+    },
+    "status_actual_shapes": {
+      "pass": true,
+      "detail": {
+        "status": {
+          "30": [
+            171,
+            241,
+            241
+          ],
+          "100": [
+            171,
+            241,
+            241
+          ],
+          "200": [
+            171,
+            241,
+            241
+          ]
+        },
+        "measured": {
+          "30": [
+            171,
+            241,
+            241
+          ],
+          "100": [
+            171,
+            241,
+            241
+          ],
+          "200": [
+            171,
+            241,
+            241
+          ]
+        }
+      }
+    },
+    "all_cubes_171_layers": {
+      "pass": true,
+      "detail": {
+        "30": 171,
+        "100": 171,
+        "200": 171
+      }
+    },
+    "recorded_current_tests_31_pass": {
+      "pass": true,
+      "detail": {
+        "ran": 31,
+        "ok": true,
+        "recheck_exit": "EXIT=0"
+      }
+    },
+    "recorded_legacy_tests_7_pass": {
+      "pass": true,
+      "detail": {
+        "ran": 7,
+        "ok": true,
+        "exit": null
+      }
+    },
+    "recorded_convergence_artifact": {
+      "pass": true,
+      "detail": {
+        "top_level_keys": [
+          "audit_script_sha256",
+          "checks",
+          "config_sha256",
+          "implementation_sha256",
+          "not_covered_here",
+          "overall",
+          "sampling",
+          "source",
+          "source_sha256",
+          "thresholds"
+        ]
+      }
+    }
+  },
+  "cases": {
+    "30": {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\release\\D030nm\\cube.h5",
+      "bytes": 424882738,
+      "sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "layers_read": 171,
+      "nonfinite_arrays": 0,
+      "negative_intensity_voxels": 0,
+      "undefined_contrast_non_nan": 0,
+      "defined_contrast_nonfinite": 0,
+      "defined_mask_mismatch_outside_tolerance": 0,
+      "stable_mask_mismatch_outside_tolerance": 0,
+      "max_total_identity_normalized_residual": 1.1920046461000311e-07,
+      "max_fixed_contrast_identity_normalized_residual": 3.725290298461914e-09,
+      "min_total_intensity": 2.2055193227288328e-09,
+      "max_total_intensity": 1.032920002937317,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "coordinate_lengths": [
+        171,
+        241,
+        241
+      ],
+      "coordinates_exact": true,
+      "zeta_zero_present": true,
+      "completed_slices_attr": 171,
+      "metadata": {
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "diameter_nm": 30.0,
+        "radius_nm": 15.0,
+        "center_height_nm": 15.0,
+        "surface_gap_nm": 0.0,
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "material": "Fe3O4",
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "reference_field_scale": 9.422632737507974e-08
+      },
+      "checks": {
+        "metadata_and_shape": true,
+        "layers_read": true,
+        "finite_arrays": true,
+        "nonnegative_intensity": true,
+        "mask_contrast_nan": true,
+        "defined_contrast_finite": true,
+        "defined_mask": true,
+        "stable_mask": true,
+        "total_identity": true,
+        "fixed_contrast_identity": true,
+        "known_bytes_and_sha256": true
+      },
+      "errors": [],
+      "case_pass": true
+    },
+    "100": {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\release\\D100nm\\cube.h5",
+      "bytes": 424639674,
+      "sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "layers_read": 171,
+      "nonfinite_arrays": 0,
+      "negative_intensity_voxels": 0,
+      "undefined_contrast_non_nan": 0,
+      "defined_contrast_nonfinite": 0,
+      "defined_mask_mismatch_outside_tolerance": 0,
+      "stable_mask_mismatch_outside_tolerance": 0,
+      "max_total_identity_normalized_residual": 1.1714685399510927e-07,
+      "max_fixed_contrast_identity_normalized_residual": 1.1789261122885364e-07,
+      "min_total_intensity": 3.6548400417224514e-10,
+      "max_total_intensity": 3.146827459335327,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "coordinate_lengths": [
+        171,
+        241,
+        241
+      ],
+      "coordinates_exact": true,
+      "zeta_zero_present": true,
+      "completed_slices_attr": 171,
+      "metadata": {
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "diameter_nm": 100.0,
+        "radius_nm": 50.0,
+        "center_height_nm": 50.0,
+        "surface_gap_nm": 0.0,
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "material": "Fe3O4",
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "reference_field_scale": 9.422632737507974e-08
+      },
+      "checks": {
+        "metadata_and_shape": true,
+        "layers_read": true,
+        "finite_arrays": true,
+        "nonnegative_intensity": true,
+        "mask_contrast_nan": true,
+        "defined_contrast_finite": true,
+        "defined_mask": true,
+        "stable_mask": true,
+        "total_identity": true,
+        "fixed_contrast_identity": true,
+        "known_bytes_and_sha256": true
+      },
+      "errors": [],
+      "case_pass": true
+    },
+    "200": {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\release\\D200nm\\cube.h5",
+      "bytes": 424913287,
+      "sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "layers_read": 171,
+      "nonfinite_arrays": 0,
+      "negative_intensity_voxels": 0,
+      "undefined_contrast_non_nan": 0,
+      "defined_contrast_nonfinite": 0,
+      "defined_mask_mismatch_outside_tolerance": 0,
+      "stable_mask_mismatch_outside_tolerance": 0,
+      "max_total_identity_normalized_residual": 1.1920928955078125e-07,
+      "max_fixed_contrast_identity_normalized_residual": 1.1039099234722016e-07,
+      "min_total_intensity": 4.959265775816846e-10,
+      "max_total_intensity": 2.3179705142974854,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "coordinate_lengths": [
+        171,
+        241,
+        241
+      ],
+      "coordinates_exact": true,
+      "zeta_zero_present": true,
+      "completed_slices_attr": 171,
+      "metadata": {
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "diameter_nm": 200.0,
+        "radius_nm": 100.0,
+        "center_height_nm": 100.0,
+        "surface_gap_nm": 0.0,
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "material": "Fe3O4",
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "reference_field_scale": 9.422632737507974e-08
+      },
+      "checks": {
+        "metadata_and_shape": true,
+        "layers_read": true,
+        "finite_arrays": true,
+        "nonnegative_intensity": true,
+        "mask_contrast_nan": true,
+        "defined_contrast_finite": true,
+        "defined_mask": true,
+        "stable_mask": true,
+        "total_identity": true,
+        "fixed_contrast_identity": true,
+        "known_bytes_and_sha256": true
+      },
+      "errors": [],
+      "case_pass": true
+    }
+  },
+  "failures": [],
+  "completed_utc": "2026-10-29T14:33:29.100108+00:00",
+  "elapsed_s": 10.89,
+  "status": "PASS",
+  "n_checks": 20,
+  "n_passed": 20
+}

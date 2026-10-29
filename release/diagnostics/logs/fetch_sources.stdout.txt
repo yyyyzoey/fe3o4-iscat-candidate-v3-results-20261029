@@ -1,0 +1,57 @@
+{
+  "retrieval_utc": "2026-10-29T13:30:32.103085+00:00",
+  "files": {
+    "figshare_supplement_file52761698.pdf": {
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://opticapublishing.figshare.com/ndownloader/files/52761698",
+          "ok": false,
+          "error": "ValueError: Not a PDF; likely blocked HTML"
+        },
+        {
+          "url": "https://api.figshare.com/v2/file/download/52761698",
+          "ok": false,
+          "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>"
+        }
+      ]
+    },
+    "author_preprint_including_supplement.pdf": {
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/2209.14508",
+          "ok": true,
+          "final_url": "https://arxiv.org/pdf/2209.14508",
+          "sha256": "1e40105aa5f1fe5ad399185f0ec84c400178c94fbdb1c1ea199496b452114358",
+          "bytes": 4776448
+        }
+      ]
+    },
+    "figshare_article_metadata.json": {
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://api.figshare.com/v2/articles/22047950",
+          "ok": true,
+          "final_url": "https://api.figshare.com/v2/articles/22047950",
+          "sha256": "620787c5c04ead62919aee78b2c64005f4d12f386ca083206cacc7abdec65de1",
+          "bytes": 3814
+        }
+      ]
+    },
+    "Querry_full.yml": {
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml",
+          "ok": true,
+          "final_url": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml",
+          "sha256": "c42e5a5007827fb3548df61daf222b164a7799206790fb2116c8488aefe9e802",
+          "bytes": 16992
+        }
+      ]
+    }
+  },
+  "exact_supplement_downloaded": false
+}

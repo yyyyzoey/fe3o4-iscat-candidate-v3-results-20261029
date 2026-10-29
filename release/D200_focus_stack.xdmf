@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Xdmf Version="3.0">
+  <Domain>
+    <Grid Name="D200_CANDIDATE_focus_stack" GridType="Uniform">
+      <Information Name="warning" Value="z axis is zeta focus scan; not a spatial near-field distribution" />
+      <Topology TopologyType="3DRectMesh" Dimensions="171 241 241" />
+      <Geometry GeometryType="VXVYVZ">
+        <DataItem Dimensions="241" NumberType="Float" Precision="8" Format="HDF">D200nm/cube.h5:/coords/x_object_nm</DataItem>
+        <DataItem Dimensions="241" NumberType="Float" Precision="8" Format="HDF">D200nm/cube.h5:/coords/y_object_nm</DataItem>
+        <DataItem Dimensions="171" NumberType="Float" Precision="8" Format="HDF">D200nm/cube.h5:/coords/zeta_nm</DataItem>
+      </Geometry>
+      <Attribute Name="I_cross" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">D200nm/cube.h5:/signals/I_cross</DataItem>
+      </Attribute>
+      <Attribute Name="I_total" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">D200nm/cube.h5:/signals/I_total</DataItem>
+      </Attribute>
+      <Attribute Name="I_ref" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">D200nm/cube.h5:/signals/I_ref</DataItem>
+      </Attribute>
+      <Attribute Name="I_scat" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">D200nm/cube.h5:/signals/I_scat</DataItem>
+      </Attribute>
+      <Attribute Name="contrast_fixed_reference" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">D200nm/cube.h5:/signals/contrast_fixed_reference</DataItem>
+      </Attribute>
+      <Attribute Name="contrast_local" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">D200nm/cube.h5:/signals/contrast_local</DataItem>
+      </Attribute>
+    </Grid>
+  </Domain>
+</Xdmf>

@@ -1,0 +1,12 @@
+test_Mie_angular_recurrence_dipole (test_physics_numerics.TestForwardModel.test_Mie_angular_recurrence_dipole) ... ok
+test_Mie_angular_recurrence_n2 (test_physics_numerics.TestForwardModel.test_Mie_angular_recurrence_n2) ... ok
+test_Mie_no_index_contrast (test_physics_numerics.TestForwardModel.test_Mie_no_index_contrast) ... ok
+test_axial_symmetry_and_oil_height (test_physics_numerics.TestForwardModel.test_axial_symmetry_and_oil_height) ... ok
+test_fresnel_normal_incidence (test_physics_numerics.TestForwardModel.test_fresnel_normal_incidence) ... ok
+test_gauss_legendre_quadrature_convergence (test_physics_numerics.TestForwardModel.test_gauss_legendre_quadrature_convergence) ... ok
+test_pupil_highNA_non_nan_and_branch (test_physics_numerics.TestForwardModel.test_pupil_highNA_non_nan_and_branch) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.019s
+
+OK

@@ -1,0 +1,8 @@
+# Full data and bundle are published as a GitHub Release asset.
+*.h5
+*.hdf5
+results_bundle.zip
+.vscode/
+.idea/
+__pycache__/
+*.pyc

@@ -1,0 +1,209 @@
+{
+  "directory": "C:\\Users\\PC\\Downloads\\Fe3O4_iSCAT_Codex_Handoff_v3\\Fe3O4_iSCAT_Codex_Handoff_v3\\results\\execution_20261029\\figures",
+  "pass": true,
+  "figures": {
+    "axis_comparison.png": {
+      "bytes": 62177,
+      "size_px": [
+        1280,
+        640
+      ],
+      "sha256": "643d4782b47e4f6362513448ac44e1f56ee9b812fcf49b15c82f061bc89fe2fe",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 35.41358431028255,
+      "ink_fraction": 0.044232177734375
+    },
+    "D030_xz.png": {
+      "bytes": 42918,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "17eca1391ad9b6e65d5e83e0c389a99f07eddbab77ca3a1e8b835d6c90eb5476",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 74.7411370430814,
+      "ink_fraction": 0.5783098958333334
+    },
+    "D030_yz.png": {
+      "bytes": 42950,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "cb8d03e6e609b78234d825658d44123bd5e2f47cd6bdf3599da645ab3e875bcf",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 74.74261664869267,
+      "ink_fraction": 0.57833203125
+    },
+    "D030_z+00000.png": {
+      "bytes": 44059,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "3b898cfea7eacd76b1986cfaad564fc4455c4b095ba5cb695a70142030fce27c",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 74.89753393462321,
+      "ink_fraction": 0.5685403645833333
+    },
+    "D030_z+00170.png": {
+      "bytes": 46297,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "3dc630b3fbe73bb980767b694fc0177e7740b135b21efb39c196ea2e1f533f0b",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 75.1531011628086,
+      "ink_fraction": 0.5684140625
+    },
+    "D030_z-00170.png": {
+      "bytes": 46677,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "b5847c8b67bcd29cd1417e79c17a273b2738f7be8a0008ee681afeac0ad7a61a",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 75.09233963138603,
+      "ink_fraction": 0.56829296875
+    },
+    "D100_xz.png": {
+      "bytes": 47505,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "5b0ebcb9a0bc9d428abc20d8f3604eda53a0d415af06b190889f760e1544dd31",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 73.44417609661485,
+      "ink_fraction": 0.5784114583333333
+    },
+    "D100_yz.png": {
+      "bytes": 47562,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "efe9a6a52a7cefece4f93e1a5914fb0a464671cc05cdd5fc47041bcd022bb6b3",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 73.44591888907628,
+      "ink_fraction": 0.5784375
+    },
+    "D100_z+00000.png": {
+      "bytes": 48027,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "70dff3fdaea7f2d79a03e5eba2b1a27a95d564106596a3ea09087447b1b6ab6a",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 74.79601820844238,
+      "ink_fraction": 0.5686510416666667
+    },
+    "D100_z+00170.png": {
+      "bytes": 48618,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "cda2524cf0b9df9bcd1763c6eab7438860ac7d3ff0a9add4f11974c2d6806a54",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 75.08866755237736,
+      "ink_fraction": 0.5685104166666667
+    },
+    "D100_z-00170.png": {
+      "bytes": 47968,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "b681cd358833b0995ed743f22a443f25a3ee776efd60d58b7298f7e6b6522cee",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 74.79225407455019,
+      "ink_fraction": 0.5684518229166666
+    },
+    "D200_xz.png": {
+      "bytes": 47557,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "51702aa689ba8fa88911bb00deea21f9725620938ec0693bc7fac1dc12921f83",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 74.3914793993768,
+      "ink_fraction": 0.57848046875
+    },
+    "D200_yz.png": {
+      "bytes": 47592,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "7dd7618fe03f9cdeffb0b79e0f2c3e9984a473d5c1e682be46263cc988c8cc13",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 74.39316524627718,
+      "ink_fraction": 0.57850390625
+    },
+    "D200_z+00000.png": {
+      "bytes": 47699,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "f140e4ec1979ba3b4d704d415b1c0b17120e96af12a751d12c60b0d8404f5128",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 75.07134523341706,
+      "ink_fraction": 0.5687096354166666
+    },
+    "D200_z+00170.png": {
+      "bytes": 48784,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "64678282ce6f39e82f422532b04bbc4b978692a3585b60193cd3436f9d1602e6",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 75.08949096694823,
+      "ink_fraction": 0.5685924479166666
+    },
+    "D200_z-00170.png": {
+      "bytes": 49500,
+      "size_px": [
+        960,
+        800
+      ],
+      "sha256": "b553fca6830a1cb53b735739ec19665591dcd7c16623cefe13e4b83180825613",
+      "gray_min": 0.0,
+      "gray_max": 255.0,
+      "gray_std": 74.79638841694744,
+      "ink_fraction": 0.568484375
+    }
+  },
+  "failures": [],
+  "plot_metadata": {
+    "source": "results\\execution_20261029\\full",
+    "shared_limits": [
+      -2.146827459335327,
+      2.146827459335327
+    ],
+    "signal": "contrast_fixed_reference",
+    "interpolation": "nearest",
+    "status": "CANDIDATE"
+  }
+}

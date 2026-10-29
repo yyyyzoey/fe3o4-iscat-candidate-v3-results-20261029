@@ -1,0 +1,100 @@
+{
+  "retrieval_utc": "2026-10-29T13:41:57.890455+00:00",
+  "user_requested_figshare_file_id": 52761698,
+  "files": {
+    "figshare_supplement_file52761698.pdf": {
+      "attempts": [
+        {
+          "url": "https://ndownloader.figshare.com/files/52761698",
+          "accessed_utc": "2026-10-29T13:41:57.890455+00:00",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-osa-2151918321/52761698/6288691.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIC5UZOEV5G5EP3CQ/20261029/eu-west-1/s3/aws4_request&X-Amz-Date=20261029T134203Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=7e5ab445f722468d1d0ba55652e5bb119c7029f7c52342c10267773da9f1ccc3",
+          "bytes": 2821576,
+          "sha256": "62a60e7194230c7ad5ed7635c951dfdab81e6f82e2e0f4772b6b71ef70ffbbfe"
+        }
+      ],
+      "requested_urls": [
+        "https://ndownloader.figshare.com/files/52761698",
+        "https://opticapublishing.figshare.com/ndownloader/files/52761698",
+        "https://api.figshare.com/v2/file/download/52761698"
+      ],
+      "downloaded_this_run": true,
+      "cache_used": false,
+      "sha256": "62a60e7194230c7ad5ed7635c951dfdab81e6f82e2e0f4772b6b71ef70ffbbfe",
+      "bytes": 2821576,
+      "matches_previous_cache": null,
+      "pages": 12
+    },
+    "author_preprint_including_supplement.pdf": {
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/2209.14508",
+          "accessed_utc": "2026-10-29T13:42:21.824521+00:00",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "final_url": "https://arxiv.org/pdf/2209.14508",
+          "bytes": 4776448,
+          "sha256": "1e40105aa5f1fe5ad399185f0ec84c400178c94fbdb1c1ea199496b452114358"
+        }
+      ],
+      "requested_urls": [
+        "https://arxiv.org/pdf/2209.14508"
+      ],
+      "downloaded_this_run": true,
+      "cache_used": false,
+      "sha256": "1e40105aa5f1fe5ad399185f0ec84c400178c94fbdb1c1ea199496b452114358",
+      "bytes": 4776448,
+      "matches_previous_cache": true,
+      "pages": 20
+    },
+    "figshare_article_metadata.json": {
+      "attempts": [
+        {
+          "url": "https://api.figshare.com/v2/articles/22047950",
+          "accessed_utc": "2026-10-29T13:42:42.518787+00:00",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "application/json",
+          "final_url": "https://api.figshare.com/v2/articles/22047950",
+          "bytes": 3814,
+          "sha256": "620787c5c04ead62919aee78b2c64005f4d12f386ca083206cacc7abdec65de1"
+        }
+      ],
+      "requested_urls": [
+        "https://api.figshare.com/v2/articles/22047950"
+      ],
+      "downloaded_this_run": true,
+      "cache_used": false,
+      "sha256": "620787c5c04ead62919aee78b2c64005f4d12f386ca083206cacc7abdec65de1",
+      "bytes": 3814,
+      "matches_previous_cache": true
+    },
+    "Querry_full.yml": {
+      "attempts": [
+        {
+          "url": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml",
+          "accessed_utc": "2026-10-29T13:42:50.198558+00:00",
+          "ok": true,
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "final_url": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml",
+          "bytes": 16992,
+          "sha256": "c42e5a5007827fb3548df61daf222b164a7799206790fb2116c8488aefe9e802"
+        }
+      ],
+      "requested_urls": [
+        "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml"
+      ],
+      "downloaded_this_run": true,
+      "cache_used": false,
+      "sha256": "c42e5a5007827fb3548df61daf222b164a7799206790fb2116c8488aefe9e802",
+      "bytes": 16992,
+      "matches_previous_cache": true
+    }
+  },
+  "exact_supplement_obtained": true,
+  "exact_supplement_downloaded_this_run": true
+}

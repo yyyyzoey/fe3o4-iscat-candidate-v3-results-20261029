@@ -1,0 +1,54 @@
+{
+  "data_checks_pass": true,
+  "cases": {
+    "30": {
+      "numerical_storage_pass": true,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "max_normalized_signal_error": 1.1117754180644078e-07,
+      "max_normalized_local_contrast_error": 3.190442566735017e-07,
+      "defined_voxels": 9931851,
+      "stable_voxels": 968715,
+      "total_voxels": 9931851,
+      "physical_validation": "NOT_ESTABLISHED",
+      "diameter_nm": 30.0,
+      "NA": 1.45
+    },
+    "100": {
+      "numerical_storage_pass": true,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "max_normalized_signal_error": 1.3691220444576837e-07,
+      "max_normalized_local_contrast_error": 3.6091304046517433e-07,
+      "defined_voxels": 9931851,
+      "stable_voxels": 968715,
+      "total_voxels": 9931851,
+      "physical_validation": "NOT_ESTABLISHED",
+      "diameter_nm": 100.0,
+      "NA": 1.45
+    },
+    "200": {
+      "numerical_storage_pass": true,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "max_normalized_signal_error": 1.3041943196155156e-07,
+      "max_normalized_local_contrast_error": 3.828350047331291e-07,
+      "defined_voxels": 9931851,
+      "stable_voxels": 968715,
+      "total_voxels": 9931851,
+      "physical_validation": "NOT_ESTABLISHED",
+      "diameter_nm": 200.0,
+      "NA": 1.45
+    }
+  },
+  "physical_validation": "NOT_ESTABLISHED_BY_THIS_TOOL"
+}

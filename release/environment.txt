@@ -1,0 +1,16 @@
+captured_utc: 2026-10-29T14:06:34.974738+00:00
+cwd: C:\Users\PC\Downloads\Fe3O4_iSCAT_Codex_Handoff_v3\Fe3O4_iSCAT_Codex_Handoff_v3
+python_executable: C:\Users\PC\Downloads\Fe3O4_iSCAT_Codex_Handoff_v3\Fe3O4_iSCAT_Codex_Handoff_v3\.venv\Scripts\python.exe
+python_version: 3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]
+platform: Windows-10-10.0.26200-SP0
+machine: AMD64
+processor: Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+numpy: 2.3.5
+scipy: 1.17.0
+h5py: 3.15.1
+matplotlib: 3.10.8
+mpmath: 1.3.0
+pillow: 13.0.0
+venv: C:/Users/PC/Downloads/Fe3O4_iSCAT_Codex_Handoff_v3/Fe3O4_iSCAT_Codex_Handoff_v3/.venv
+requirements_tested.txt: numpy==2.3.5; scipy==1.17.0; h5py==3.15.1; matplotlib==3.10.8; mpmath==1.3.0; 
+note: README quotes Python 3.13.5 for the handoff environment; this run used the venv above and the versions listed here.

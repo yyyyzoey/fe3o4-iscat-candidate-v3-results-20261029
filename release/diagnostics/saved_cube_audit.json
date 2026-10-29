@@ -1,0 +1,168 @@
+{
+  "directory": "C:\\Users\\PC\\Downloads\\Fe3O4_iSCAT_Codex_Handoff_v3\\Fe3O4_iSCAT_Codex_Handoff_v3\\results\\execution_20261029\\full",
+  "data_checks_pass": true,
+  "manifest_entries_verified": 13,
+  "cases": {
+    "30": {
+      "file": "C:\\Users\\PC\\Downloads\\Fe3O4_iSCAT_Codex_Handoff_v3\\Fe3O4_iSCAT_Codex_Handoff_v3\\results\\execution_20261029\\full\\D030nm\\cube.h5",
+      "bytes": 424882738,
+      "layers_read": 171,
+      "gamma": null,
+      "nonfinite_noncontrast": 0,
+      "negative_intensity_voxels": 0,
+      "undefined_contrast_non_nan": 0,
+      "defined_contrast_nonfinite": 0,
+      "defined_mask_mismatch_outside_tolerance": 0,
+      "stable_mask_mismatch_outside_tolerance": 0,
+      "max_total_identity_normalized_residual": 1.1920046461000311e-07,
+      "max_fixed_contrast_identity_normalized_residual": 3.725290298461914e-09,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "layer_shape": [
+        241,
+        241
+      ],
+      "file_sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "manifest_sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "sha256_matches_manifest": true,
+      "completed_slices_attr": 171,
+      "zeta_zero_present": true,
+      "coordinates_exact": true,
+      "metadata": {
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "diameter_nm": 30.0,
+        "radius_nm": 15.0,
+        "center_height_nm": 15.0,
+        "surface_gap_nm": 0.0,
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "material": "Fe3O4",
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "reference_field_scale": 9.422632737507974e-08
+      },
+      "case_pass": true
+    },
+    "100": {
+      "file": "C:\\Users\\PC\\Downloads\\Fe3O4_iSCAT_Codex_Handoff_v3\\Fe3O4_iSCAT_Codex_Handoff_v3\\results\\execution_20261029\\full\\D100nm\\cube.h5",
+      "bytes": 424639674,
+      "layers_read": 171,
+      "gamma": null,
+      "nonfinite_noncontrast": 0,
+      "negative_intensity_voxels": 0,
+      "undefined_contrast_non_nan": 0,
+      "defined_contrast_nonfinite": 0,
+      "defined_mask_mismatch_outside_tolerance": 0,
+      "stable_mask_mismatch_outside_tolerance": 0,
+      "max_total_identity_normalized_residual": 1.1714685399510927e-07,
+      "max_fixed_contrast_identity_normalized_residual": 1.1789261122885364e-07,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "layer_shape": [
+        241,
+        241
+      ],
+      "file_sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "manifest_sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "sha256_matches_manifest": true,
+      "completed_slices_attr": 171,
+      "zeta_zero_present": true,
+      "coordinates_exact": true,
+      "metadata": {
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "diameter_nm": 100.0,
+        "radius_nm": 50.0,
+        "center_height_nm": 50.0,
+        "surface_gap_nm": 0.0,
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "material": "Fe3O4",
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "reference_field_scale": 9.422632737507974e-08
+      },
+      "case_pass": true
+    },
+    "200": {
+      "file": "C:\\Users\\PC\\Downloads\\Fe3O4_iSCAT_Codex_Handoff_v3\\Fe3O4_iSCAT_Codex_Handoff_v3\\results\\execution_20261029\\full\\D200nm\\cube.h5",
+      "bytes": 424913287,
+      "layers_read": 171,
+      "gamma": null,
+      "nonfinite_noncontrast": 0,
+      "negative_intensity_voxels": 0,
+      "undefined_contrast_non_nan": 0,
+      "defined_contrast_nonfinite": 0,
+      "defined_mask_mismatch_outside_tolerance": 0,
+      "stable_mask_mismatch_outside_tolerance": 0,
+      "max_total_identity_normalized_residual": 1.1920928955078125e-07,
+      "max_fixed_contrast_identity_normalized_residual": 1.1039099234722016e-07,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "layer_shape": [
+        241,
+        241
+      ],
+      "file_sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "manifest_sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "sha256_matches_manifest": true,
+      "completed_slices_attr": 171,
+      "zeta_zero_present": true,
+      "coordinates_exact": true,
+      "metadata": {
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "diameter_nm": 200.0,
+        "radius_nm": 100.0,
+        "center_height_nm": 100.0,
+        "surface_gap_nm": 0.0,
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "material": "Fe3O4",
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "reference_field_scale": 9.422632737507974e-08
+      },
+      "case_pass": true
+    }
+  },
+  "failures": [],
+  "shared_reference_scale": true,
+  "actual_shapes": {
+    "30": [
+      171,
+      241,
+      241
+    ],
+    "100": [
+      171,
+      241,
+      241
+    ],
+    "200": [
+      171,
+      241,
+      241
+    ]
+  },
+  "all_files_171_layers": true
+}

@@ -1,0 +1,92 @@
+{
+  "project": "PAPER_CONTROL_NOT_USER_TARGET",
+  "diameters_nm": [
+    120
+  ],
+  "material": {
+    "material_name": "PS_latex_control",
+    "n_real": 1.59,
+    "k_imag": 0.0,
+    "dispersion_reference": "Querry 1985 bulk magnetite via refractiveindex.info; 530-540 nm linear interpolation",
+    "optical_index_is_experimental": false
+  },
+  "optics": {
+    "wavelength_nm": 532,
+    "NA": 1.35,
+    "n_sample": 1.33,
+    "n_glass": 1.52,
+    "n_immersion": 1.52,
+    "n_detector": 1.0,
+    "n_immersion_design": 1.52,
+    "n_glass_design": 1.52,
+    "glass_thickness_nm": 170000,
+    "glass_thickness_design_nm": 170000,
+    "immersion_thickness_design_nm": 100000,
+    "magnification": 170
+  },
+  "model": {
+    "model_name": "PAPER_INSPIRED_CANDIDATE_WITH_EXPLICIT_BASIS_REPAIRS",
+    "angle_scattering_convention": "backward_mu=-kzs/ns; complex angle analytical continuation for high NA",
+    "supercritical_model": "UNVALIDATED analytic continuation of homogeneous-sphere far-field Mie/Fresnel; fails rigorous sphere-near-interface Maxwell claim",
+    "particle_interface_multiple_scattering": false,
+    "magneto_optical_tensor": false,
+    "camera_sampling": false,
+    "background_stray_light": false,
+    "brownian_motion": false,
+    "n_particles_per_case": 1,
+    "particle_center_height_nm": "diameter_nm/2 (surface-bound sphere)",
+    "data_is": "image-plane through-focus (zeta,y,x), not electromagnetic field in sample volume",
+    "nominal_DOF_nm": 336.5,
+    "DOF_warning": "+-170 nm is only a fixed nominal sampling window, not validated high-NA depth of field.",
+    "basis_scale_gamma": [
+      0.5,
+      0.0
+    ],
+    "absolute_calibration": false,
+    "formula_audit_status": "OPEN",
+    "high_NA_validation_status": "OPEN",
+    "scattering_basis": "Mie theta from incident +Z; returning-ray p coefficient=-S2_Mie",
+    "gamma_assumed_not_calibrated": true
+  },
+  "grid_full": {
+    "xy_min_nm": -1200,
+    "xy_max_nm": 1200,
+    "xy_step_nm": 10,
+    "zeta_min_nm": -3000,
+    "zeta_max_nm": 3000,
+    "zeta_step_nm": 20,
+    "radial_points": 1601,
+    "quadrature_below_critical": 512,
+    "quadrature_above_critical": 256
+  },
+  "grid_pilot": {
+    "xy_min_nm": -600,
+    "xy_max_nm": 600,
+    "xy_step_nm": 20,
+    "zeta_min_nm": -170,
+    "zeta_max_nm": 170,
+    "zeta_step_nm": 10,
+    "radial_points": 501,
+    "quadrature_below_critical": 128,
+    "quadrature_above_critical": 64
+  },
+  "source": {
+    "paper": "https://doi.org/10.1364/OE.480337",
+    "author_preprint_including_supplement": "https://arxiv.org/pdf/2209.14508",
+    "user_figshare_supplement": "https://opticapublishing.figshare.com/articles/journal_contribution/Supplementary_document_for_Axial_Profiling_of_Interferometric_Scattering_Enables_an_Accurate_Determination_of_Nanoparticle_Size_-_6288691_pdf/22047950?file=52761698",
+    "Fe3O4_nk": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml",
+    "version_difference_audit": "Not yet verified against direct Figshare supplement download (version 3)"
+  },
+  "storage": {
+    "float_dtype": "float32",
+    "complex_calculation": "complex128",
+    "intensity_calculation": "float64",
+    "compression": "gzip",
+    "compression_level": 1,
+    "chunk_z": 1,
+    "save_basis": true,
+    "contrast_stable_Iref_fraction": 0.005,
+    "disk_safety_factor": 1.5,
+    "reserve_disk_bytes": 268435456
+  }
+}

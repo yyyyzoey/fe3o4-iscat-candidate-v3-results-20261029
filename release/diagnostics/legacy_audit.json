@@ -1,0 +1,14 @@
+{
+  "legacy_sha256": "c8312c28cf0936828a1e8388197bc0f377292ee78746ef214f25630eef22cd10",
+  "dipole_backward": {
+    "S1_real": 1.5,
+    "S2_real": -1.5,
+    "old_combination_real": 0.0,
+    "returning_p_basis_combination_real": 3.0
+  },
+  "detector_Ex_sign": {
+    "old_Ex_real": -1.6,
+    "candidate_Ex_real": 1.6
+  },
+  "interpretation": "Observed algebraic differences; returning-p repair still requires full Jones-chain validation."
+}

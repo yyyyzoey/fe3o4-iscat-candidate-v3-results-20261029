@@ -1,0 +1,240 @@
+{
+  "current_suite": {
+    "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -v",
+    "log": "results/execution_20261029/logs/final_tests.stdout.txt",
+    "log_sha256": "7db0bf2156267b50ce6df09ee034411220e526fee9a093a2cadd74d55abbdc2f",
+    "recheck_log": "results/execution_20261029/logs/final_recheck_tests.stdout.txt",
+    "recheck_log_sha256": "621a7d68392f6d9b346d09a34d35b5d2ddeef30c2fbb18627f3404550b6f0f2b",
+    "recheck_exit": "EXIT=0",
+    "ran": 31,
+    "duration_s": 0.383,
+    "ok": true,
+    "tests": [
+      {
+        "test": "test_axis_rejects_invalid_endpoints",
+        "case": "test_handoff.CoreChecks.test_axis_rejects_invalid_endpoints",
+        "status": "ok"
+      },
+      {
+        "test": "test_azimuthal_direct_integral_sign",
+        "case": "test_handoff.CoreChecks.test_azimuthal_direct_integral_sign",
+        "status": "ok"
+      },
+      {
+        "test": "test_backscatter_returning_p_basis",
+        "case": "test_handoff.CoreChecks.test_backscatter_returning_p_basis",
+        "status": "ok"
+      },
+      {
+        "test": "test_branch_passive_decay",
+        "case": "test_handoff.CoreChecks.test_branch_passive_decay",
+        "status": "ok"
+      },
+      {
+        "test": "test_complex_amplitude_basis_identity",
+        "case": "test_handoff.CoreChecks.test_complex_amplitude_basis_identity",
+        "status": "ok"
+      },
+      {
+        "test": "test_fresnel_normal",
+        "case": "test_handoff.CoreChecks.test_fresnel_normal",
+        "status": "ok"
+      },
+      {
+        "test": "test_fresnel_s_power_conservation_below_critical",
+        "case": "test_handoff.CoreChecks.test_fresnel_s_power_conservation_below_critical",
+        "status": "ok"
+      },
+      {
+        "test": "test_homogeneous_OPD_identity",
+        "case": "test_handoff.CoreChecks.test_homogeneous_OPD_identity",
+        "status": "ok"
+      },
+      {
+        "test": "test_material_interpolation",
+        "case": "test_handoff.CoreChecks.test_material_interpolation",
+        "status": "ok"
+      },
+      {
+        "test": "test_mie_angular_legendre_polynomial_oracle",
+        "case": "test_handoff.CoreChecks.test_mie_angular_legendre_polynomial_oracle",
+        "status": "ok"
+      },
+      {
+        "test": "test_mie_high_precision_cylindrical_bessel_oracle",
+        "case": "test_handoff.CoreChecks.test_mie_high_precision_cylindrical_bessel_oracle",
+        "status": "ok"
+      },
+      {
+        "test": "test_mie_passivity_and_lossless",
+        "case": "test_handoff.CoreChecks.test_mie_passivity_and_lossless",
+        "status": "ok"
+      },
+      {
+        "test": "test_mie_rayleigh_amplitude_phase",
+        "case": "test_handoff.CoreChecks.test_mie_rayleigh_amplitude_phase",
+        "status": "ok"
+      },
+      {
+        "test": "test_phase_flip_only_cross_changes",
+        "case": "test_handoff.CoreChecks.test_phase_flip_only_cross_changes",
+        "status": "ok"
+      },
+      {
+        "test": "test_pupil_candidate_uses_returning_p_basis",
+        "case": "test_handoff.CoreChecks.test_pupil_candidate_uses_returning_p_basis",
+        "status": "ok"
+      },
+      {
+        "test": "test_reduced_RW_against_direct_phi",
+        "case": "test_handoff.CoreChecks.test_reduced_RW_against_direct_phi",
+        "status": "ok"
+      },
+      {
+        "test": "test_reference_magnitude_scan_invariant",
+        "case": "test_handoff.CoreChecks.test_reference_magnitude_scan_invariant",
+        "status": "ok"
+      },
+      {
+        "test": "test_reference_null_mask",
+        "case": "test_handoff.CoreChecks.test_reference_null_mask",
+        "status": "ok"
+      },
+      {
+        "test": "test_target_parameters_locked",
+        "case": "test_handoff.CoreChecks.test_target_parameters_locked",
+        "status": "ok"
+      },
+      {
+        "test": "test_zero_scattering_matched_index",
+        "case": "test_handoff.CoreChecks.test_zero_scattering_matched_index",
+        "status": "ok"
+      },
+      {
+        "test": "test_tiny_roundtrip_resume_and_refusal",
+        "case": "test_handoff.IOChecks.test_tiny_roundtrip_resume_and_refusal",
+        "status": "ok"
+      },
+      {
+        "test": "test_backward_spherical_basis_equals_p_s_basis",
+        "case": "test_jones_chain.JonesChainConsistency.test_backward_spherical_basis_equals_p_s_basis",
+        "status": "ok"
+      },
+      {
+        "test": "test_candidate_pupil_matches_chain_result",
+        "case": "test_jones_chain.JonesChainConsistency.test_candidate_pupil_matches_chain_result",
+        "status": "ok"
+      },
+      {
+        "test": "test_chain_consistent_s6_sign",
+        "case": "test_jones_chain.JonesChainConsistency.test_chain_consistent_s6_sign",
+        "status": "ok"
+      },
+      {
+        "test": "test_literal_printed_S6_requires_contradictory_S2",
+        "case": "test_jones_chain.JonesChainConsistency.test_literal_printed_S6_requires_contradictory_S2",
+        "status": "ok"
+      },
+      {
+        "test": "test_rayleigh_backscatter_does_not_vanish",
+        "case": "test_jones_chain.JonesChainConsistency.test_rayleigh_backscatter_does_not_vanish",
+        "status": "ok"
+      },
+      {
+        "test": "test_scattered_ps_content_is_minus_S2_and_iS1",
+        "case": "test_jones_chain.JonesChainConsistency.test_scattered_ps_content_is_minus_S2_and_iS1",
+        "status": "ok"
+      },
+      {
+        "test": "test_config_hash_mismatch_is_rejected",
+        "case": "test_robustness.Robustness.test_config_hash_mismatch_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_diameter_order_invariance",
+        "case": "test_robustness.Robustness.test_diameter_order_invariance",
+        "status": "ok"
+      },
+      {
+        "test": "test_truncated_and_tampered_cubes_are_rejected",
+        "case": "test_robustness.Robustness.test_truncated_and_tampered_cubes_are_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_truncated_file_is_rejected",
+        "case": "test_robustness.Robustness.test_truncated_file_is_rejected",
+        "status": "ok"
+      }
+    ],
+    "files_sha256": {
+      "tests/test_handoff.py": "67d066130d71ede1c3b9ab4c602128ea0b6835b2219ba5c8c6eb59ee3a8aa16b",
+      "tests/test_jones_chain.py": "b08ee160a0d0644324f22f9961f0e7585dd2e18160d69839bd9dcd83ef1f2622",
+      "tests/test_robustness.py": "05aade844d029751422a56e995953c821cdc88216d98634485097138b72d1578"
+    }
+  },
+  "legacy_suite": {
+    "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s legacy\\tests -v",
+    "log": "results/execution_20261029/logs/final_legacy_tests.stdout.txt",
+    "log_sha256": "12009566d66a954d9f4283ab021372bcdae9e9f201a0ce85d2a167cca0d1e0ab",
+    "recheck_log": "results/execution_20261029/logs/final_recheck_legacy.stdout.txt",
+    "recheck_log_sha256": "12009566d66a954d9f4283ab021372bcdae9e9f201a0ce85d2a167cca0d1e0ab",
+    "recheck_exit": "EXIT=0",
+    "ran": 7,
+    "duration_s": 0.018,
+    "ok": true,
+    "tests": [
+      {
+        "test": "test_Mie_angular_recurrence_dipole",
+        "case": "test_physics_numerics.TestForwardModel.test_Mie_angular_recurrence_dipole",
+        "status": "ok"
+      },
+      {
+        "test": "test_Mie_angular_recurrence_n2",
+        "case": "test_physics_numerics.TestForwardModel.test_Mie_angular_recurrence_n2",
+        "status": "ok"
+      },
+      {
+        "test": "test_Mie_no_index_contrast",
+        "case": "test_physics_numerics.TestForwardModel.test_Mie_no_index_contrast",
+        "status": "ok"
+      },
+      {
+        "test": "test_axial_symmetry_and_oil_height",
+        "case": "test_physics_numerics.TestForwardModel.test_axial_symmetry_and_oil_height",
+        "status": "ok"
+      },
+      {
+        "test": "test_fresnel_normal_incidence",
+        "case": "test_physics_numerics.TestForwardModel.test_fresnel_normal_incidence",
+        "status": "ok"
+      },
+      {
+        "test": "test_gauss_legendre_quadrature_convergence",
+        "case": "test_physics_numerics.TestForwardModel.test_gauss_legendre_quadrature_convergence",
+        "status": "ok"
+      },
+      {
+        "test": "test_pupil_highNA_non_nan_and_branch",
+        "case": "test_physics_numerics.TestForwardModel.test_pupil_highNA_non_nan_and_branch",
+        "status": "ok"
+      }
+    ],
+    "files_sha256": {
+      "legacy/tests/test_physics_numerics.py": "b9c395a998df474006d89edf6ceda6a5c0684879977e4983bce9ac277eaebdc5"
+    }
+  },
+  "summary": {
+    "current_passed": 31,
+    "current_failed": 0,
+    "legacy_passed": 7,
+    "legacy_failed": 0,
+    "total_passed": 38,
+    "all_pass": true
+  },
+  "notes": [
+    "当前套件 31 项：test_handoff.py 21 项 + test_jones_chain.py 6 项 + test_robustness.py 4 项；每项名称与状态均从 final_tests.stdout.txt 逐行解析，数量与 Ran 31 一致。",
+    "本轮新增 tests/test_jones_chain.py（6 项）与 tests/test_robustness.py（4 项）。robustness 的场扰动加强为 0.1，以实际触发既有存储代数容差；未放宽 validate_cube 的任何断言或容差。",
+    "legacy 7 项为回归基线，目录未修改；其不覆盖返回 p 基/Jones 约定。",
+    "final_tests/final_legacy 为打包前正式日志；final_recheck_* 为交付前再次实跑，均 EXIT=0。"
+  ]
+}

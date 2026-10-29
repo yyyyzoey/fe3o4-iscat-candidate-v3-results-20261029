@@ -1,0 +1,10 @@
+{
+  "source": "results\\execution_20261029\\full",
+  "shared_limits": [
+    -2.146827459335327,
+    2.146827459335327
+  ],
+  "signal": "contrast_fixed_reference",
+  "interpolation": "nearest",
+  "status": "CANDIDATE"
+}
