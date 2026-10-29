@@ -8,19 +8,24 @@
 
 ## 完整数据下载
 
-完整压缩包约 **1.19 GiB**，作为 **GitHub Release 资产**发布，不进入普通 Git 历史：
+完整压缩包约 **1.19 GiB**，作为 **GitHub Release 资产**发布，不进入普通 Git 历史。由于 GitHub Release 单个资产只能单流上传，完整包被无损切分为 76 个 16 MiB 分片，以并行方式上传：
 
 - Release 标签：`v1.0.0`
-- 资产：`results_bundle.zip`
-- 预期 SHA256：`fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7`
-- 校验文件：[checksums/results_bundle.zip.sha256](checksums/results_bundle.zip.sha256)
+- 分片：`results_bundle.zip.part000` … `results_bundle.zip.part075`
+- 重组后文件：`results_bundle.zip`
+- 重组后大小：`1,273,486,344` bytes
+- 重组后 SHA256：`fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7`
+- 分片清单：`results_bundle.zip.manifest.json`（SHA256 `07b8d5a19ce260b4f7e57898e16b7a978c82b94cdf384e628f682a08700188df`）
+- 自动下载与校验脚本：[data/DOWNLOAD_RESULTS.md](data/DOWNLOAD_RESULTS.md)、[scripts/download_results.py](scripts/download_results.py)
 
-下载后请先校验：
+推荐使用脚本下载、逐片校验并自动重组：
 
 ```powershell
-Get-FileHash .\results_bundle.zip -Algorithm SHA256
-Get-Content .\results_bundle.zip.sha256
+$env:GITHUB_TOKEN = Read-Host "GitHub token"
+python .\scripts\download_results.py --tag v1.0.0 --out .\download
 ```
+
+只有脚本输出 `FINAL ARCHIVE VERIFICATION PASSED` 才表示完整包下载成功。手工重组与校验步骤见 [data/DOWNLOAD_RESULTS.md](data/DOWNLOAD_RESULTS.md)。
 
 ## 实际主数据
 
