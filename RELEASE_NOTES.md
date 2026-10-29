@@ -18,9 +18,10 @@ The complete archive is published as **76 lossless 16 MiB parts** whose numeric 
 The parts are not independent datasets. Concatenate them in numeric order, then verify the final size and SHA256. The recommended downloader verifies every part and the final archive automatically:
 
 ```powershell
-$env:GITHUB_TOKEN = Read-Host "GitHub token"
 python .\download_results.py --tag v1.0.0 --out .\download
 ```
+
+The repository is public (since 2026-10-29); the downloader works anonymously and no GitHub token is required.
 
 Contents: 139 ZIP members rooted at `release/`, including three complete `(171,241,241)` HDF5 cubes, XDMF files, figures, diagnostics, source/configuration, and SHA256 manifests.
 

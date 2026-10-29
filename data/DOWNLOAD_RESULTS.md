@@ -1,6 +1,6 @@
 # 完整结果包下载与重组
 
-> 仓库为 **Private**。GitHub Release 中的完整数据被无损切分为 **76 个 16 MiB 分片**，以便并行上传和断点续传。分片不是独立数据文件；必须按名称顺序拼接后，才得到原始 `results_bundle.zip`。
+> 仓库为 **Public**（2026-10-29 起公开）。GitHub Release 中的完整数据被无损切分为 **76 个 16 MiB 分片**，以便并行上传和断点续传。分片不是独立数据文件；必须按名称顺序拼接后，才得到原始 `results_bundle.zip`。
 
 ## 数据标识
 
@@ -20,12 +20,11 @@ ZIP 内含 139 个成员，三个 HDF5 数据体均为完整 `(171,241,241)` 网
 
 ## 推荐方式：脚本下载并自动校验
 
-需要 Python 3.8+ 和一个能读取本私有仓库 Release 的 GitHub token（fine-grained token 的 **Contents: Read** 权限即可）。不要把 token 提交到仓库。
+需要 Python 3.8+。仓库已公开，脚本默认匿名下载，无需 GitHub token；只有遇到匿名 API 限额时才需要设置只读 token。不要把 token 提交到仓库。
 
 PowerShell：
 
 ```powershell
-$env:GITHUB_TOKEN = Read-Host "GitHub token"
 python .\download_results.py --tag v1.0.0 --out .\download
 ```
 
@@ -52,8 +51,8 @@ FINAL ARCHIVE VERIFICATION PASSED
 已安装 GitHub CLI 且已登录时：
 
 ```powershell
-gh release download v1.0.0 --repo yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029 --pattern "results_bundle.zip.part*" --dir .esults_bundle.zip.parts
-gh release download v1.0.0 --repo yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029 --pattern "results_bundle.zip.parts.sha256" --dir .esults_bundle.zip.parts
+gh release download v1.0.0 --repo yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029 --pattern "results_bundle.zip.part*" --dir .\results_bundle.zip.parts
+gh release download v1.0.0 --repo yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029 --pattern "results_bundle.zip.parts.sha256" --dir .\results_bundle.zip.parts
 ```
 
 也可在仓库的 Release 页面逐个下载分片。
@@ -63,9 +62,9 @@ gh release download v1.0.0 --repo yyyyzoey/fe3o4-iscat-candidate-v3-results-2026
 PowerShell：
 
 ```powershell
-Get-Content .esults_bundle.zip.partsesults_bundle.zip.parts.sha256 | ForEach-Object {
+Get-Content .\results_bundle.zip.parts\results_bundle.zip.parts.sha256 | ForEach-Object {
     $hash, $name = $_ -split '\s+', 2
-    $actual = (Get-FileHash -LiteralPath (Join-Path '.esults_bundle.zip.parts' $name) -Algorithm SHA256).Hash.ToLowerInvariant()
+    $actual = (Get-FileHash -LiteralPath (Join-Path '.\results_bundle.zip.parts' $name) -Algorithm SHA256).Hash.ToLowerInvariant()
     if ($actual -ne $hash.ToLowerInvariant()) { throw "Part mismatch: $name" }
 }
 ```
@@ -75,13 +74,13 @@ Get-Content .esults_bundle.zip.partsesults_bundle.zip.parts.sha256 | ForEach-O
 PowerShell：
 
 ```powershell
-.eassemble_results.ps1 -PartsDir .esults_bundle.zip.parts -Output .esults_bundle.zip
+.\scripts\reassemble_results.ps1 -PartsDir .\results_bundle.zip.parts -Output .\results_bundle.zip
 ```
 
 Linux/macOS：
 
 ```sh
-sh ./reassemble_results.sh ./results_bundle.zip.parts ./results_bundle.zip
+sh ./scripts/reassemble_results.sh ./results_bundle.zip.parts ./results_bundle.zip
 ```
 
 最终必须得到：

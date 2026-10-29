@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Download and verify the split Fe3O4 iSCAT result bundle from GitHub.
 
-The repository is private. Set GITHUB_TOKEN to a token that can read repository
-contents/releases. The token is never written to disk or printed.
+The repository is public, so no token is required. GITHUB_TOKEN is optional and
+is used only if the anonymous API rate limit is hit. A token, when supplied, is
+never written to disk or printed.
 """
 import argparse
 import hashlib
@@ -29,14 +30,22 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 OPENER = urllib.request.build_opener(NoRedirect)
 
 
+def asset_endpoint(asset, token):
+    """Use the direct browser URL anonymously; the API asset URL when authenticated."""
+    if token:
+        return f"/repos/{OWNER}/{REPO}/releases/assets/{asset['id']}"
+    return asset["browser_download_url"]
+
+
 def api_request(path, token, accept="application/vnd.github+json", retries=6):
     url = path if path.startswith("http") else API + path
     headers = {
-        "Authorization": "Bearer " + token,
         "Accept": accept,
         "User-Agent": "Fe3O4-results-downloader",
         "X-GitHub-Api-Version": "2022-11-28",
     }
+    if token:
+        headers["Authorization"] = "Bearer " + token
     last = None
     for attempt in range(1, retries + 1):
         req = urllib.request.Request(url, headers=headers)
@@ -83,9 +92,7 @@ def main():
     parser.add_argument("--keep-parts", action="store_true")
     args = parser.parse_args()
 
-    token = os.environ.get("GITHUB_TOKEN", "").strip()
-    if not token:
-        raise SystemExit("Set GITHUB_TOKEN to a token with read access to the private repository.")
+    token = os.environ.get("GITHUB_TOKEN", "").strip()  # optional for the public repo
 
     out = Path(args.out).resolve()
     parts_dir = out / "results_bundle.zip.parts"
@@ -97,8 +104,8 @@ def main():
     if MANIFEST_NAME not in assets:
         raise SystemExit(f"Release asset not found: {MANIFEST_NAME}")
     manifest_data = api_request(
-        f"/repos/{OWNER}/{REPO}/releases/assets/{assets[MANIFEST_NAME]['id']}", token,
-        accept="application/octet-stream",
+        asset_endpoint(assets[MANIFEST_NAME], token),
+        token, accept="application/octet-stream",
     )
     manifest = json.loads(manifest_data.decode("utf-8"))
     manifest_path = out / MANIFEST_NAME
@@ -123,8 +130,8 @@ def main():
         for attempt in range(1, 5):
             try:
                 data = api_request(
-                    f"/repos/{OWNER}/{REPO}/releases/assets/{asset['id']}", token,
-                    accept="application/octet-stream", retries=4,
+                    asset_endpoint(asset, token),
+                    token, accept="application/octet-stream", retries=4,
                 )
                 if len(data) != item["bytes"]:
                     raise ValueError(f"size {len(data)} != {item['bytes']}")
