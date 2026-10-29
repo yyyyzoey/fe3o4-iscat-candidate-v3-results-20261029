@@ -1,11 +1,11 @@
 {
-  "audit_time_utc": "2026-10-29T16:08:46.458141+00:00",
+  "audit_time_utc": "2026-10-29T16:10:22.131444+00:00",
   "repository": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
   "release_url": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/releases/tag/v1.0.0",
   "release_id": 427999383,
   "release_tag": "v1.0.0",
   "release_target_commitish": "f0f9959db144b01b6e0c6cf82f4a030df6515127",
-  "main_commit_at_audit": "e55349a6c06279c6cdba20dd2a1a05b60f58eb0e",
+  "main_commit_at_audit": "ffa6239e98b1604cdffecf8c21a8f4113025e322",
   "repository_visibility": "public",
   "repository_private": false,
   "anonymous_read_verified": true,
@@ -51,10 +51,10 @@
     },
     "DOWNLOAD_RESULTS.md": {
       "bytes": 3376,
-      "sha256": "f03068147ccce438592524bba686e99a4cf1d8d1f5779daabb4d27bd6e17760d",
-      "asset_id": 689086635,
+      "sha256": "4d02a80fac314c4929f646161e73271b745f09c0b12d64ed91953d938c2c875a",
+      "asset_id": 689113876,
       "state": "uploaded",
-      "remote_digest": "sha256:f03068147ccce438592524bba686e99a4cf1d8d1f5779daabb4d27bd6e17760d",
+      "remote_digest": "sha256:4d02a80fac314c4929f646161e73271b745f09c0b12d64ed91953d938c2c875a",
       "verified": true
     },
     "reassemble_results.ps1": {
@@ -77,7 +77,7 @@
   "unexpected_assets": [],
   "problems": [],
   "anonymous_e2e": {
-    "test_time_utc": "2026-10-29T16:08:46.457141+00:00",
+    "test_time_utc": "2026-10-29T16:10:22.130441+00:00",
     "release_url": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/releases/tag/v1.0.0",
     "method": "Published release asset download_results.py run with GITHUB_TOKEN unset, anonymous browser_download_url path, 8 parallel workers",
     "manifest_sha256": "07b8d5a19ce260b4f7e57898e16b7a978c82b94cdf384e628f682a08700188df",

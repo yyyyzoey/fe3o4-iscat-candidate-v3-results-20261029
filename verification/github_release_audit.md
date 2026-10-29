@@ -1,13 +1,13 @@
 # GitHub Release 发布与公开访问审计
 
 - 状态：**PASS**
-- 审计时间（UTC）：`2026-10-29T16:08:46.458141+00:00`
+- 审计时间（UTC）：`2026-10-29T16:10:22.131444+00:00`
 - 仓库：https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029
 - 仓库可见性：**public**（`private=false`）
 - Release：https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/releases/tag/v1.0.0
 - Release ID：`427999383`
 - Release target：`f0f9959db144b01b6e0c6cf82f4a030df6515127`
-- 审计时 `main`：`e55349a6c06279c6cdba20dd2a1a05b60f58eb0e`
+- 审计时 `main`：`ffa6239e98b1604cdffecf8c21a8f4113025e322`
 - 资产总数：`83`
 - 数据分片：`76` 个，全部为 `state=uploaded`
 - 意外/探测资产：`0`
@@ -26,7 +26,7 @@
 
 ## 端到端匿名下载与重组测试
 
-- 时间（UTC）：`2026-10-29T16:08:46.457141+00:00`
+- 时间（UTC）：`2026-10-29T16:10:22.130441+00:00`
 - 方法：在 `GITHUB_TOKEN` 未设置的情况下直接运行 Release 资产 `download_results.py`，走匿名 `browser_download_url` 路径，8 路并行下载全部 76 个分片。
 - 每片 SHA256：全部通过。
 - 重组大小：`1273486344` bytes。
