@@ -24,6 +24,12 @@ python .\download_results.py --tag v1.0.0 --out .\download
 
 Contents: 139 ZIP members rooted at `release/`, including three complete `(171,241,241)` HDF5 cubes, XDMF files, figures, diagnostics, source/configuration, and SHA256 manifests.
 
+## Verification
+
+- 83 release assets re-read through the GitHub API; all 76 part assets are `uploaded` with server-side size and digest matching the manifest.
+- The published `download_results.py` was run end-to-end: all 76 parts downloaded and verified, the ZIP was reassembled, and the final size/SHA256 plus ZIP integrity test passed.
+- See `verification/github_release_audit.md` and `verification/github_e2e_download.json`.
+
 ## Status
 
 - `data_generation=COMPLETE`

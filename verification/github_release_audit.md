@@ -25,3 +25,16 @@
 ## 结论
 
 83 个正式资产全部通过服务端 size/digest 核对，0 个问题。该审计证明 Release 资产完整；最终 ZIP 的可重组性还由本地分片顺序重组后的总 SHA256 独立验证。
+
+
+## 端到端下载与重组测试
+
+- 时间（UTC）：`2026-10-29T15:42:40.899017+00:00`
+- 方法：直接运行 Release 资产 `download_results.py`，8 路并行下载全部 76 个分片。
+- 每片 SHA256：全部通过。
+- 重组大小：`1273486344` bytes。
+- 重组 SHA256：`fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7`。
+- ZIP 内部测试：139 个成员，`testzip` 无损坏；成员列表与原始包一致。
+- 最终输出：`FINAL ARCHIVE VERIFICATION PASSED`。
+
+详见 [github_e2e_download.json](github_e2e_download.json)。
