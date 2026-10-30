@@ -34,6 +34,43 @@ def metrics(a, b):
     }
 
 
+def accumulate_diff_stats(acc, a, b):
+    """Accumulate squared/peak norms of (a-b) and b for one slice or block."""
+    a = np.asarray(a); b = np.asarray(b)
+    d = a - b
+    acc[0] += float(np.sum(np.abs(d) ** 2))
+    acc[1] = max(acc[1], float(np.max(np.abs(d))))
+    acc[2] += float(np.sum(np.abs(b) ** 2))
+    acc[3] = max(acc[3], float(np.max(np.abs(b))))
+    return acc
+
+
+def stats_to_metrics(acc):
+    dsq, dmax, rsq, rmax = acc
+    return {
+        'relative_l2': float(np.sqrt(dsq)/max(np.sqrt(rsq), 1e-300)),
+        'relative_linf': float(dmax/max(rmax, 1e-300)),
+        'absolute_l2': float(np.sqrt(dsq)),
+        'absolute_linf': float(dmax),
+        'reference_l2': float(np.sqrt(rsq)),
+        'reference_linf': float(rmax),
+    }
+
+
+def combine_stats_metrics(sa, sb):
+    # sa/sb hold summed squared norms, so take the square roots before combining.
+    ref_l2 = float(np.hypot(np.sqrt(sa[2]), np.sqrt(sb[2]))); ref_linf = max(sa[3], sb[3])
+    abs_l2 = float(np.hypot(np.sqrt(sa[0]), np.sqrt(sb[0]))); abs_linf = max(sa[1], sb[1])
+    return {
+        'relative_l2': float(abs_l2/max(ref_l2, 1e-300)),
+        'relative_linf': float(abs_linf/max(ref_linf, 1e-300)),
+        'absolute_l2': abs_l2,
+        'absolute_linf': abs_linf,
+        'reference_l2': ref_l2,
+        'reference_linf': ref_linf,
+    }
+
+
 def field_metrics(er_a, es_a, er_b, es_b):
     return {
         'E_ref_all_components': metrics(er_a, er_b),
@@ -219,11 +256,22 @@ def audit(config, out):
         z1 = np.arange(-169.0, 170.0, 2.0)
         rad2 = core.make_radial_response(op, p512, D/2, z2, rrad)
         rad1 = core.make_radial_response(op, p512, D/2, z1, rrad)
-        er2, es2 = fields_from_radial(rad2, len(z2), rrad, geo)
-        er1, es1 = fields_from_radial(rad1, len(z1), rrad, geo)
-        er_mid = 0.5*(er2[:-1]+er2[1:])
-        es_mid = 0.5*(es2[:-1]+es2[1:])
-        axial_errors = field_metrics(er_mid, es_mid, er1, es1)
+        # Streamed slice-by-slice (same accumulated L2/L-inf norms as field_metrics) so the
+        # audit does not require ~2 GB of transient 170 x 241 x 241 complex128 buffers.
+        acc = {'E_ref_all_components': [0.0, 0.0, 0.0, 0.0],
+               'E_scat_unit_all_components': [0.0, 0.0, 0.0, 0.0]}
+        prev = None
+        for kz in range(len(z2)):
+            cur = core.fields_at_slice(rad2, kz, rrad, geo)
+            if prev is not None:
+                direct = core.fields_at_slice(rad1, kz-1, rrad, geo)
+                for tag, ic in (('E_ref_all_components', 0),
+                                ('E_scat_unit_all_components', 1)):
+                    accumulate_diff_stats(acc[tag], 0.5*(prev[ic]+cur[ic]), direct[ic])
+            prev = cur
+        axial_errors = {tag: stats_to_metrics(v) for tag, v in acc.items()}
+        axial_errors['combined_all_components'] = combine_stats_metrics(
+            acc['E_ref_all_components'], acc['E_scat_unit_all_components'])
         axial_pass = is_pass(axial_errors)
         all_pass &= axial_pass
 

@@ -6,8 +6,21 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import h5py
 
-ROOT = Path(__file__).resolve().parents[1]
-RES = ROOT / "results_v4"; FIG = RES / "figures"; DATA = RES / "data"
+import argparse
+
+_ap = argparse.ArgumentParser(add_help=True)
+_ap.add_argument("--data-root", type=Path, default=Path(__file__).resolve().parents[2],
+                 help="results_v4 package root containing data/, figures/, tables/")
+_ap.add_argument("--out", type=Path, default=None,
+                 help="figure output root (default: <data-root>/figures)")
+_ap.add_argument("--diagnostics-root", type=Path, default=None,
+                 help="folder holding target_long/ and paper_control_long/ (default: <data-root>/diagnostics)")
+_a, _unknown = _ap.parse_known_args()
+RES = _a.data_root.resolve()
+FIG = (_a.out or RES / "figures").resolve()
+DATA = RES / "data"
+TAB = RES / "tables"
+DIAG = (_a.diagnostics_root or RES / "diagnostics").resolve()
 plt.rcParams.update({"font.size": 8.5, "axes.titlesize": 9, "axes.unicode_minus": True})
 for D in (30, 100, 200):
     with h5py.File(DATA / f"D{D:03d}nm" / "cube.h5", "r") as f:
@@ -39,6 +52,7 @@ for D in (30, 100, 200):
     fig.suptitle(f"Fe3O4 D={D} nm, NA=1.45, lambda0=532 nm | on-axis (x=y=0) axial components | "
                  "saved data, no recentering", fontsize=9.4)
     out = FIG / "F4_axial"
+    out.mkdir(parents=True, exist_ok=True)
     fig.savefig(out / f"{D:03d}nm_axial_full_components.png", dpi=200)
     fig.savefig(out / f"{D:03d}nm_axial_full_components.svg")
     plt.close(fig)

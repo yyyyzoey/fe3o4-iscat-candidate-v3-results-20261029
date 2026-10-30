@@ -1,0 +1,119 @@
+{
+  "generated_utc": "2026-10-30T07:44:11+00:00",
+  "result_class": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+  "gates": [
+    {
+      "gate": "G00",
+      "status": "PASS",
+      "evidence": "validation/preflight_final.json",
+      "exit_code": 0,
+      "note": "correct repository, branch, fixed commit and parts tree"
+    },
+    {
+      "gate": "G01",
+      "status": "PASS",
+      "evidence": "validation/parts_verification.json",
+      "exit_code": 0,
+      "note": "80/80 anonymous shard downloads, per-shard SHA and total bytes"
+    },
+    {
+      "gate": "G02",
+      "status": "PASS",
+      "evidence": "validation/parts_verification.json#zip",
+      "exit_code": 0,
+      "note": "reassembled ZIP SHA, CRC, 380 entries and manifest"
+    },
+    {
+      "gate": "G03",
+      "status": "PASS",
+      "evidence": "validation/baseline_new_verifier.json",
+      "exit_code": 0,
+      "note": "three HDF5, 171 layers each, 513 layers re-read"
+    },
+    {
+      "gate": "G04",
+      "status": "PASS",
+      "evidence": "validation/baseline_strict_audit.json",
+      "exit_code": 0,
+      "note": "axes, finite fields, masks, algebra and classification"
+    },
+    {
+      "gate": "G05",
+      "status": "PASS",
+      "evidence": "provenance/config.json; provenance/branch_and_commit.json",
+      "exit_code": 0,
+      "note": "532 nm, NA 1.45, Fe3O4, no excluded experiment conditions"
+    },
+    {
+      "gate": "G06",
+      "status": "PASS",
+      "evidence": "logs/tests/verifier_14.log",
+      "exit_code": 0,
+      "note": "14 negative controls reject malformed bundles"
+    },
+    {
+      "gate": "G07",
+      "status": "PASS",
+      "evidence": "validation/tests.json; validation/model_conventions.md",
+      "exit_code": 0,
+      "note": "gamma 0.5 once; CS=1, CR=1; no second eta multiplication"
+    },
+    {
+      "gate": "G08",
+      "status": "PASS",
+      "evidence": "validation/tests.json; validation/model_conventions.md",
+      "exit_code": 0,
+      "note": "return Fresnel sample->glass, normal amplitude 0.9333333333"
+    },
+    {
+      "gate": "G09",
+      "status": "PASS",
+      "evidence": "logs/tests/",
+      "exit_code": 0,
+      "note": "98 runs / 86 unique tests, all pass"
+    },
+    {
+      "gate": "G10",
+      "status": "PASS",
+      "evidence": "validation/numerical_spot_recompute.json",
+      "exit_code": 0,
+      "note": "80 saved samples per diameter independently recomputed"
+    },
+    {
+      "gate": "G11",
+      "status": "PASS_WITH_FAILED_KEPT",
+      "evidence": "validation/numerical_audit.json",
+      "exit_code": 0,
+      "note": "linear midpoint FAILED_KEPT; cubic passes"
+    },
+    {
+      "gate": "G12",
+      "status": "PASS",
+      "evidence": "validation/figure_checks_final.json",
+      "exit_code": 0,
+      "note": "F1-F7, nine slices, sections, axial curves, decomposition, static 3D"
+    },
+    {
+      "gate": "G13",
+      "status": "PASS",
+      "evidence": "validation/html_render_audit_final.json; validation/xdmf_audit_final.json",
+      "exit_code": 0,
+      "note": "offline browser render and HDF5-resolving XDMF"
+    },
+    {
+      "gate": "G14",
+      "status": "PASS",
+      "evidence": "validation/privacy_scan_final.json",
+      "exit_code": 0,
+      "note": "no token, private absolute path or e-mail in published tree"
+    },
+    {
+      "gate": "G15",
+      "status": "PASS",
+      "evidence": "package_verification.json (external release asset; ZIP cannot contain its own digest)",
+      "note": "light + full ZIP sealed, then re-read by verify_results_bundle.py: outer SHA256/bytes/entries, CRC, internal manifest, and (full mode) all 513 HDF5 layers; digests recorded outside the archive",
+      "exit_code": 0
+    }
+  ],
+  "note": "G15 is verified after sealing; its evidence is a small release asset, not embedded in its own ZIP."
+}

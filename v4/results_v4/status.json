@@ -1,7 +1,28 @@
 {
-  "result_class": "CANDIDATE",
+  "schema": "iscat-v4.1-status-1",
+  "generated_utc": "2026-10-30T07:44:11+00:00",
+  "result_class": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
   "data_generation": "COMPLETE",
   "data_complete": true,
+  "candidate_only": true,
+  "status_statement": "The three full through-focus cubes and the engineering/visual deliverables are complete. Physical/formula certification is not claimed; unresolved items remain CANDIDATE/UNVERIFIED as listed.",
+  "absolute_calibration": false,
+  "sample_space_near_field": false,
+  "formula_fidelity": "UNVERIFIED",
+  "full_jones_chain": "UNVERIFIED",
+  "high_na_model_validation": "UNVERIFIED",
+  "paper_convention_checks": "UNVERIFIED",
+  "source_version_audit": "VERIFIED_FIGSHARE_AND_ARXIV",
+  "publisher_typeset_audit": "UNVERIFIED_NOT_OBTAINED",
+  "baseline": {
+    "repo": "yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
+    "branch": "v4-paper-forward-results",
+    "commit": "e96d8b13a7410af5e864d09f22f1bf6e8bbc70a7",
+    "data_commit": "324b4b384ac088b8bba93091fea336a6bfe7597d",
+    "parts_tree": "00fceb986342566f6d7e58cdbb06b5062ff2f8ea",
+    "full_zip_bytes": 1326369547,
+    "full_zip_sha256": "c61f9a3bf7d6d90f0c1746a1e9de104db669cb2e838c84d3d1234f67b8e62a2a"
+  },
   "cases": {
     "D030": {
       "diameter_nm": 30,
@@ -16,6 +37,7 @@
       ],
       "array_order": "zeta,y,x",
       "completed_slices": 171,
+      "layers_actually_read": 171,
       "zeta_nm": [
         -170,
         2,
@@ -46,6 +68,7 @@
       ],
       "array_order": "zeta,y,x",
       "completed_slices": 171,
+      "layers_actually_read": 171,
       "zeta_nm": [
         -170,
         2,
@@ -76,6 +99,7 @@
       ],
       "array_order": "zeta,y,x",
       "completed_slices": 171,
+      "layers_actually_read": 171,
       "zeta_nm": [
         -170,
         2,
@@ -94,6 +118,7 @@
       "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED"
     }
   },
+  "layers_total_read": 513,
   "fixed_parameters": {
     "material": "Fe3O4",
     "wavelength_nm": 532,
@@ -110,21 +135,195 @@
     "gamma_real": 0.5,
     "gamma_imag": 0.0,
     "CR": 1.0,
-    "CS": 0.5,
+    "CS": 1.0,
+    "cs_over_cr": 1.0,
+    "eta_collection_optional": 0.5,
+    "eta_applied_to_E_scat_unit": false,
+    "E_scat": "gamma * E_scat_unit",
+    "I_scat": "|gamma|^2 * U",
+    "I_cross": "2 Re(gamma * Q)",
     "reference_field_scale": 9.422632737507974e-08,
     "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
     "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6"
   },
-  "source_version_audit": "VERIFIED_FIGSHARE_AND_ARXIV",
-  "publisher_typeset_audit": "UNVERIFIED_NOT_OBTAINED",
-  "paper_convention_checks": "UNVERIFIED",
-  "formula_fidelity": "UNVERIFIED",
-  "within_model_numerics": "PASS_WITH_DISPLAY_INTERPOLATION_FAILURE_KEPT",
-  "numerical_validation": "PARTIAL",
-  "high_na_model_validation": "UNVERIFIED",
-  "figures_complete": true,
-  "absolute_calibration": false,
-  "sample_space_near_field": false,
+  "checks": {
+    "tests": {
+      "runs": 98,
+      "unique_cases": 86,
+      "failures": 0,
+      "errors": 0,
+      "suites": {
+        "solver_and_v41_35": 35,
+        "exporter_9": 9,
+        "legacy_7": 7,
+        "handoff_audit_21": 21,
+        "strict_auditor_12": 12,
+        "verifier_14": 14
+      }
+    },
+    "tests_were_not_modified_to_pass": true,
+    "numerical_audit_pass": true,
+    "linear_midpoint_reconstruction_all_pass": false,
+    "linear_midpoint_reconstruction_status": "FAILED_KEPT",
+    "cubic_reconstruction_pass": true,
+    "strict_all_including_linear_reconstruction": false,
+    "hdf5_layers_read": 513,
+    "hdf5_sha256_unchanged": true,
+    "figures": "PASS",
+    "html_offline_render": "PASS",
+    "xdmf_structure": "PASS",
+    "privacy_scan": "PASS",
+    "implementation_hash_reproduced": true,
+    "source_pdfs": {
+      "figshare_52761698": "OBTAINED_AND_HASH_MATCHED",
+      "arxiv_2209.14508": "OBTAINED_AND_HASH_MATCHED",
+      "publisher_typeset_pdf": "NOT_OBTAINED"
+    },
+    "previews": "PASS",
+    "preview_3d_representation": "PASS: 5 saved xy slices + saved x=0 yz section; display crop x/y +/-400 nm; no resampling or interpolation enlargement"
+  },
+  "acceptance_gates": [
+    {
+      "gate": "G00",
+      "status": "PASS",
+      "evidence": "validation/preflight_final.json",
+      "exit_code": 0,
+      "note": "correct repository, branch, fixed commit and parts tree"
+    },
+    {
+      "gate": "G01",
+      "status": "PASS",
+      "evidence": "validation/parts_verification.json",
+      "exit_code": 0,
+      "note": "80/80 anonymous shard downloads, per-shard SHA and total bytes"
+    },
+    {
+      "gate": "G02",
+      "status": "PASS",
+      "evidence": "validation/parts_verification.json#zip",
+      "exit_code": 0,
+      "note": "reassembled ZIP SHA, CRC, 380 entries and manifest"
+    },
+    {
+      "gate": "G03",
+      "status": "PASS",
+      "evidence": "validation/baseline_new_verifier.json",
+      "exit_code": 0,
+      "note": "three HDF5, 171 layers each, 513 layers re-read"
+    },
+    {
+      "gate": "G04",
+      "status": "PASS",
+      "evidence": "validation/baseline_strict_audit.json",
+      "exit_code": 0,
+      "note": "axes, finite fields, masks, algebra and classification"
+    },
+    {
+      "gate": "G05",
+      "status": "PASS",
+      "evidence": "provenance/config.json; provenance/branch_and_commit.json",
+      "exit_code": 0,
+      "note": "532 nm, NA 1.45, Fe3O4, no excluded experiment conditions"
+    },
+    {
+      "gate": "G06",
+      "status": "PASS",
+      "evidence": "logs/tests/verifier_14.log",
+      "exit_code": 0,
+      "note": "14 negative controls reject malformed bundles"
+    },
+    {
+      "gate": "G07",
+      "status": "PASS",
+      "evidence": "validation/tests.json; validation/model_conventions.md",
+      "exit_code": 0,
+      "note": "gamma 0.5 once; CS=1, CR=1; no second eta multiplication"
+    },
+    {
+      "gate": "G08",
+      "status": "PASS",
+      "evidence": "validation/tests.json; validation/model_conventions.md",
+      "exit_code": 0,
+      "note": "return Fresnel sample->glass, normal amplitude 0.9333333333"
+    },
+    {
+      "gate": "G09",
+      "status": "PASS",
+      "evidence": "logs/tests/",
+      "exit_code": 0,
+      "note": "98 runs / 86 unique tests, all pass"
+    },
+    {
+      "gate": "G10",
+      "status": "PASS",
+      "evidence": "validation/numerical_spot_recompute.json",
+      "exit_code": 0,
+      "note": "80 saved samples per diameter independently recomputed"
+    },
+    {
+      "gate": "G11",
+      "status": "PASS_WITH_FAILED_KEPT",
+      "evidence": "validation/numerical_audit.json",
+      "exit_code": 0,
+      "note": "linear midpoint FAILED_KEPT; cubic passes"
+    },
+    {
+      "gate": "G12",
+      "status": "PASS",
+      "evidence": "validation/figure_checks_final.json",
+      "exit_code": 0,
+      "note": "F1-F7, nine slices, sections, axial curves, decomposition, static 3D"
+    },
+    {
+      "gate": "G13",
+      "status": "PASS",
+      "evidence": "validation/html_render_audit_final.json; validation/xdmf_audit_final.json",
+      "exit_code": 0,
+      "note": "offline browser render and HDF5-resolving XDMF"
+    },
+    {
+      "gate": "G14",
+      "status": "PASS",
+      "evidence": "validation/privacy_scan_final.json",
+      "exit_code": 0,
+      "note": "no token, private absolute path or e-mail in published tree"
+    },
+    {
+      "gate": "G15",
+      "status": "PASS",
+      "evidence": "package_verification.json (external release asset; ZIP cannot contain its own digest)",
+      "note": "light + full ZIP sealed, then re-read by verify_results_bundle.py: outer SHA256/bytes/entries, CRC, internal manifest, and (full mode) all 513 HDF5 layers; digests recorded outside the archive",
+      "exit_code": 0
+    }
+  ],
+  "blockers": [
+    {
+      "id": "jones_chain_not_fully_certified",
+      "status": "UNVERIFIED",
+      "reason": "Scalar/basis algebra and direct 3D projection agree, but the complete QWP/PBS/Fresnel/objective/tube-lens S3 matrix chain is not independently reconstructable from the available text."
+    },
+    {
+      "id": "supercritical_angle_physics",
+      "status": "UNVERIFIED",
+      "reason": "Im(kz_s)>=0 analytic continuation is numerically stable, but not validated against a full-wave sphere-interface solution for NA=1.45 > n_s=1.33."
+    },
+    {
+      "id": "absolute_relative_amplitude",
+      "status": "UNVERIFIED",
+      "absolute_calibration": false,
+      "reason": "gamma=0.5 is a display convention, not an experimental calibration; no absolute V/m or W/m^2 scale exists."
+    },
+    {
+      "id": "publisher_typeset_pdf",
+      "status": "NOT_OBTAINED",
+      "reason": "No institutional access; Figshare v3 supplement and arXiv 2209.14508 were checked instead."
+    },
+    {
+      "id": "linear_midpoint_display_reconstruction",
+      "status": "FAILED_KEPT",
+      "reason": "0.15%-0.24% relative error exceeds the unchanged 0.1% threshold; main-grid points are direct evaluations and cubic reconstruction passes."
+    }
+  ],
   "task_scope": {
     "included": [
       "single spherical Fe3O4 particle",
@@ -152,74 +351,50 @@
       "larger-than-requested main grid"
     ]
   },
-  "checks": {
-    "v4_exporter_tests": {
-      "ran": 9,
-      "failed": 0,
-      "verdict": "PASS"
-    },
-    "optics_io_tests": {
-      "ran": 31,
-      "failed": 0,
-      "verdict": "PASS"
-    },
-    "legacy_physics_tests": {
-      "ran": 7,
-      "failed": 0,
-      "verdict": "PASS"
-    },
-    "numerical_audit_pass": true,
-    "linear_midpoint_reconstruction_all_pass": false,
-    "strict_all_including_linear_reconstruction": false,
-    "figures": "PASS",
-    "html_offline_render": "PASS",
-    "xdmf_structure": "PASS",
-    "hdf5_sampled_layer_reread": "PASS",
-    "privacy_scan": "PASS",
-    "implementation_hash_reproduced": true
-  },
-  "blockers": [
-    {
-      "id": "jones_chain_not_fully_certified",
-      "status": "UNVERIFIED",
-      "reason": "S2-term sign difference between printed S6/S13 and candidate return-basis chain; scalar/basis evidence exists but the complete S3 matrix chain is not independently reconstructable."
-    },
-    {
-      "id": "supercritical_angle_physics",
-      "status": "UNVERIFIED",
-      "reason": "Analytic continuation is numerically stable but not validated against a sphere-interface full-wave solution."
-    },
-    {
-      "id": "absolute_relative_amplitude",
-      "status": "UNVERIFIED",
-      "reason": "Gamma and overall relative scale are modeling conventions, not experimental calibration."
-    },
-    {
-      "id": "publisher_typeset_pdf",
-      "status": "NOT_OBTAINED",
-      "reason": "No institutional access; Figshare v3 supplement and arXiv preprint were checked instead."
-    },
-    {
-      "id": "linear_midpoint_display_reconstruction",
-      "status": "FAILED_KEPT",
-      "reason": "0.15%-0.22% relative error exceeds 0.1%; main-grid coordinates are direct evaluations and cubic reconstruction passes."
-    }
-  ],
   "evidence_paths": {
     "summary": "summary_zh.md",
     "start_here": "START_HERE.html",
     "conventions": "validation/model_conventions.md",
     "jones_numbers": "validation/jones_chain_numbers.json",
     "tests": "validation/tests.json",
-    "numerics": "validation/numerics.json",
-    "data_audit": "validation/data_audit.json",
-    "hdf5_check": "validation/data_hdf5_check.json",
-    "figures": "validation/figure_checks.json",
-    "html": "validation/html_audit.json",
-    "html_render": "validation/html_render_audit.json",
-    "xdmf": "validation/xdmf_audit.json",
+    "parts": "validation/parts_verification.json",
+    "baseline_strict": "validation/baseline_strict_audit.json",
+    "baseline_verifier": "validation/baseline_new_verifier.json",
+    "numerics": "validation/numerical_audit.json",
+    "spot_recompute": "validation/numerical_spot_recompute.json",
+    "hdf5_check": "validation/data_hdf5_check_final.json",
+    "figures": "validation/figure_checks_final.json",
+    "html": "validation/html_audit_final.json",
+    "html_render": "validation/html_render_audit_final.json",
+    "xdmf": "validation/xdmf_audit_final.json",
+    "privacy": "validation/privacy_scan_final.json",
     "sources": "validation/sources/source_check.json",
-    "provenance": "provenance/run_identity.json"
+    "acceptance": "acceptance_matrix.csv",
+    "provenance": "provenance/branch_and_commit.json",
+    "preview_index": "previews/index.html",
+    "readme_zh": "README_打开这里.md",
+    "physical_limitations": "reports/physical_limitations.md",
+    "execution_log": "logs/execution_log.md"
   },
-  "status_statement": "The requested full three-cube data generation and local deliverables are complete. Physical/formula certification is not claimed; unresolved items remain CANDIDATE/UNVERIFIED as listed."
+  "package_scope": {
+    "light": "LIGHT_NO_HDF5",
+    "full": "FULL_DATA_AND_HDF5",
+    "verification": "external release asset reports/package_verification.json; generated after sealing to avoid a self-referential hash"
+  },
+  "deliverables": {
+    "entry_html": "START_HERE.html",
+    "entry_markdown": "README_打开这里.md",
+    "previews": "previews/ (2D slices, through-focus orthoslice volumes, offline links)",
+    "reports": "reports/00..06 + physical_limitations.md + 02_验收矩阵.csv",
+    "sha256_manifest": "SHA256SUMS.txt (relative paths, excludes itself)",
+    "light_package": {
+      "name": "Fe3O4_iSCAT_V4_1_REPORT_CANDIDATE.zip",
+      "scope": "LIGHT_NO_HDF5"
+    },
+    "full_package": {
+      "name": "Fe3O4_iSCAT_V4_1_FULL_CANDIDATE.zip",
+      "scope": "FULL_DATA_AND_HDF5"
+    },
+    "package_verification": "package_verification.json (external; not inside either ZIP)"
+  }
 }

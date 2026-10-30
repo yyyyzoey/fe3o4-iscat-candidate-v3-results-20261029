@@ -1,0 +1,336 @@
+{
+  "directory": "<results_v4>\\views3d",
+  "pass": true,
+  "files": {
+    "30": {
+      "xdmf": "<results_v4>\\views3d\\D030_focus_stack.xdmf",
+      "exists": true,
+      "grid_name": "Fe3O4_D30nm_through_focus_CANDIDATE",
+      "grid_type": "Uniform",
+      "dimensions": "171 241 241",
+      "geometry": {
+        "x_object_nm": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/coords/x_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "y_object_nm": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/coords/y_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "zeta_nm": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/coords/zeta_nm",
+          "shape": [
+            171
+          ],
+          "dtype": "float64",
+          "n": 171
+        }
+      },
+      "attributes": {
+        "I_cross": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/signals/I_cross",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_total": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/signals/I_total",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_ref": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/signals/I_ref",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_scat": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/signals/I_scat",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_fixed_reference": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/signals/contrast_fixed_reference",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_local": {
+          "hdf": "../data/D030nm/cube.h5",
+          "dataset": "/signals/contrast_local",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        }
+      },
+      "information": [
+        "third axis is the through-focus scan coordinate zeta, not a sample-space near-field z; not absolutely calibrated",
+        "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED"
+      ],
+      "file_bytes": 2921
+    },
+    "100": {
+      "xdmf": "<results_v4>\\views3d\\D100_focus_stack.xdmf",
+      "exists": true,
+      "grid_name": "Fe3O4_D100nm_through_focus_CANDIDATE",
+      "grid_type": "Uniform",
+      "dimensions": "171 241 241",
+      "geometry": {
+        "x_object_nm": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/coords/x_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "y_object_nm": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/coords/y_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "zeta_nm": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/coords/zeta_nm",
+          "shape": [
+            171
+          ],
+          "dtype": "float64",
+          "n": 171
+        }
+      },
+      "attributes": {
+        "I_cross": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/signals/I_cross",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_total": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/signals/I_total",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_ref": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/signals/I_ref",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_scat": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/signals/I_scat",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_fixed_reference": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/signals/contrast_fixed_reference",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_local": {
+          "hdf": "../data/D100nm/cube.h5",
+          "dataset": "/signals/contrast_local",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        }
+      },
+      "information": [
+        "third axis is the through-focus scan coordinate zeta, not a sample-space near-field z; not absolutely calibrated",
+        "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED"
+      ],
+      "file_bytes": 2922
+    },
+    "200": {
+      "xdmf": "<results_v4>\\views3d\\D200_focus_stack.xdmf",
+      "exists": true,
+      "grid_name": "Fe3O4_D200nm_through_focus_CANDIDATE",
+      "grid_type": "Uniform",
+      "dimensions": "171 241 241",
+      "geometry": {
+        "x_object_nm": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/coords/x_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "y_object_nm": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/coords/y_object_nm",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "n": 241
+        },
+        "zeta_nm": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/coords/zeta_nm",
+          "shape": [
+            171
+          ],
+          "dtype": "float64",
+          "n": 171
+        }
+      },
+      "attributes": {
+        "I_cross": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/signals/I_cross",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_total": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/signals/I_total",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_ref": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/signals/I_ref",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "I_scat": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/signals/I_scat",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_fixed_reference": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/signals/contrast_fixed_reference",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        },
+        "contrast_local": {
+          "hdf": "../data/D200nm/cube.h5",
+          "dataset": "/signals/contrast_local",
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32",
+          "dims_attr": "171 241 241"
+        }
+      },
+      "information": [
+        "third axis is the through-focus scan coordinate zeta, not a sample-space near-field z; not absolutely calibrated",
+        "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED"
+      ],
+      "file_bytes": 2922
+    }
+  },
+  "failures": [],
+  "sanitized_absolute_paths": true,
+  "sanitization_note": "Absolute local paths written by verify_xdmf.py were rewritten to <results_v4>; the unedited report is retained in the local audit archive."
+}

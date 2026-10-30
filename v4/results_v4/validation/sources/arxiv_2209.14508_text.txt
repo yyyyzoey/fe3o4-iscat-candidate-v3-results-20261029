@@ -76,8 +76,8 @@ b. Department of Natural Sciences, Faculty of Biomedical Engineering, Czech
 Technical University in Prague, Kladno, 272 01, Czech Republic. 
 c. Department of Physics, Korea University, Seoul 02841, Republic of Korea.  
 d. Department of Chemistry, Korea University, Seoul 02841, Republic of Korea.  
-*Email (S.-C. Hong): hongsc@korea.ac.kr 
-*Email (M. Cho): mcho@korea.ac.kr  
+*Email (S.-C. Hong): [email-redacted] 
+*Email (M. Cho): [email-redacted]  
 † Electronic Supplementary Information (ESI) available: Derivation of the formulae 
 for the vectorial point spread function (PSF) model based on the Mie theory and 
 their application to iSCAT detection. PSF analysis via Root -Mean-Square-Error 
@@ -744,8 +744,8 @@ b. Department of Natural Sciences, Faculty of Biomedical Engineering, Czech Tech
 Republic. 
 c. Department of Physics, Korea University, Seoul 02841, Republic of Korea. 
 d. Department of Chemistry, Korea University, Seoul 02841, Republic of Korea.  
-*Email (S.-C. Hong): hongsc@korea.ac.kr 
-*Email (M. Cho): mcho@korea.ac.kr  
+*Email (S.-C. Hong): [email-redacted] 
+*Email (M. Cho): [email-redacted]  
   
 Page  2 | 12 
  

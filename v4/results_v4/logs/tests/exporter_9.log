@@ -1,0 +1,14 @@
+test_axis (test_exporter.Tests.test_axis) ... ok
+test_axis_not_centered (test_exporter.Tests.test_axis_not_centered) ... ok
+test_axis_not_uniform (test_exporter.Tests.test_axis_not_uniform) ... ok
+test_corrupt_signal_rejected (test_exporter.Tests.test_corrupt_signal_rejected) ... ok
+test_diameter_not_radius (test_exporter.Tests.test_diameter_not_radius) ... ok
+test_gamma_phase_not_cancelled (test_exporter.Tests.test_gamma_phase_not_cancelled) ... ok
+test_gamma_positive_shape_invariance (test_exporter.Tests.test_gamma_positive_shape_invariance) ... ok
+test_pilot_not_final (test_exporter.Tests.test_pilot_not_final) ... ok
+test_saved_algebra (test_exporter.Tests.test_saved_algebra) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.067s
+
+OK

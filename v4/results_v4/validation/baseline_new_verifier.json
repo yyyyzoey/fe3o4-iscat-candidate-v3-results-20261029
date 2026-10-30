@@ -1,0 +1,65 @@
+{
+  "archive": "results_v4_full.zip",
+  "mode": "full",
+  "physical_certification": false,
+  "img_bytes": 1326369547,
+  "expected_external_sha256": "c61f9a3bf7d6d90f0c1746a1e9de104db669cb2e838c84d3d1234f67b8e62a2a",
+  "failures": [],
+  "cases": {
+    "30": {
+      "pass": true,
+      "diameter_nm": 30,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "layers_actually_read": 171,
+      "reference_field_scale": 9.422632737507974e-08,
+      "max_normalized_algebra_error": 5.624029616814814e-08,
+      "expected_masked_contrast_nan": 0,
+      "unexplained_nonfinite": 0,
+      "physical_certification": false
+    },
+    "100": {
+      "pass": true,
+      "diameter_nm": 100,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "layers_actually_read": 171,
+      "reference_field_scale": 9.422632737507974e-08,
+      "max_normalized_algebra_error": 8.190741040646187e-08,
+      "expected_masked_contrast_nan": 0,
+      "unexplained_nonfinite": 0,
+      "physical_certification": false
+    },
+    "200": {
+      "pass": true,
+      "diameter_nm": 200,
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "layers_actually_read": 171,
+      "reference_field_scale": 9.422632737507974e-08,
+      "max_normalized_algebra_error": 7.346634141524927e-08,
+      "expected_masked_contrast_nan": 0,
+      "unexplained_nonfinite": 0,
+      "physical_certification": false
+    }
+  },
+  "pass_scope": "FULL_DATA_AND_HDF5",
+  "zip_sha256": "c61f9a3bf7d6d90f0c1746a1e9de104db669cb2e838c84d3d1234f67b8e62a2a",
+  "bytes": 1326369547,
+  "entries": 380,
+  "crc_pass": true,
+  "manifest_entries_verified": 379,
+  "hdf5_present": true,
+  "hdf5_checked": true,
+  "hdf5_layers_read": 513,
+  "pass": true
+}

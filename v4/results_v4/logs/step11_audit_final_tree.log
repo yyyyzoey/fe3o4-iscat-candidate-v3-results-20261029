@@ -1,0 +1,10 @@
+$ ..\..\..\v4\venv\Scripts\python.exe code\package_v4\tools\audit_final_tree.py --results .
+# started 2026-10-30T07:39:37+00:00 exit=0 seconds=13.16
+
+{
+  "figure_checks": true,
+  "html_audit": true,
+  "privacy_scan": true,
+  "hdf5_sampled_reread": true
+}
+

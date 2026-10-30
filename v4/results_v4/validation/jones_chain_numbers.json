@@ -332,6 +332,6 @@
     "printed_sum_abs": 0.0,
     "chain_abs": 3.0
   },
-  "reading": "core_over_chain == [0.5, 0.5] would mean the stored value equals 0.5*i*(S1 t_s - S2 t_p) up to the -i global prefactor convention; core_over_printed shows the printed S6 differs.",
+  "reading": "core_over_chain == [0.5, 0.0] would mean the stored value equals 0.5*i*(S1 t_s - S2 t_p) up to the -i global prefactor convention; core_over_printed shows the printed S6 differs.",
   "certification": "algebra only; does NOT certify the full optical chain or the physics"
 }

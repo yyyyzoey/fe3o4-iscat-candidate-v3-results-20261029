@@ -1,0 +1,17 @@
+gate,strict_condition,status,evidence,exit_code,note
+G00,固定分支与基线 e96d8b1；parts tree 00fceb…,PASS,validation/preflight_final.json,0,repository/branch/commit/subtree verified
+G01,80/80 片实际字节与清单 SHA 逐片一致；总字节 1326369547,PASS,validation/parts_verification.json,0,"anonymous download, per-shard SHA"
+G02,重组 ZIP SHA c61f…、CRC、380 条目、清单 SHA,PASS,validation/parts_verification.json#zip,0,ZIP re-read and CRC tested
+G03,"三 HDF5 原 SHA、171 层各、shape(171,241,241)，513 层实读",PASS,validation/baseline_new_verifier.json,0,all layers streamed
+G04,zeta/x/y 坐标正确；场有限、合法 masked NaN、代数恒等式、状态分类,PASS,validation/baseline_strict_audit.json,0,strict independent auditor
+G05,禁止 400 Hz/520 nm/运动/相机/反演；NA 实际 1.45,PASS,provenance/config.json; provenance/branch_and_commit.json,0,configuration and HDF5 attributes
+G06,P0 验证器拒绝 NaN/零坐标/缺字段/错摘要/重复名/缺 cube,PASS,logs/tests/verifier_14.log,0,14 negative controls
+G07,gamma 生产路径 0.5 一次；文档未误乘 eta；保留原 HDF5,PASS,validation/tests.json; validation/model_conventions.md,0,regression tests and source diff
+G08,Fresnel 回程样品→玻璃；正入射 0.9333333333,PASS,validation/tests.json; validation/model_conventions.md,0,normal-incidence test
+G09,35+9+7+21+12+14 次运行；全部通过,PASS,validation/tests.json; logs/tests/,0,98 runs / 86 unique cases
+G10,源码五 zeta 点/三粒径抽查与存盘场数值一致,PASS,validation/numerical_spot_recompute.json,0,80 samples per diameter
+G11,双线性门槛 FAILED_KEPT 未抹去；三次重建 PASS 并列,PASS_WITH_FAILED_KEPT,validation/numerical_audit.json,0,threshold unchanged
+G12,F1–F7 图真实来自 cube；9 切片、剖面、曲线、分解,PASS,validation/figure_checks_final.json,0,"PNG decoded, CSV checked"
+G13,3 个 HTML 离线实际打开；XDMF 解析到 H5 路径,PASS,validation/html_render_audit_final.json; validation/xdmf_audit_final.json,0,headless Edge with DNS blocked
+G14,公开包无 token/私密本机路径；旧包/Tag 未覆盖,PASS,validation/privacy_scan_final.json,0,tree scan; old tag untouched
+G15,新轻量包、新完整包均有 SHA/成员数和中文入口；封包后由外部验证器复读,PASS,package_verification.json (external release asset; ZIP cannot contain its own digest),0,sealed ZIPs re-read after sealing; SHA/bytes/entries recorded externally

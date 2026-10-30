@@ -1,3 +1,4 @@
+> **V4.1（2026-10-30）**：当前交付为 Release `v4.1.0-candidate` 的两个 ZIP 与 `v4/results_v4/` 树；下文的 `v4.0.0` 与 80 分片为历史记录，仅作追溯。
 # V4 Results summary
 
 当前 V4 结果以 [`v4/results_v4/summary_zh.md`](v4/results_v4/summary_zh.md) 为准。

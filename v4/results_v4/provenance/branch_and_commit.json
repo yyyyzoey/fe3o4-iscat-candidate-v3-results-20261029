@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-10-30T07:14:14+00:00",
+  "repository": "yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
+  "baseline_branch": "v4-paper-forward-results",
+  "baseline_commit": "e96d8b13a7410af5e864d09f22f1bf6e8bbc70a7",
+  "data_commit": "324b4b384ac088b8bba93091fea336a6bfe7597d",
+  "parts_tree": "00fceb986342566f6d7e58cdbb06b5062ff2f8ea",
+  "release_branch": "v4-audit-final-candidate",
+  "release_tag": "v4.1.0-candidate",
+  "final_commit_note": "The final commit hash is recorded in the Git log and in the external release verification asset; a commit cannot embed its own hash in its tree.",
+  "preserved": [
+    "main",
+    "tag v4.0.0",
+    "baseline branch v4-paper-forward-results"
+  ],
+  "pass": true
+}

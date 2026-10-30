@@ -20,7 +20,7 @@
 - `data/D100nm/cube.h5`
 - `data/D200nm/cube.h5`
 
-三组共用轴上参考场尺度 `reference_field_scale=9.422632737507974e-08`，共用演示相对复振幅 `gamma=0.5+0i`。`CR=1`；生产的散射前因子取论文收集效率 `CS=eta=0.5`。`eta` 只乘一次，随后分解再乘演示 `gamma`，所以总演示相对幅度为 `eta*gamma=0.25`。这不是 Fe₃O₄ 实验对比度标定。
+三组共用轴上参考场尺度 `reference_field_scale=9.422632737507974e-08`，共用演示相对复振幅 `gamma=0.5+0i`。生产路径设 `CR=CS=1`（`cs_over_cr=1.0`），保存的 `E_scat_unit` 不含 `eta`；随后 `E_scat=gamma*E_scat_unit`，`I_scat=|gamma|^2*U=0.25U`，`I_cross=2Re(gamma*Q)`。`eta=0.5` 只是论文符号下的可选收集效率约定，不是 Fe₃O₄ 实验对比度标定。
 
 主信号为
 
@@ -43,27 +43,27 @@ I_total = I_ref + I_scat + I_cross
 
 ## 测试与数值检查
 
-- V4 导出工具测试：**9/9 通过**。
-- 光学/IO/方位积分/IO 拒绝等测试：**31/31 通过**。
-- legacy 物理测试：**7/7 通过**。
+- 六组共 **98 次测试运行全部通过**，去重后 **86 个唯一用例**：solver+V4.1 35/35、exporter 9/9、legacy 7/7、handoff 21/21、strict auditor 12/12、verifier 错误注入 14/14。
+- 测试原始日志位于 `logs/tests/`，命令、退出码、耗时和哈希见 `validation/tests.json`；没有修改测试以凑通过。
 - 完整数值诊断：`numerical_audit_pass=true`。角积分连续加密、径向、Mie 阶数、轴向 2→1 nm 抽检均满足 1e-3 阈值；三粒径各检查了 5 个 zeta、轴上/离轴点。
-- **保留失败**：10 nm 主网格使用双线性从 20 nm 中点重建时，误差约 0.15%–0.22%，不满足 0.1%；三次插值误差小于 1e-5。该检查不改阈值、不删除，记录在 `validation/numerics.json`。这不否定主网格坐标点是直接求值的事实。
+- **保留失败**：10 nm 主网格使用双线性从 20 nm 中点重建时，误差约 0.15%–0.24%，不满足 0.1%；三次插值误差小于 1e-5。该检查不改阈值、不删除，记录在 `validation/numerical_audit.json`。这不否定主网格坐标点是直接求值的事实。
 - 图件完整性、CSV、HTML 本地链接、隐私扫描、XDMF 结构和三组 HDF5 抽层复读均通过。
 - 三个离线 3D HTML 均用断网的 Microsoft Edge 实际渲染成功；不是只做 XML/HTML 解析。
 
 ## 图件怎么看
 
+- `previews/`：汇报用二维切片和三维正交切片体视。三维图使用 5 个保存的 xy 层与 x=0 yz 剖面，x/y 仅裁剪显示至 ±400 nm；主网格未重采样、未插值放大，彩色切片不是颗粒表面。
 - `figures/F1_geometry_method/`：几何、界面和传播约定。
 - `figures/F2_xy_slices/`：九层 xy 切片。`common` 使用跨粒径共同色标，用于比较；`shape` 使用单数据体归一化，用于看形态。30 nm 在共同色标下较弱是量级差异，不是缺数据。
-- `figures/F3_sections/`：xz/yz 纵剖面。
+- `figures/F3_sections/`：xz/yz 纵剖面；入口为 `figures/F3_sections/index.html`。
 - `figures/F4_axial/`：轴上 CSV 对应的轴向曲线与分量。
-- `figures/F5_decomposition/`：zeta=0 的 `I_ref`、`I_scat`、`J`、`I_total` 分解。
-- `figures/F6_3d_static/`：真实 3D 体素静态概览；`views3d/*.html` 为可旋转离线三维视图。
+- `figures/F5_decomposition/`：zeta=0 的 `I_ref`、`I_scat`、`J`、`I_total` 分解；入口为 `figures/F5_decomposition/index.html`。
+- `figures/F6_3d_static/`：真实 3D 体素静态概览；入口为 `figures/F6_3d_static/index.html`。可旋转离线视图位于 `views3d/D030|D100|D200_signed_interference_3d.html`。
 - `figures/F7_long_range/`：±3 μm 诊断曲线，并标出 ±170 nm 主窗口。它是诊断，不是主三维数据体。
 - `tables/axis_D*.csv`、`tables/metrics.csv`：由同一 HDF5 复读生成的曲线与指标。
 - `views3d/*.xdmf`：引用 `data/*/cube.h5` 的三维查看文件。
 
-球形只描述颗粒几何；through-focus 数据体的等值面不要求呈球形，也没有为了“像球”而改造数据。
+球形只描述颗粒几何。三维汇报图的彩色体视由保存网格的正交切片构成，不是颗粒表面；显示裁剪不改变 171×241×241 主网格，也没有插值放大。`views3d` 中的离线等值面视图同样不要求呈球形。
 
 ## 明确的未完成/未认证项
 
@@ -74,7 +74,7 @@ I_total = I_ref + I_scat + I_cross
 | 相对复振幅/绝对对比度 | UNVERIFIED / false | `gamma` 是演示约定；无实验标定 |
 | 出版社最终排版 PDF | NOT OBTAINED | 无机构访问；只核对了 Figshare v3 补充材料与 arXiv 预印本 |
 | 样品空间近场 | false | 交付的是像面 through-focus 响应 |
-| 双线性 0.1% 显示插值 | FAILED（保留） | 实测约 0.15%–0.22%；三次插值通过 |
+| 双线性 0.1% 显示插值 | FAILED（保留） | 实测约 0.15%–0.24%；三次插值通过 |
 
 ## 复算入口
 
@@ -82,8 +82,9 @@ I_total = I_ref + I_scat + I_cross
 python -m unittest discover -s code/package_v4/tests -v
 python -m unittest discover -s code/solver/tests -v
 python code/solver/tools/numerical_audit.py --config code/solver/configs/target_Fe3O4_NA145.json
-python code/figures/audits/audit_deliverables.py
-python code/figures/audits/render_html_audit.py
+python code/package_v4/tools/audit_final_tree.py --results .
+python code/package_v4/tools/render_html_final.py --results .
+python code/package_v4/tools/verify_results_bundle.py --help
 ```
 
-审计脚本使用交付树相对路径；完整数据体积约 1.27 GB，轻量包只含图件、代码、表格、验证记录和网页。
+审计脚本使用交付树相对路径；完整数据包约 1.3 GB（含三份 HDF5）；轻量包明确标注 `LIGHT_NO_HDF5`，不含主 HDF5，只含图件、代码、表格、验证记录、日志和离线网页。两包的 ZIP/SHA/成员数在包外 `package_verification.json` 记录。

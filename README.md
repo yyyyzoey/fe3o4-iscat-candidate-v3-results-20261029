@@ -4,6 +4,25 @@
 >
 > 数据生成已完成；完整 QWP/PBS/Fresnel/物镜 Jones 链、超临界高 NA 球—界面物理、相对复振幅和绝对标定仍未认证。
 
+## V4.1 最终修订与验收（2026-10-30）
+
+本分支 `v4-audit-final-candidate` 在固定基线 `e96d8b13a7410af5e864d09f22f1bf6e8bbc70a7` 之上完成了 V4.1 修订、80 个分片复验、513 层 HDF5 逐层复读与成果重新封包。**当前结果以 [`v4/results_v4/`](v4/results_v4/) 为准**，完整数据与轻量包见 Release `v4.1.0-candidate`：
+
+| 资产 | 内容 | bytes | SHA256 |
+|---|---|---:|---|
+| `Fe3O4_iSCAT_V4_1_FULL_CANDIDATE.zip` | 完整科研数据包（含 3 个 HDF5） | 1346123825 | `6fc827a1533de365ec50351855c51610184266a8f04d441d486b9d1f2213e8c8` |
+| `Fe3O4_iSCAT_V4_1_REPORT_CANDIDATE.zip` | 轻量汇报包（无 HDF5） | 44519269 | `73c1b364c3ef5c33fba424d1e6ff96748d980945c765c9e6d480fd6075069b90` |
+| `package_verification.json` | 包外验证记录（ZIP 无法包含自身摘要） | 见资产 | 见 Release 附件 |
+
+入口：`v4/results_v4/README_打开这里.md`、`v4/results_v4/reports/00_汇报摘要_一页.md`、`v4/results_v4/reports/physical_limitations.md`。
+
+复验：
+
+```bash
+python code/package_v4/tools/verify_results_bundle.py Fe3O4_iSCAT_V4_1_FULL_CANDIDATE.zip --mode full
+```
+
+以下历史章节保留原始 `v4.0.0` 发布与 80 分片记录的上下文，不再代表当前交付形态。
 ## V4 当前交付
 
 V4 是当前结果，位于 [`v4/`](v4/)，分支为 `v4-paper-forward-results`。Tag `v4.0.0` 仍指向原始发布提交 `49f7f9ac644b6ac59892c3cb31177a2e2b600e16`；分支后续新增了完整数据分片和无凭据可访问性核验记录。

@@ -1,5 +1,0 @@
-<local>\Documents\Codex\2026-10-29\fe3o4-iscat-codex-handoff-v3-agents\work\v4\pkg\tools\export_paper_views.py:180: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
-  fig.tight_layout(); fig.savefig(out.with_suffix('.png'), dpi=220); plt.close(fig)
-<local>\Documents\Codex\2026-10-29\fe3o4-iscat-codex-handoff-v3-agents\work\v4\pkg\tools\export_paper_views.py:180: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
-  fig.tight_layout(); fig.savefig(out.with_suffix('.png'), dpi=220); plt.close(fig)
-{"data_algebra_pass": true, "visualization_complete": true, "pilot_only": false, "out": "../results_v4_final_views", "optical_certification": false}

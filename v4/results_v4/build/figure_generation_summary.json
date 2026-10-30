@@ -1,0 +1,77 @@
+{
+  "jmax_common": 1.5476553440093994,
+  "cases": {
+    "D030": {
+      "zoom_shape": [
+        "zoom_shape_xy_-170.0.png",
+        "zoom_shape_xy_-128.0.png",
+        "zoom_shape_xy_-86.0.png",
+        "zoom_shape_xy_-42.0.png",
+        "zoom_shape_xy_+0.0.png",
+        "zoom_shape_xy_+42.0.png",
+        "zoom_shape_xy_+86.0.png",
+        "zoom_shape_xy_+128.0.png",
+        "zoom_shape_xy_+170.0.png"
+      ],
+      "zoom_common": [
+        "zoom_common_xy_-170.0.png",
+        "zoom_common_xy_-128.0.png",
+        "zoom_common_xy_-86.0.png",
+        "zoom_common_xy_-42.0.png",
+        "zoom_common_xy_+0.0.png",
+        "zoom_common_xy_+42.0.png",
+        "zoom_common_xy_+86.0.png",
+        "zoom_common_xy_+128.0.png",
+        "zoom_common_xy_+170.0.png"
+      ]
+    },
+    "D100": {
+      "zoom_shape": [
+        "zoom_shape_xy_-170.0.png",
+        "zoom_shape_xy_-128.0.png",
+        "zoom_shape_xy_-86.0.png",
+        "zoom_shape_xy_-42.0.png",
+        "zoom_shape_xy_+0.0.png",
+        "zoom_shape_xy_+42.0.png",
+        "zoom_shape_xy_+86.0.png",
+        "zoom_shape_xy_+128.0.png",
+        "zoom_shape_xy_+170.0.png"
+      ],
+      "zoom_common": [
+        "zoom_common_xy_-170.0.png",
+        "zoom_common_xy_-128.0.png",
+        "zoom_common_xy_-86.0.png",
+        "zoom_common_xy_-42.0.png",
+        "zoom_common_xy_+0.0.png",
+        "zoom_common_xy_+42.0.png",
+        "zoom_common_xy_+86.0.png",
+        "zoom_common_xy_+128.0.png",
+        "zoom_common_xy_+170.0.png"
+      ]
+    },
+    "D200": {
+      "zoom_shape": [
+        "zoom_shape_xy_-170.0.png",
+        "zoom_shape_xy_-128.0.png",
+        "zoom_shape_xy_-86.0.png",
+        "zoom_shape_xy_-42.0.png",
+        "zoom_shape_xy_+0.0.png",
+        "zoom_shape_xy_+42.0.png",
+        "zoom_shape_xy_+86.0.png",
+        "zoom_shape_xy_+128.0.png",
+        "zoom_shape_xy_+170.0.png"
+      ],
+      "zoom_common": [
+        "zoom_common_xy_-170.0.png",
+        "zoom_common_xy_-128.0.png",
+        "zoom_common_xy_-86.0.png",
+        "zoom_common_xy_-42.0.png",
+        "zoom_common_xy_+0.0.png",
+        "zoom_common_xy_+42.0.png",
+        "zoom_common_xy_+86.0.png",
+        "zoom_common_xy_+128.0.png",
+        "zoom_common_xy_+170.0.png"
+      ]
+    }
+  }
+}

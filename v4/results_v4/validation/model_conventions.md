@@ -41,13 +41,13 @@
 | `E_Sθ, E_Sφ` | 球坐标散射场分量 | `S2`、`S1` 组合（S4/S5） | `e_s = e^{iφ_s}(S2 e_θ + i S1 e_φ)` |
 | `e_θ, e_φ` | 球坐标单位基 | 由方向 `(θ_s,φ_s)` 定义 | 测试内显式构造 |
 | `p̂, ŝ` | 返回光 p/s 基 | `p̂ = ŝ × k_in`，`ŝ = (-sinφ, cosφ, 0)` | 测试内显式构造 |
-| `t_p, t_s` | 玻璃→样品透射系数 | Fresnel 振幅 | `fresnel_glass_sample(...)` → `tp, ts` |
+| `t_p, t_s` | **样品→玻璃（返回光）**透射系数；正入射 `2·1.33/(1.33+1.52)=0.9333333` | Fresnel 振幅 | `fresnel_glass_sample(...)` → `tp, ts` |
 | `r_p, r_s` | 玻璃—水界面反射 | Fresnel 振幅 | 同上 → `rp, rs` |
 | `u = n_i sinθ` | 瞳面变量 | — | `quadrature_u(...)` |
 | `M` | 有效放大率 170 | — | `op['M']` |
 | `θ_d, φ_d` | 像面/检测极角、方位角 | — | `cos_td`、`geo['sin2']`、`geo['cos2']` |
 | `Λ_OPD`, `Λ_OPD,ref` | 光程差 | 正文 (8)(9)(10) | `axial_opd_nm(...)` |
-| `C_R, C_S` | 参考/散射总前因子 | 含收集效率 `η` | `cr=1`，`cs=η=0.5`（config 未设 `cs_over_cr` 时取 `η`）；`gamma=0.5+0i` 是另外施加的演示相对复振幅 |
+| `C_R, C_S` | 参考/散射总前因子 | 论文符号含收集效率 `η`（可选模型约定） | 生产路径设 `cs_over_cr=1.0`，即 `cr=cs=1`；`E_scat_unit` 不含 `η`，随后 `E_scat=γ·E_scat_unit`，`γ=0.5+0i` |
 | `γ` | 相对复振幅 | 文献未唯一定义 | `gamma_real=0.5, gamma_imag=0.0` |
 
 ### 后向散射角
@@ -77,13 +77,15 @@ S13: E_a,scat ∝ (1/2) C_S i ( S2 t_p + S1 t_s ) · 同一空间向量
 候选实现（`src/iscat_core.py::pupil_precompute`）：
 
 ```python
-eta = asin(min(NA/n_s, 1.0))/pi            # = 0.5 for this task
-cr, cs = 1.0, op.get('cs_over_cr', eta)    # production: cs = eta = 0.5
+eta = asin(min(NA/n_s, 1.0))/pi            # optional collection convention; 0.5 here
+cr, cs = 1.0, op.get('cs_over_cr', eta)    # fallback only
+# run_dataset production override before pupil_precompute:
+op['cs_over_cr'] = 1.0                      # therefore cr = cs = 1
 ref_strength  = 0.5j * cr * (r_p + r_s)
-scat_strength = 0.5j * cs * (-S2*tp + S1*ts)   # = 0.5j*eta*(S1*ts - S2*tp)
+scat_strength = 0.5j * cs * (-S2*tp + S1*ts)   # = 0.5j*(S1*ts - S2*tp)
 ```
 
-差异 **只在 `S2 t_p` 的符号**。这不是"把论文改成自己的答案"，而是把 S6 与 S2/S4/S5
+生产路径中 `cs_over_cr=1.0`，所以 `E_scat_unit` 不含 `eta`。差异 **只在 `S2 t_p` 的符号**。这不是"把论文改成自己的答案"，而是把 S6 与 S2/S4/S5
 在**返回光 p 基**下的线性链做一致性检查后得到的候选：S6 的括注说明 `t_p, t_s` 是
 "glass–water interface" 的透射系数，而 S3 的 `F_T` 作用在返回光上，返回光的 `p̂`
 相对入射光的 `p̂` 反向，故 `p` 分量的系数整体多一个负号；`s` 分量不受影响。
@@ -108,8 +110,10 @@ Fe₃O₄、D=100 nm、λ=532 nm、n_s=1.33、NA=1.45，`x=π n_s D/λ=0.785`。
 
 1. **`core/chain` 在全部 5 条光线上恒为 `0.5+0j`**。这里为隔离标量代数，直接审计脚本
    临时设 `cs_over_cr=1`，所以这个 `0.5` 是 S13 的 `(1/2)·i` 前因子，不是 `η`。
-   生产 cube 不设该键，取 `cs=η=0.5`，并在分解阶段再乘 `gamma=0.5+0i`；因此保存的
-   `E_scat_unit` 含 `η` 一次，信号中的总相对幅度为 `eta*gamma=0.25`（正实、演示约定）。
+   生产路径 `run_dataset.py` 同样显式设 `op['cs_over_cr']=1.0`，因此保存的
+   `E_scat_unit` **不含 `η`**；分解阶段再施加演示相对复振幅 `γ=0.5+0i`：
+   `E_scat=γ·E_scat_unit`，`I_scat=|γ|²U=0.25U`，`I_cross=2Re(γQ)`；`γ=0.5+0i` 只在分解阶段施加一次。
+   `η=0.5` 只作为论文符号下的可选收集效率约定出现在讨论中，不进入生产 cube。
    方位角从 0° 变到 120°，`S1,S2` 不变（轴对称），符合球对称性。
 2. **θ=0（沿光轴返回）时印刷式的值恰好为 0（2.8e−17 为浮点零）**。这是结构性的：
    后向散射恒有 `S2(θ=π) = -S1(θ=π)`，而正入射处 `t_p = t_s`，于是
@@ -147,7 +151,7 @@ Mie 角函数在复角上解析延拓，Fresnel 系数同样延拓。
 
 已核实：分支取 `Im(kz)>=0` 使场沿传播方向指数衰减而非增长
 （`test_branch_passive_decay`）；高 NA 下无 NaN/Inf（`test_pupil_highNA_non_nan_and_branch`）；
-求积加密 512/256→1024/512 的相对 L2 误差量级 1e−8（见 `numerics.json`）。
+求积加密 512/256→1024/512 的相对 L2 误差量级 1e−8（见 `numerical_audit.json`）。
 
 未核实：均匀球远场 Mie + Fresnel 解析延拓能否代表**球—界面**体系的超临界角谱。
 cube 属性写作 `supercritical_sector=ANALYTIC_CONTINUATION_UNVALIDATED`，
@@ -159,9 +163,11 @@ cube 属性写作 `supercritical_sector=ANALYTIC_CONTINUATION_UNVALIDATED`，
 
 - 所有 cube 共享同一个参考场尺度 `reference_field_scale = 9.422632737507974e-08`
   （轴上 `max|E_ref|`），三组可跨粒径直接比较。
-- 散射场按 `C_R=1`、`C_S=η=0.5` 保存（`eta` 只在 `scat_strength` 中乘一次），
-  分解阶段再施加演示相对复振幅 `γ = 0.5 + 0i`：`E_s = γ · E_s,unit`。
-  因此总相对幅度为 `η·γ = 0.25`；这是归一化约定，不是实验标定。
+- 生产 cube 设 `C_R=C_S=1`（`run_dataset.py` 中 `op['cs_over_cr']=1.0`），
+  保存的 `E_scat_unit` **不含 `η`**；分解阶段再施加演示相对复振幅 `γ = 0.5 + 0i`：
+  `E_scat = γ·E_scat_unit`，`I_scat = |γ|²·U`，`I_cross = 2 Re(γ Q)`。
+- 论文符号中的收集效率 `η=0.5` 是**可选模型约定**，没有被再乘进 `E_scat_unit`，
+  因此不存在 `η·γ=0.25` 的“场幅”乘积；`|γ|²=0.25` 是强度因子，不是场幅因子。
 - `γ` 是**演示约定**，不是 Fe₃O₄ 的标定对比度。文献只说明 `C_S` 含 `η`，
   推不出 `C_S/C_R = η`，也定不出全部相对复相位。
 - `absolute_calibration=false`；`units` 属性写的是"相对共享轴上参考的无量纲场，无 V/m 或 W/m²"。
@@ -201,7 +207,7 @@ contrast_fixed_reference  =  I_scat + I_cross              （固定参考归一
 
 最后一项是有意保留的失败记录：主网格的 10 nm 坐标值是直接求值，不是插值放大；
 但"用双线性从 20 nm 恢复 10 nm 网格"达不到 0.1%，该检查不通过且不改阈值，
-详见 `numerics.json` 的 `horizontal_10nm_vs_direct_5nm_midpoint`。
+详见 `numerical_audit.json` 的 `horizontal_10nm_vs_direct_5nm_midpoint`。
 
 ---
 

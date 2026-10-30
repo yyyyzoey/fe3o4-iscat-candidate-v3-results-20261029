@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-10-30T07:14:14+00:00",
+  "repo": "yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
+  "branch": "v4-paper-forward-results",
+  "expected_commit": "e96d8b13a7410af5e864d09f22f1bf6e8bbc70a7",
+  "actual_head": "e96d8b13a7410af5e864d09f22f1bf6e8bbc70a7",
+  "data_commit": "324b4b384ac088b8bba93091fea336a6bfe7597d",
+  "expected_parts_tree": "00fceb986342566f6d7e58cdbb06b5062ff2f8ea",
+  "actual_parts_tree": "00fceb986342566f6d7e58cdbb06b5062ff2f8ea",
+  "part_count": 80,
+  "parts_total_git_metadata_bytes": 1326369547,
+  "public_by_anonymous_api": true,
+  "scope": "git metadata plus anonymous shard download recorded separately",
+  "pass": true
+}

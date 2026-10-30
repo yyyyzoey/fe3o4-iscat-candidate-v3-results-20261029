@@ -1,0 +1,60 @@
+$ ..\..\..\v4\venv\Scripts\python.exe code\package_v4\tools\render_html_final.py --results .
+# started 2026-10-30T07:40:19+00:00 exit=0 seconds=7.82
+
+{
+  "D030": {
+    "pass": true,
+    "png_bytes": 90802,
+    "nonwhite_fraction": 0.14394,
+    "unique_colors": 2099
+  },
+  "D100": {
+    "pass": true,
+    "png_bytes": 95211,
+    "nonwhite_fraction": 0.14591,
+    "unique_colors": 2226
+  },
+  "D200": {
+    "pass": true,
+    "png_bytes": 96098,
+    "nonwhite_fraction": 0.14598,
+    "unique_colors": 2446
+  },
+  "INDEX": {
+    "pass": true,
+    "png_bytes": 127102,
+    "nonwhite_fraction": 0.05821,
+    "unique_colors": 2857
+  },
+  "START_HERE": {
+    "pass": true,
+    "png_bytes": 105816,
+    "nonwhite_fraction": 0.21857,
+    "unique_colors": 2567
+  },
+  "PREVIEWS": {
+    "pass": true,
+    "png_bytes": 173037,
+    "nonwhite_fraction": 0.09794,
+    "unique_colors": 2507
+  },
+  "F3": {
+    "pass": true,
+    "png_bytes": 82175,
+    "nonwhite_fraction": 0.06239,
+    "unique_colors": 3009
+  },
+  "F5": {
+    "pass": true,
+    "png_bytes": 104923,
+    "nonwhite_fraction": 0.18038,
+    "unique_colors": 4082
+  },
+  "F6": {
+    "pass": true,
+    "png_bytes": 100368,
+    "nonwhite_fraction": 0.05139,
+    "unique_colors": 2206
+  }
+}
+

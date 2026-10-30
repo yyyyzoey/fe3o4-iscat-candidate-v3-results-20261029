@@ -1,0 +1,85 @@
+{
+  "generated_utc": "2026-10-30T07:46:40+00:00",
+  "cases": {
+    "D030": {
+      "file": "data/D030nm/cube.h5",
+      "bytes": 424882738,
+      "sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "completed_slices": 171,
+      "layers": 171,
+      "axes": {
+        "zeta": [
+          -170.0,
+          170.0,
+          171
+        ],
+        "x": [
+          -1200.0,
+          1200.0,
+          241
+        ]
+      },
+      "sampled_layer_failures": [],
+      "pass": true
+    },
+    "D100": {
+      "file": "data/D100nm/cube.h5",
+      "bytes": 424639674,
+      "sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "completed_slices": 171,
+      "layers": 171,
+      "axes": {
+        "zeta": [
+          -170.0,
+          170.0,
+          171
+        ],
+        "x": [
+          -1200.0,
+          1200.0,
+          241
+        ]
+      },
+      "sampled_layer_failures": [],
+      "pass": true
+    },
+    "D200": {
+      "file": "data/D200nm/cube.h5",
+      "bytes": 424913287,
+      "sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "completed_slices": 171,
+      "layers": 171,
+      "axes": {
+        "zeta": [
+          -170.0,
+          170.0,
+          171
+        ],
+        "x": [
+          -1200.0,
+          1200.0,
+          241
+        ]
+      },
+      "sampled_layer_failures": [],
+      "pass": true
+    }
+  },
+  "failures": [],
+  "pass": true
+}

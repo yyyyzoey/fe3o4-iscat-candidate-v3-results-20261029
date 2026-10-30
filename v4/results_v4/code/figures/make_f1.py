@@ -5,7 +5,14 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-FIG = Path(__file__).resolve().parents[1] / "results_v4" / "figures" / "F1_geometry_method"
+import argparse
+
+_ap = argparse.ArgumentParser(add_help=True)
+_ap.add_argument("--out", type=Path, default=None,
+                 help="figure output root (default: <package-root>/figures)")
+_a, _unknown = _ap.parse_known_args()
+_ROOT = Path(__file__).resolve().parents[2]
+FIG = ((_a.out or (_ROOT / "figures")) / "F1_geometry_method").resolve()
 FIG.mkdir(parents=True, exist_ok=True)
 
 fig, (ax, ax2) = plt.subplots(1, 2, figsize=(11.2, 4.6), gridspec_kw={"width_ratios": [1.35, 1]})

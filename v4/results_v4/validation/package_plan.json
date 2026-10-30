@@ -1,0 +1,31 @@
+{
+  "generated_utc": "2026-10-30T07:14:14+00:00",
+  "light_package": {
+    "scope": "LIGHT_NO_HDF5",
+    "contains": [
+      "status.json",
+      "START_HERE.html",
+      "README_打开这里.md",
+      "reports/",
+      "figures/ (PNG+SVG)",
+      "previews/",
+      "tables/",
+      "validation/ (evidence JSON/MD)",
+      "views3d/ (offline HTML + XDMF)",
+      "logs/ (sanitised)",
+      "code/",
+      "provenance/"
+    ],
+    "excludes": [
+      "data/*/cube.h5"
+    ]
+  },
+  "full_package": {
+    "scope": "FULL_DATA_AND_HDF5",
+    "contains": [
+      "the complete results_v4 tree",
+      "three cube.h5 files"
+    ]
+  },
+  "self_hash_rule": "The ZIP SHA256 and member count are generated after sealing and stored in an external verification asset, because a file cannot contain its own digest."
+}

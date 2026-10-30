@@ -1,76 +1,26 @@
 {
-  "generated_utc": "2026-10-30T03:27:22+00:00",
-  "how_run": "python -m unittest <module> -v, executed inside work/v4/venv (CPython 3.11.7) for this delivery; verbatim console output is stored in logs/.",
+  "generated_utc": "2026-10-30T07:14:37+00:00",
+  "how_run": "每次调用均在本机隔离 venv 内执行 CPython unittest（verifier 组用其自带 runner）；命令与日志中的解释器/库绝对路径已脱敏为 python / <local-path>。原始未脱敏日志保留在本地私有审计目录，未公开。",
   "tests_were_not_modified_to_pass": true,
+  "note_on_counting": "六组共 98 次测试运行全部通过。strict_auditor_12 的 12 个用例是 handoff_audit_21 的子集，去重后唯一用例为 86 个；runs 与 unique_cases 同时列出，未隐藏重叠。",
+  "python": "CPython 3.11 (isolated venv, path redacted)",
+  "started_utc": "2026-10-30T07:14:31Z",
+  "finished_utc": "2026-10-30T07:14:35Z",
   "suites": {
-    "v4_exporter": {
-      "target": "tests/test_exporter.py",
-      "purpose": "Saved-cube exporter: axis handling, diameter-vs-radius, gamma invariance, algebra identities, pilot rejection.",
-      "log": "logs/unit_tests_final.log",
-      "log_sha256": "eeaa7db84bd9bf7f1ad0320596ae5b04e4e7aef85e7fcce9cd862f920eaa6bc3",
-      "log_bytes": 809,
-      "ran": 9,
-      "seconds": 0.064,
-      "verdict": "OK",
-      "cases": [
-        {
-          "test": "test_axis",
-          "qualname": "test_exporter.Tests.test_axis",
-          "result": "ok"
-        },
-        {
-          "test": "test_axis_not_centered",
-          "qualname": "test_exporter.Tests.test_axis_not_centered",
-          "result": "ok"
-        },
-        {
-          "test": "test_axis_not_uniform",
-          "qualname": "test_exporter.Tests.test_axis_not_uniform",
-          "result": "ok"
-        },
-        {
-          "test": "test_corrupt_signal_rejected",
-          "qualname": "test_exporter.Tests.test_corrupt_signal_rejected",
-          "result": "ok"
-        },
-        {
-          "test": "test_diameter_not_radius",
-          "qualname": "test_exporter.Tests.test_diameter_not_radius",
-          "result": "ok"
-        },
-        {
-          "test": "test_gamma_phase_not_cancelled",
-          "qualname": "test_exporter.Tests.test_gamma_phase_not_cancelled",
-          "result": "ok"
-        },
-        {
-          "test": "test_gamma_positive_shape_invariance",
-          "qualname": "test_exporter.Tests.test_gamma_positive_shape_invariance",
-          "result": "ok"
-        },
-        {
-          "test": "test_pilot_not_final",
-          "qualname": "test_exporter.Tests.test_pilot_not_final",
-          "result": "ok"
-        },
-        {
-          "test": "test_saved_algebra",
-          "qualname": "test_exporter.Tests.test_saved_algebra",
-          "result": "ok"
-        }
-      ],
-      "n_cases_parsed": 9,
-      "n_not_ok": 0
-    },
-    "v4_optics_io": {
-      "target": "src/tests (test_handoff, test_jones_chain, test_robustness)",
-      "purpose": "Mie/Bessel oracles, Fresnel, OPD, pupil basis, direct azimuthal integral, Jones-chain algebra, IO resume/refusal.",
-      "log": "logs/v3_optical_tests_final.log",
-      "log_sha256": "52398ae2af7c714443c1a6f9eaeec3abbdc0cc8a8b8f7355d59b8a332f113911",
-      "log_bytes": 4198,
-      "ran": 31,
-      "seconds": 0.422,
-      "verdict": "OK",
+    "solver_and_v41_35": {
+      "label": "核心光学与 V4.1 回归",
+      "target": "code/solver/tests",
+      "purpose": "Mie/Bessel 标度、Fresnel 回程方向、返回光 p/s 基、S12/S13 方位符号、gamma=0.5 单次施加、cs_over_cr=1.0、IO 断点续跑与拒绝。",
+      "command": "python -m unittest discover -s code/solver/tests -p test_*.py -v",
+      "log": "logs/tests/solver_and_v41_35.log",
+      "log_sha256_raw": "1b4a03ee1f0bd136715dfa4e844a0ccc4663281914b4763623b5a000a9af4b3b",
+      "ran": 35,
+      "expected": 35,
+      "exit_code": 0,
+      "seconds": 1.804,
+      "verdict": "PASS",
+      "n_cases_parsed": 35,
+      "n_not_ok": 4,
       "cases": [
         {
           "test": "test_axis_rejects_invalid_endpoints",
@@ -178,9 +128,29 @@
           "result": "ok"
         },
         {
+          "test": "test_backward_spherical_basis_equals_p_s_basis",
+          "qualname": "test_jones_chain.JonesChainConsistency.test_backward_spherical_basis_equals_p_s_basis",
+          "result": "unparsed"
+        },
+        {
           "test": "test_candidate_pupil_matches_chain_result",
           "qualname": "test_jones_chain.JonesChainConsistency.test_candidate_pupil_matches_chain_result",
           "result": "ok"
+        },
+        {
+          "test": "test_chain_consistent_s6_sign",
+          "qualname": "test_jones_chain.JonesChainConsistency.test_chain_consistent_s6_sign",
+          "result": "unparsed"
+        },
+        {
+          "test": "test_literal_printed_S6_requires_contradictory_S2",
+          "qualname": "test_jones_chain.JonesChainConsistency.test_literal_printed_S6_requires_contradictory_S2",
+          "result": "unparsed"
+        },
+        {
+          "test": "test_rayleigh_backscatter_does_not_vanish",
+          "qualname": "test_jones_chain.JonesChainConsistency.test_rayleigh_backscatter_does_not_vanish",
+          "result": "unparsed"
         },
         {
           "test": "test_scattered_ps_content_is_minus_S2_and_iS1",
@@ -206,20 +176,105 @@
           "test": "test_truncated_file_is_rejected",
           "qualname": "test_robustness.Robustness.test_truncated_file_is_rejected",
           "result": "ok"
+        },
+        {
+          "test": "test_figure_script_honours_explicit_output_directory",
+          "qualname": "test_v41_regressions.V41Regressions.test_figure_script_honours_explicit_output_directory",
+          "result": "ok"
+        },
+        {
+          "test": "test_fresnel_return_direction_normal_incidence",
+          "qualname": "test_v41_regressions.V41Regressions.test_fresnel_return_direction_normal_incidence",
+          "result": "ok"
+        },
+        {
+          "test": "test_gamma_half_applied_once_in_saved_signal_definition",
+          "qualname": "test_v41_regressions.V41Regressions.test_gamma_half_applied_once_in_saved_signal_definition",
+          "result": "ok"
+        },
+        {
+          "test": "test_unit_scattering_basis_excludes_eta",
+          "qualname": "test_v41_regressions.V41Regressions.test_unit_scattering_basis_excludes_eta",
+          "result": "ok"
         }
-      ],
-      "n_cases_parsed": 27,
-      "n_not_ok": 0
+      ]
     },
-    "legacy_physics": {
-      "target": "legacy physics numerics",
-      "purpose": "Original 7-test physics suite kept unchanged as a regression baseline.",
-      "log": "logs/legacy_tests_final.log",
-      "log_sha256": "44fe97c86b7a1f327e52e4eda45b431a49bc4fe7bd4e646902499b90ab826f7c",
-      "log_bytes": 924,
+    "exporter_9": {
+      "label": "导出器",
+      "target": "code/package_v4/tests",
+      "purpose": "存盘立方体导出：轴处理、直径/半径、gamma 不变性、代数恒等式、pilot 拒绝。",
+      "command": "python -m unittest discover -s code/package_v4/tests -p test_*.py -v",
+      "log": "logs/tests/exporter_9.log",
+      "log_sha256_raw": "48c49f26798d11b2323537ba27430ce766dd4a3ca40587c328b912060fd5825b",
+      "ran": 9,
+      "expected": 9,
+      "exit_code": 0,
+      "seconds": 0.39,
+      "verdict": "PASS",
+      "n_cases_parsed": 9,
+      "n_not_ok": 0,
+      "cases": [
+        {
+          "test": "test_axis",
+          "qualname": "test_exporter.Tests.test_axis",
+          "result": "ok"
+        },
+        {
+          "test": "test_axis_not_centered",
+          "qualname": "test_exporter.Tests.test_axis_not_centered",
+          "result": "ok"
+        },
+        {
+          "test": "test_axis_not_uniform",
+          "qualname": "test_exporter.Tests.test_axis_not_uniform",
+          "result": "ok"
+        },
+        {
+          "test": "test_corrupt_signal_rejected",
+          "qualname": "test_exporter.Tests.test_corrupt_signal_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_diameter_not_radius",
+          "qualname": "test_exporter.Tests.test_diameter_not_radius",
+          "result": "ok"
+        },
+        {
+          "test": "test_gamma_phase_not_cancelled",
+          "qualname": "test_exporter.Tests.test_gamma_phase_not_cancelled",
+          "result": "ok"
+        },
+        {
+          "test": "test_gamma_positive_shape_invariance",
+          "qualname": "test_exporter.Tests.test_gamma_positive_shape_invariance",
+          "result": "ok"
+        },
+        {
+          "test": "test_pilot_not_final",
+          "qualname": "test_exporter.Tests.test_pilot_not_final",
+          "result": "ok"
+        },
+        {
+          "test": "test_saved_algebra",
+          "qualname": "test_exporter.Tests.test_saved_algebra",
+          "result": "ok"
+        }
+      ]
+    },
+    "legacy_7": {
+      "label": "legacy 基线",
+      "target": "inputs/source_snapshot/legacy/tests",
+      "purpose": "原交接包 7 项物理数值测试，未改动，作为冻结基线。",
+      "command": "python -m unittest discover -s inputs/source_snapshot/legacy/tests -p test_*.py -v",
+      "log": "logs/tests/legacy_7.log",
+      "log_sha256_raw": "12009566d66a954d9f4283ab021372bcdae9e9f201a0ce85d2a167cca0d1e0ab",
       "ran": 7,
-      "seconds": 0.019,
-      "verdict": "OK",
+      "expected": 7,
+      "exit_code": 0,
+      "seconds": 0.517,
+      "verdict": "PASS",
+      "n_cases_parsed": 7,
+      "n_not_ok": 0,
       "cases": [
         {
           "test": "test_Mie_angular_recurrence_dipole",
@@ -256,16 +311,303 @@
           "qualname": "test_physics_numerics.TestForwardModel.test_pupil_highNA_non_nan_and_branch",
           "result": "ok"
         }
-      ],
-      "n_cases_parsed": 7,
-      "n_not_ok": 0
+      ]
+    },
+    "handoff_audit_21": {
+      "label": "验收工具",
+      "target": "handoff package tests/",
+      "purpose": "交接包自带的 21 项严格立方体审计与工具测试（含 12 项 strict auditor 用例）。",
+      "command": "python -m unittest discover -s tests -p test_*.py -v",
+      "log": "logs/tests/handoff_audit_21.log",
+      "log_sha256_raw": "e954e31f2ca141c6f0bbb50c7aee9ad44f1f8fc678c9220a08295d12f02aa162",
+      "ran": 21,
+      "expected": 21,
+      "exit_code": 0,
+      "seconds": 0.414,
+      "verdict": "PASS",
+      "n_cases_parsed": 21,
+      "n_not_ok": 0,
+      "cases": [
+        {
+          "test": "test_expected_80_objects",
+          "qualname": "test_preflight_repo.TestRepoPreflight.test_expected_80_objects",
+          "result": "ok"
+        },
+        {
+          "test": "test_extra_file_fails",
+          "qualname": "test_preflight_repo.TestRepoPreflight.test_extra_file_fails",
+          "result": "ok"
+        },
+        {
+          "test": "test_missing_last_part_fails",
+          "qualname": "test_preflight_repo.TestRepoPreflight.test_missing_last_part_fails",
+          "result": "ok"
+        },
+        {
+          "test": "test_parser",
+          "qualname": "test_preflight_repo.TestRepoPreflight.test_parser",
+          "result": "ok"
+        },
+        {
+          "test": "test_wrong_size_fails",
+          "qualname": "test_preflight_repo.TestRepoPreflight.test_wrong_size_fails",
+          "result": "ok"
+        },
+        {
+          "test": "test_directory",
+          "qualname": "test_privacy_scan.TestPrivacyScan.test_directory",
+          "result": "ok"
+        },
+        {
+          "test": "test_private_home",
+          "qualname": "test_privacy_scan.TestPrivacyScan.test_private_home",
+          "result": "ok"
+        },
+        {
+          "test": "test_safe_text",
+          "qualname": "test_privacy_scan.TestPrivacyScan.test_safe_text",
+          "result": "ok"
+        },
+        {
+          "test": "test_token_suppressed",
+          "qualname": "test_privacy_scan.TestPrivacyScan.test_token_suppressed",
+          "result": "ok"
+        },
+        {
+          "test": "test_altered_finite_intensity_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_altered_finite_intensity_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_certification_overclaim_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_certification_overclaim_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_duplicate_zip_entries_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_duplicate_zip_entries_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_mask_inconsistent_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_mask_inconsistent_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_masked_nan_is_legitimate",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_masked_nan_is_legitimate",
+          "result": "ok"
+        },
+        {
+          "test": "test_missing_field_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_missing_field_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_nan_in_late_layer_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_nan_in_late_layer_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_partial_count_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_partial_count_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_trusted_outer_digest_rejects_foreign_bundle",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_trusted_outer_digest_rejects_foreign_bundle",
+          "result": "ok"
+        },
+        {
+          "test": "test_unsafe_archive_path_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_unsafe_archive_path_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_valid_and_real_layer_count",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_valid_and_real_layer_count",
+          "result": "ok"
+        },
+        {
+          "test": "test_zero_coordinate_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_zero_coordinate_rejected",
+          "result": "ok"
+        }
+      ]
+    },
+    "strict_auditor_12": {
+      "label": "冻结基线重跑",
+      "target": "handoff package tests/test_strict_cube_audit.py",
+      "purpose": "21 项中的 12 项 strict auditor 单独重跑，确认冻结基线本身仍全绿。",
+      "command": "python -m unittest discover -s tests -p test_strict_cube_audit.py -v",
+      "log": "logs/tests/strict_auditor_12.log",
+      "log_sha256_raw": "2bc845fdffaca2ed603d5b4d50349fc1ea6ae2232cc2b8cab03bf6aaa672da08",
+      "ran": 12,
+      "expected": 12,
+      "exit_code": 0,
+      "seconds": 0.411,
+      "verdict": "PASS",
+      "n_cases_parsed": 12,
+      "n_not_ok": 0,
+      "cases": [
+        {
+          "test": "test_altered_finite_intensity_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_altered_finite_intensity_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_certification_overclaim_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_certification_overclaim_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_duplicate_zip_entries_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_duplicate_zip_entries_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_mask_inconsistent_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_mask_inconsistent_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_masked_nan_is_legitimate",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_masked_nan_is_legitimate",
+          "result": "ok"
+        },
+        {
+          "test": "test_missing_field_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_missing_field_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_nan_in_late_layer_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_nan_in_late_layer_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_partial_count_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_partial_count_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_trusted_outer_digest_rejects_foreign_bundle",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_trusted_outer_digest_rejects_foreign_bundle",
+          "result": "ok"
+        },
+        {
+          "test": "test_unsafe_archive_path_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_unsafe_archive_path_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_valid_and_real_layer_count",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_valid_and_real_layer_count",
+          "result": "ok"
+        },
+        {
+          "test": "test_zero_coordinate_rejected",
+          "qualname": "test_strict_cube_audit.StrictAuditTests.test_zero_coordinate_rejected",
+          "result": "ok"
+        }
+      ]
+    },
+    "verifier_14": {
+      "label": "打包验证器负测试",
+      "target": "code/package_v4/tools/test_verify_results_bundle.py",
+      "purpose": "错误注入负测试：NaN、零坐标、缺字段、错摘要、重复 ZIP 名、缺 cube、错 mask、错参数等必须被拒绝。",
+      "command": "python test_verify_results_bundle.py",
+      "log": "logs/tests/verifier_14.log",
+      "log_sha256_raw": "6d1133a8c2b7aa01fbfbc67af2151b1143a253ff24e285ca096b7f24c3ed4552",
+      "ran": 14,
+      "expected": 14,
+      "exit_code": 0,
+      "seconds": 0.425,
+      "verdict": "PASS",
+      "n_cases_parsed": 14,
+      "n_not_ok": 0,
+      "cases": [
+        {
+          "test": "test_duplicate_zip_names_rejected",
+          "qualname": "__main__.ArchiveLevelTests.test_duplicate_zip_names_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_full_mode_refuses_light_only_archive",
+          "qualname": "__main__.ArchiveLevelTests.test_full_mode_refuses_light_only_archive",
+          "result": "ok"
+        },
+        {
+          "test": "test_light_mode_is_explicit_and_scoped",
+          "qualname": "__main__.ArchiveLevelTests.test_light_mode_is_explicit_and_scoped",
+          "result": "ok"
+        },
+        {
+          "test": "test_missing_cube_rejected",
+          "qualname": "__main__.ArchiveLevelTests.test_missing_cube_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_synthetic_archive_full_mode_passes",
+          "qualname": "__main__.ArchiveLevelTests.test_synthetic_archive_full_mode_passes",
+          "result": "ok"
+        },
+        {
+          "test": "test_wrong_external_hash_rejected",
+          "qualname": "__main__.ArchiveLevelTests.test_wrong_external_hash_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_all_nan_cross_term_rejected",
+          "qualname": "__main__.FieldLevelTests.test_all_nan_cross_term_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_late_layer_nan_rejected",
+          "qualname": "__main__.FieldLevelTests.test_late_layer_nan_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_masked_nan_outside_defined_region_is_legal",
+          "qualname": "__main__.FieldLevelTests.test_masked_nan_outside_defined_region_is_legal",
+          "result": "ok"
+        },
+        {
+          "test": "test_missing_field_rejected",
+          "qualname": "__main__.FieldLevelTests.test_missing_field_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_valid_synthetic_cube_passes",
+          "qualname": "__main__.FieldLevelTests.test_valid_synthetic_cube_passes",
+          "result": "ok"
+        },
+        {
+          "test": "test_wrong_mask_rejected",
+          "qualname": "__main__.FieldLevelTests.test_wrong_mask_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_wrong_parameter_rejected",
+          "qualname": "__main__.FieldLevelTests.test_wrong_parameter_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_zero_coordinate_rejected",
+          "qualname": "__main__.FieldLevelTests.test_zero_coordinate_rejected",
+          "result": "ok"
+        }
+      ]
     }
   },
   "totals": {
-    "tests": 47,
+    "runs": 98,
+    "unique_cases": 86,
     "failures": 0,
     "errors": 0,
-    "skipped": 0
+    "skipped": 0,
+    "exit_codes_all_zero": true,
+    "parsed_cases": 98
   },
   "all_suites_pass": true
 }

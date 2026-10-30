@@ -1,0 +1,16 @@
+$ ..\..\..\v4\venv\Scripts\python.exe code\package_v4\tools\sanitize_final_outputs.py --results . --raw-out ..\..\..\audit_raw
+# started 2026-10-30T07:24:27+00:00 exit=0 seconds=0.08
+
+{
+  "emails_redacted": {},
+  "paths_rewritten": [
+    {
+      "file": "xdmf_audit_final.json",
+      "changed": true
+    }
+  ],
+  "raw_copies": [
+    "..\\..\\..\\audit_raw\\xdmf_audit_final.raw.json"
+  ]
+}
+

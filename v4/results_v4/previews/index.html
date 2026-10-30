@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Fe3O4 iSCAT V4.1 — 预览</title>
+<style>
+body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;margin:0;padding:24px 32px;background:#f5f6f8;color:#1b1e23}
+h1{font-size:22px;margin:0 0 6px}
+p.lead{margin:0 0 18px;color:#444;font-size:14px}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;background:#fff3cd;color:#7a5b00;font-size:12px;border:1px solid #eeda9a}
+figure{margin:0 0 26px;background:#fff;border:1px solid #dfe3e8;border-radius:8px;padding:10px}
+figure img{width:100%;height:auto;display:block}
+figcaption{font-size:13px;color:#333;padding:8px 4px 2px}
+table{border-collapse:collapse;font-size:13px;background:#fff}
+th,td{border:1px solid #dfe3e8;padding:5px 9px;text-align:left}
+a{color:#0b5cad}
+</style>
+</head>
+<body>
+<h1>Fe₃O₄ 单球 iSCAT through-focus 仿真 — 预览</h1>
+<p class="lead">532 nm，NA 1.45，球心高度 15 / 50 / 100 nm。信号为带符号干涉项
+<em>I</em><sub>cross</sub> = 2 Re(conj(<em>E</em><sub>ref</sub>)·<em>E</em><sub>scat</sub>)，可正可负。
+<span class="badge">CANDIDATE · 未做物理认证</span></p>
+
+<figure>
+  <img src="preview_2d_three_diameters.png" alt="three diameters, three defocus slices">
+  <figcaption>二维切片总览：行=30/100/200 nm，列=zeta −86 / 0 / +86 nm。每行使用独立的对称色标，30 nm 的幅值比 200 nm 弱约两个数量级。</figcaption>
+</figure>
+
+<figure>
+  <img src="preview_3d_three_diameters.png" alt="three through-focus orthoslice volumes">
+  <figcaption>三维 through-focus 正交切片体视：30 / 100 / 200 nm。每幅含 5 个已保存 xy 层与 x=0 的 yz 剖面；x/y 仅裁剪显示至 ±400 nm，无插值放大；彩色切片不是颗粒表面，灰虚线圆仅为几何参考。</figcaption>
+</figure>
+
+<h2 style="font-size:16px;margin:6px 0 10px">单粒径</h2>
+<table>
+<tr><th>粒径</th><th>二维切片</th><th>三维切片体视</th><th>可旋转三维（离线）</th></tr>
+<tr><td>30 nm</td><td><a href="preview_2d_D030.png">PNG</a></td><td><a href="preview_3d_D030.png">PNG</a></td><td><a href="../views3d/D030_signed_interference_3d.html">HTML</a></td></tr>
+<tr><td>100 nm</td><td><a href="preview_2d_D100.png">PNG</a></td><td><a href="preview_3d_D100.png">PNG</a></td><td><a href="../views3d/D100_signed_interference_3d.html">HTML</a></td></tr>
+<tr><td>200 nm</td><td><a href="preview_2d_D200.png">PNG</a></td><td><a href="preview_3d_D200.png">PNG</a></td><td><a href="../views3d/D200_signed_interference_3d.html">HTML</a></td></tr>
+</table>
+
+<p style="font-size:13px;color:#555;margin-top:18px">数据来源：<code>data/D*/cube.h5</code> · 完整边界见
+<a href="../reports/physical_limitations.md">reports/physical_limitations.md</a></p>
+</body>
+</html>

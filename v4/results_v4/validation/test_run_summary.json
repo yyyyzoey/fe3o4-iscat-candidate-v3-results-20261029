@@ -1,0 +1,61 @@
+{
+  "generated_utc": "2026-10-30T07:14:37+00:00",
+  "source": "derived from validation/tests.json by build/make_execution_log.py",
+  "python": "CPython 3.11 (isolated venv, path redacted)",
+  "started_utc": "2026-10-30T07:14:31Z",
+  "finished_utc": "2026-10-30T07:14:35Z",
+  "groups": {
+    "solver_and_v41_35": {
+      "ran": 35,
+      "exit_code": 0,
+      "seconds": 1.804,
+      "verdict": "PASS",
+      "log": "logs/tests/solver_and_v41_35.log"
+    },
+    "exporter_9": {
+      "ran": 9,
+      "exit_code": 0,
+      "seconds": 0.39,
+      "verdict": "PASS",
+      "log": "logs/tests/exporter_9.log"
+    },
+    "legacy_7": {
+      "ran": 7,
+      "exit_code": 0,
+      "seconds": 0.517,
+      "verdict": "PASS",
+      "log": "logs/tests/legacy_7.log"
+    },
+    "handoff_audit_21": {
+      "ran": 21,
+      "exit_code": 0,
+      "seconds": 0.414,
+      "verdict": "PASS",
+      "log": "logs/tests/handoff_audit_21.log"
+    },
+    "strict_auditor_12": {
+      "ran": 12,
+      "exit_code": 0,
+      "seconds": 0.411,
+      "verdict": "PASS",
+      "log": "logs/tests/strict_auditor_12.log"
+    },
+    "verifier_14": {
+      "ran": 14,
+      "exit_code": 0,
+      "seconds": 0.425,
+      "verdict": "PASS",
+      "log": "logs/tests/verifier_14.log"
+    }
+  },
+  "totals": {
+    "runs": 98,
+    "unique_cases": 86,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "exit_codes_all_zero": true,
+    "parsed_cases": 98
+  },
+  "all_pass": true
+}

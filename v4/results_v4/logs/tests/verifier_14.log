@@ -1,0 +1,21 @@
+test_duplicate_zip_names_rejected (__main__.ArchiveLevelTests.test_duplicate_zip_names_rejected) ... <local-path> UserWarning: Duplicate name: 'results_v4/status.json'
+  return self._open_to_write(zinfo, force_zip64=force_zip64)
+ok
+test_full_mode_refuses_light_only_archive (__main__.ArchiveLevelTests.test_full_mode_refuses_light_only_archive) ... ok
+test_light_mode_is_explicit_and_scoped (__main__.ArchiveLevelTests.test_light_mode_is_explicit_and_scoped) ... ok
+test_missing_cube_rejected (__main__.ArchiveLevelTests.test_missing_cube_rejected) ... ok
+test_synthetic_archive_full_mode_passes (__main__.ArchiveLevelTests.test_synthetic_archive_full_mode_passes) ... ok
+test_wrong_external_hash_rejected (__main__.ArchiveLevelTests.test_wrong_external_hash_rejected) ... ok
+test_all_nan_cross_term_rejected (__main__.FieldLevelTests.test_all_nan_cross_term_rejected) ... ok
+test_late_layer_nan_rejected (__main__.FieldLevelTests.test_late_layer_nan_rejected) ... ok
+test_masked_nan_outside_defined_region_is_legal (__main__.FieldLevelTests.test_masked_nan_outside_defined_region_is_legal) ... ok
+test_missing_field_rejected (__main__.FieldLevelTests.test_missing_field_rejected) ... ok
+test_valid_synthetic_cube_passes (__main__.FieldLevelTests.test_valid_synthetic_cube_passes) ... ok
+test_wrong_mask_rejected (__main__.FieldLevelTests.test_wrong_mask_rejected) ... ok
+test_wrong_parameter_rejected (__main__.FieldLevelTests.test_wrong_parameter_rejected) ... ok
+test_zero_coordinate_rejected (__main__.FieldLevelTests.test_zero_coordinate_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.112s
+
+OK

@@ -1,0 +1,176 @@
+{
+  "generated_utc": "2026-10-30T07:46:39+00:00",
+  "html_files": 12,
+  "rows": [
+    {
+      "file": "figures/F3_sections/index.html",
+      "bytes": 3425,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {},
+      "inline_plotly_bundle": false,
+      "authored_text_chars": 2766,
+      "pass": true
+    },
+    {
+      "file": "figures/F5_decomposition/index.html",
+      "bytes": 2859,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {},
+      "inline_plotly_bundle": false,
+      "authored_text_chars": 2762,
+      "pass": true
+    },
+    {
+      "file": "figures/F6_3d_static/index.html",
+      "bytes": 1723,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {},
+      "inline_plotly_bundle": false,
+      "authored_text_chars": 1450,
+      "pass": true
+    },
+    {
+      "file": "previews/index.html",
+      "bytes": 2841,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 12,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {},
+      "inline_plotly_bundle": false,
+      "authored_text_chars": 2455,
+      "pass": true
+    },
+    {
+      "file": "START_HERE.html",
+      "bytes": 7653,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 38,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {},
+      "inline_plotly_bundle": false,
+      "authored_text_chars": 6053,
+      "pass": true
+    },
+    {
+      "file": "views3d/D030/signed_interference_3d.html",
+      "bytes": 4027251,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {
+        "cdn.plot.ly": 1
+      },
+      "inline_plotly_bundle": true,
+      "authored_text_chars": 263,
+      "pass": true
+    },
+    {
+      "file": "views3d/D030_signed_interference_3d.html",
+      "bytes": 4027251,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {
+        "cdn.plot.ly": 1
+      },
+      "inline_plotly_bundle": true,
+      "authored_text_chars": 263,
+      "pass": true
+    },
+    {
+      "file": "views3d/D100/signed_interference_3d.html",
+      "bytes": 4140744,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {
+        "cdn.plot.ly": 1
+      },
+      "inline_plotly_bundle": true,
+      "authored_text_chars": 263,
+      "pass": true
+    },
+    {
+      "file": "views3d/D100_signed_interference_3d.html",
+      "bytes": 4140744,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {
+        "cdn.plot.ly": 1
+      },
+      "inline_plotly_bundle": true,
+      "authored_text_chars": 263,
+      "pass": true
+    },
+    {
+      "file": "views3d/D200/signed_interference_3d.html",
+      "bytes": 3856399,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {
+        "cdn.plot.ly": 1
+      },
+      "inline_plotly_bundle": true,
+      "authored_text_chars": 263,
+      "pass": true
+    },
+    {
+      "file": "views3d/D200_signed_interference_3d.html",
+      "bytes": 3856399,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 0,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {
+        "cdn.plot.ly": 1
+      },
+      "inline_plotly_bundle": true,
+      "authored_text_chars": 263,
+      "pass": true
+    },
+    {
+      "file": "views3d/index.html",
+      "bytes": 11207,
+      "script_src_attribute": false,
+      "external_refs": 0,
+      "local_refs": 91,
+      "missing_local": [],
+      "network_load_paths": [],
+      "vendor_literal_urls_inert": {},
+      "inline_plotly_bundle": false,
+      "authored_text_chars": 11090,
+      "pass": true
+    }
+  ],
+  "failing": [],
+  "pass": true
+}

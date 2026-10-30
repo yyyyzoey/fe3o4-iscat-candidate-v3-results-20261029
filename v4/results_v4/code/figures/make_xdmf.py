@@ -5,8 +5,21 @@ import json
 import h5py
 import numpy as np
 
-ROOT = Path(__file__).resolve().parents[1]
-RES = ROOT / "results_v4"
+import argparse
+
+_ap = argparse.ArgumentParser(add_help=True)
+_ap.add_argument("--data-root", type=Path, default=Path(__file__).resolve().parents[2],
+                 help="results_v4 package root containing data/, figures/, tables/")
+_ap.add_argument("--out", type=Path, default=None,
+                 help="figure output root (default: <data-root>/figures)")
+_ap.add_argument("--diagnostics-root", type=Path, default=None,
+                 help="folder holding target_long/ and paper_control_long/ (default: <data-root>/diagnostics)")
+_a, _unknown = _ap.parse_known_args()
+RES = _a.data_root.resolve()
+FIG = (_a.out or RES / "figures").resolve()
+DATA = RES / "data"
+TAB = RES / "tables"
+DIAG = (_a.diagnostics_root or RES / "diagnostics").resolve()
 OUT = RES / "views3d"
 CASES = (("D030nm", 30), ("D100nm", 100), ("D200nm", 200))
 ATTRS = [("I_cross", "J = 2 Re(conj(E_ref).E_scat); signed interference term"),
@@ -89,6 +102,7 @@ def main():
             report["failures"].append(f"{path.name}: {exc}")
         report["files"][case] = e
         print(case, e["pass"], e["items"])
+    (RES / "validation" / "xdmf_audit.json").parent.mkdir(parents=True, exist_ok=True)
     (RES / "validation" / "xdmf_audit.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print("ALL PASS" if report["pass"] else "FAILURES")

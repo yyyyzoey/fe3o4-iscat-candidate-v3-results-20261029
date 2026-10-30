@@ -1,0 +1,9 @@
+$ ..\..\..\v4\venv\Scripts\python.exe code\solver\tools\verify_xdmf.py views3d --out validation\xdmf_audit_final.json
+# started 2026-10-30T07:24:24+00:00 exit=0 seconds=0.30
+
+{
+  "xdmf_audit_pass": true,
+  "failures": [],
+  "report": "validation\\xdmf_audit_final.json"
+}
+

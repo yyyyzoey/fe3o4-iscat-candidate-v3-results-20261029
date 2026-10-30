@@ -1,0 +1,188 @@
+{
+  "audit_role": "frozen-config independent numerical recomputation of saved samples",
+  "physical_validation": false,
+  "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+  "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+  "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+  "zeta_nm": [
+    -170.0,
+    -86.0,
+    0.0,
+    84.0,
+    170.0
+  ],
+  "points_xy_nm": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      10.0,
+      0.0
+    ],
+    [
+      100.0,
+      100.0
+    ],
+    [
+      350.0,
+      350.0
+    ],
+    [
+      500.0,
+      -250.0
+    ],
+    [
+      700.0,
+      700.0
+    ],
+    [
+      1000.0,
+      -1000.0
+    ],
+    [
+      1200.0,
+      1200.0
+    ]
+  ],
+  "relative_threshold": 0.001,
+  "cases": {
+    "30": {
+      "cube": "D030nm\\cube.h5",
+      "cube_sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "reference_field_scale": 9.422632737507974e-08,
+      "gamma": [
+        0.5,
+        0.0
+      ],
+      "samples": 80,
+      "checks": {
+        "E_ref_complex": {
+          "relative_l2": 8.217635467867337e-06,
+          "relative_linf": 1.1630387703071598e-05,
+          "max_absolute": 1.1630387862461928e-05,
+          "saved_l2": 3.257716823334834,
+          "saved_linf": 1.0000000137046445,
+          "pass_relative_below_1e-3": true
+        },
+        "E_scat_unit_complex": {
+          "relative_l2": 6.2718949481853705e-06,
+          "relative_linf": 9.378470780537398e-06,
+          "max_absolute": 4.409222512325871e-07,
+          "saved_l2": 0.14044059322228353,
+          "saved_linf": 0.047014301323794465,
+          "pass_relative_below_1e-3": true
+        },
+        "E_scat_with_gamma_complex": {
+          "relative_l2": 6.2718949481853705e-06,
+          "relative_linf": 9.378470780537398e-06,
+          "max_absolute": 2.2046112561629356e-07,
+          "saved_l2": 0.07022029661114176,
+          "saved_linf": 0.023507150661897232,
+          "pass_relative_below_1e-3": true
+        },
+        "I_cross_recomputed_vs_signal": {
+          "relative_l2": 1.4788951113168372e-05,
+          "relative_linf": 2.1213816712880107e-05,
+          "max_absolute": 6.898382289358129e-07,
+          "saved_l2": 0.07597709107229927,
+          "saved_linf": 0.03251834586262703,
+          "pass_relative_below_1e-3": true
+        }
+      },
+      "pass": true
+    },
+    "100": {
+      "cube": "D100nm\\cube.h5",
+      "cube_sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "reference_field_scale": 9.422632737507974e-08,
+      "gamma": [
+        0.5,
+        0.0
+      ],
+      "samples": 80,
+      "checks": {
+        "E_ref_complex": {
+          "relative_l2": 8.224942316819318e-06,
+          "relative_linf": 1.1642975138249645e-05,
+          "max_absolute": 1.1642975467848306e-05,
+          "saved_l2": 3.257716811909691,
+          "saved_linf": 1.0000000283088006,
+          "pass_relative_below_1e-3": true
+        },
+        "E_scat_unit_complex": {
+          "relative_l2": 6.2601443653842526e-06,
+          "relative_linf": 9.302559311776867e-06,
+          "max_absolute": 1.439801893533078e-05,
+          "saved_l2": 4.694291658579462,
+          "saved_linf": 1.5477481468033378,
+          "pass_relative_below_1e-3": true
+        },
+        "E_scat_with_gamma_complex": {
+          "relative_l2": 6.2601443653842526e-06,
+          "relative_linf": 9.302559311776867e-06,
+          "max_absolute": 7.19900946766539e-06,
+          "saved_l2": 2.347145829289731,
+          "saved_linf": 0.7738740734016689,
+          "pass_relative_below_1e-3": true
+        },
+        "I_cross_recomputed_vs_signal": {
+          "relative_l2": 1.375702178385969e-05,
+          "relative_linf": 2.07854876735513e-05,
+          "max_absolute": 3.200108438949911e-05,
+          "saved_l2": 3.919992998644406,
+          "saved_linf": 1.5395878553390503,
+          "pass_relative_below_1e-3": true
+        }
+      },
+      "pass": true
+    },
+    "200": {
+      "cube": "D200nm\\cube.h5",
+      "cube_sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "reference_field_scale": 9.422632737507974e-08,
+      "gamma": [
+        0.5,
+        0.0
+      ],
+      "samples": 80,
+      "checks": {
+        "E_ref_complex": {
+          "relative_l2": 8.239702642160967e-06,
+          "relative_linf": 1.1674549458101495e-05,
+          "max_absolute": 1.1674549468067097e-05,
+          "saved_l2": 3.257716747765363,
+          "saved_linf": 1.0000000008536176,
+          "pass_relative_below_1e-3": true
+        },
+        "E_scat_unit_complex": {
+          "relative_l2": 1.1280714216637182e-05,
+          "relative_linf": 1.307201751486294e-05,
+          "max_absolute": 1.366364433486078e-05,
+          "saved_l2": 2.432047088368514,
+          "saved_linf": 1.0452590290156174,
+          "pass_relative_below_1e-3": true
+        },
+        "E_scat_with_gamma_complex": {
+          "relative_l2": 1.1280714216637182e-05,
+          "relative_linf": 1.307201751486294e-05,
+          "max_absolute": 6.83182216743039e-06,
+          "saved_l2": 1.216023544184257,
+          "saved_linf": 0.5226295145078087,
+          "pass_relative_below_1e-3": true
+        },
+        "I_cross_recomputed_vs_signal": {
+          "relative_l2": 1.78681732868341e-05,
+          "relative_linf": 2.440292569278123e-05,
+          "max_absolute": 2.5496884716202928e-05,
+          "saved_l2": 1.903684318451697,
+          "saved_linf": 1.04482901096344,
+          "pass_relative_below_1e-3": true
+        }
+      },
+      "pass": true
+    }
+  },
+  "all_numerical_pass": true,
+  "interpretation": "PASS here means the frozen solver reproduces saved samples to the declared numerical tolerance; it does not verify the publication's full Jones chain, supercritical interface physics, or absolute amplitude."
+}

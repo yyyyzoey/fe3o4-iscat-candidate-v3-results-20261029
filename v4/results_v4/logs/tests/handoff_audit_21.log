@@ -1,0 +1,26 @@
+test_expected_80_objects (test_preflight_repo.TestRepoPreflight.test_expected_80_objects) ... ok
+test_extra_file_fails (test_preflight_repo.TestRepoPreflight.test_extra_file_fails) ... ok
+test_missing_last_part_fails (test_preflight_repo.TestRepoPreflight.test_missing_last_part_fails) ... ok
+test_parser (test_preflight_repo.TestRepoPreflight.test_parser) ... ok
+test_wrong_size_fails (test_preflight_repo.TestRepoPreflight.test_wrong_size_fails) ... ok
+test_directory (test_privacy_scan.TestPrivacyScan.test_directory) ... ok
+test_private_home (test_privacy_scan.TestPrivacyScan.test_private_home) ... ok
+test_safe_text (test_privacy_scan.TestPrivacyScan.test_safe_text) ... ok
+test_token_suppressed (test_privacy_scan.TestPrivacyScan.test_token_suppressed) ... ok
+test_altered_finite_intensity_rejected (test_strict_cube_audit.StrictAuditTests.test_altered_finite_intensity_rejected) ... ok
+test_certification_overclaim_rejected (test_strict_cube_audit.StrictAuditTests.test_certification_overclaim_rejected) ... ok
+test_duplicate_zip_entries_rejected (test_strict_cube_audit.StrictAuditTests.test_duplicate_zip_entries_rejected) ... ok
+test_mask_inconsistent_rejected (test_strict_cube_audit.StrictAuditTests.test_mask_inconsistent_rejected) ... ok
+test_masked_nan_is_legitimate (test_strict_cube_audit.StrictAuditTests.test_masked_nan_is_legitimate) ... ok
+test_missing_field_rejected (test_strict_cube_audit.StrictAuditTests.test_missing_field_rejected) ... ok
+test_nan_in_late_layer_rejected (test_strict_cube_audit.StrictAuditTests.test_nan_in_late_layer_rejected) ... ok
+test_partial_count_rejected (test_strict_cube_audit.StrictAuditTests.test_partial_count_rejected) ... ok
+test_trusted_outer_digest_rejects_foreign_bundle (test_strict_cube_audit.StrictAuditTests.test_trusted_outer_digest_rejects_foreign_bundle) ... ok
+test_unsafe_archive_path_rejected (test_strict_cube_audit.StrictAuditTests.test_unsafe_archive_path_rejected) ... ok
+test_valid_and_real_layer_count (test_strict_cube_audit.StrictAuditTests.test_valid_and_real_layer_count) ... ok
+test_zero_coordinate_rejected (test_strict_cube_audit.StrictAuditTests.test_zero_coordinate_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.095s
+
+OK

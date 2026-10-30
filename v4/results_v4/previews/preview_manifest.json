@@ -1,0 +1,96 @@
+{
+  "source": "read directly from data/D*/cube.h5 signals/I_cross; no physics recomputation",
+  "slices_zeta_nm": [
+    -86.0,
+    0.0,
+    86.0
+  ],
+  "display_crop_note": "3D xy display crop is a direct subset of saved 10 nm samples; no interpolation enlargement",
+  "cases": {
+    "D030": {
+      "diameter_nm": 30,
+      "center_height_nm": 15,
+      "zeta_indices": [
+        42,
+        85,
+        128
+      ],
+      "symmetric_vmax": 0.02645060047507286,
+      "png_bytes": 477463,
+      "display_crop_xy_nm": [
+        -400.0,
+        400.0
+      ],
+      "xy_slice_zeta_nm": [
+        -120.0,
+        -60.0,
+        0.0,
+        60.0,
+        120.0
+      ],
+      "yz_section_x_nm": 0.0,
+      "geometric_sphere_reference": true,
+      "main_grid_resampled_or_upscaled": false,
+      "preview_representation": "5 saved xy slices + saved x=0 yz section"
+    },
+    "D100": {
+      "diameter_nm": 100,
+      "center_height_nm": 50,
+      "zeta_indices": [
+        42,
+        85,
+        128
+      ],
+      "symmetric_vmax": 1.2717293500900269,
+      "png_bytes": 487040,
+      "display_crop_xy_nm": [
+        -400.0,
+        400.0
+      ],
+      "xy_slice_zeta_nm": [
+        -120.0,
+        -60.0,
+        0.0,
+        60.0,
+        120.0
+      ],
+      "yz_section_x_nm": 0.0,
+      "geometric_sphere_reference": true,
+      "main_grid_resampled_or_upscaled": false,
+      "preview_representation": "5 saved xy slices + saved x=0 yz section"
+    },
+    "D200": {
+      "diameter_nm": 200,
+      "center_height_nm": 100,
+      "zeta_indices": [
+        42,
+        85,
+        128
+      ],
+      "symmetric_vmax": 0.6339069604873657,
+      "png_bytes": 505045,
+      "display_crop_xy_nm": [
+        -400.0,
+        400.0
+      ],
+      "xy_slice_zeta_nm": [
+        -120.0,
+        -60.0,
+        0.0,
+        60.0,
+        120.0
+      ],
+      "yz_section_x_nm": 0.0,
+      "geometric_sphere_reference": true,
+      "main_grid_resampled_or_upscaled": false,
+      "preview_representation": "5 saved xy slices + saved x=0 yz section"
+    }
+  },
+  "combined_2d_png_bytes": 320569,
+  "combined_3d_png_bytes": 1420969,
+  "combined_3d_shape": [
+    4026,
+    3266
+  ],
+  "combined_3d_layout": "2x2: D030, D100 / D200, reading-guide card"
+}

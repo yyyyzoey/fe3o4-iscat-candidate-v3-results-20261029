@@ -1,0 +1,18 @@
+{
+  "generated_utc": "2026-10-30T07:46:40+00:00",
+  "files_scanned": 307,
+  "patterns": [
+    "windows_user_path",
+    "posix_home_path",
+    "file_url",
+    "github_token",
+    "aws_key",
+    "private_key",
+    "bearer_token",
+    "basic_auth",
+    "email_address"
+  ],
+  "hits": [],
+  "note": "HTML vendor <script> bodies stripped; HDF5 scanned via all group/dataset attrs.",
+  "pass": true
+}

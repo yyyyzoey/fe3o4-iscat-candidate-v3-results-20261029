@@ -1,0 +1,5 @@
+$ ..\..\..\v4\venv\Scripts\python.exe ..\..\build\make_execution_log.py
+# started 2026-10-30T07:39:58+00:00 exit=0 seconds=0.09
+
+wrote logs/execution_log.md, reports/04_执行日志索引.md, validation/test_run_summary.json
+

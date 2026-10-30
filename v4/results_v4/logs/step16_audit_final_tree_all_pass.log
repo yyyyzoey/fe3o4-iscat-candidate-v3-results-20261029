@@ -1,0 +1,10 @@
+$ python <WORKSPACE>\final_tree\results_v4\code\package_v4\tools\audit_final_tree.py --results <WORKSPACE>\final_tree\results_v4
+# started 2026-10-30T07:44:16+00:00 exit=1 seconds=16.02
+
+{
+  "figure_checks": true,
+  "html_audit": true,
+  "privacy_scan": false,
+  "hdf5_sampled_reread": true
+}
+

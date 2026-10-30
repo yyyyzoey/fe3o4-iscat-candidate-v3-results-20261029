@@ -1,0 +1,188 @@
+{
+  "generated_utc": "2026-10-30T07:40:27+00:00",
+  "method": "headless Edge render of each saved page with DNS resolution disabled; 3D volume pages must paint >1% non-background pixels and >500 distinct colours; static pages must paint >0.5% and >50 colours",
+  "cases": {
+    "D030": {
+      "html": "views3d/D030_signed_interference_3d.html",
+      "html_bytes": 4027251,
+      "render_png": "validation/html_render/D030_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "volume",
+      "png_bytes": 90802,
+      "sha256": "2b564f83e02f342acb730f8d14939732f42ef2b21b16028ae0058ca041b82184",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.14394,
+      "pixel_std": 30.727,
+      "unique_colors": 2099,
+      "pass": true
+    },
+    "D100": {
+      "html": "views3d/D100_signed_interference_3d.html",
+      "html_bytes": 4140744,
+      "render_png": "validation/html_render/D100_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "volume",
+      "png_bytes": 95211,
+      "sha256": "12bbba07526b39f9dd085619eda114405cb04597b5a333a7d45378aa6371b905",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.14591,
+      "pixel_std": 30.774,
+      "unique_colors": 2226,
+      "pass": true
+    },
+    "D200": {
+      "html": "views3d/D200_signed_interference_3d.html",
+      "html_bytes": 3856399,
+      "render_png": "validation/html_render/D200_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "volume",
+      "png_bytes": 96098,
+      "sha256": "ed950d9dcd495ccab2c63487c0c5f51427887893906abe8e1448200b7408c8b0",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.14598,
+      "pixel_std": 22.425,
+      "unique_colors": 2446,
+      "pass": true
+    },
+    "INDEX": {
+      "html": "views3d/index.html",
+      "html_bytes": 11207,
+      "render_png": "validation/html_render/INDEX_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "page",
+      "png_bytes": 127102,
+      "sha256": "530217b476937f9a278a76becaf24a5e228bbbd44078ef18523b71b3476e4c6c",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.05821,
+      "pixel_std": 32.642,
+      "unique_colors": 2857,
+      "pass": true
+    },
+    "START_HERE": {
+      "html": "START_HERE.html",
+      "html_bytes": 7653,
+      "render_png": "validation/html_render/START_HERE_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "page",
+      "png_bytes": 105816,
+      "sha256": "3ee5e50a7780cc8e780bb3fc16dbbe988ddd6e21638ec451df56af3ecb5bcd22",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.21857,
+      "pixel_std": 35.643,
+      "unique_colors": 2567,
+      "pass": true
+    },
+    "PREVIEWS": {
+      "html": "previews/index.html",
+      "html_bytes": 2841,
+      "render_png": "validation/html_render/PREVIEWS_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "page",
+      "png_bytes": 173037,
+      "sha256": "16098f0ac8c03e1639cb3da4252e64c1108337589331908b8c05d0fe74533791",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.09794,
+      "pixel_std": 38.658,
+      "unique_colors": 2507,
+      "pass": true
+    },
+    "F3": {
+      "html": "figures/F3_sections/index.html",
+      "html_bytes": 3425,
+      "render_png": "validation/html_render/F3_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "page",
+      "png_bytes": 82175,
+      "sha256": "05b92d974e48e83f87edafe689f0f129a54ec76cc808d6d8aa6ffa431f505aed",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.06239,
+      "pixel_std": 32.257,
+      "unique_colors": 3009,
+      "pass": true
+    },
+    "F5": {
+      "html": "figures/F5_decomposition/index.html",
+      "html_bytes": 2859,
+      "render_png": "validation/html_render/F5_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "page",
+      "png_bytes": 104923,
+      "sha256": "2275aba755189cd3c72afa3e4e9627ac14a4db485c1d2d92594a660ccff9e6f1",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.18038,
+      "pixel_std": 74.802,
+      "unique_colors": 4082,
+      "pass": true
+    },
+    "F6": {
+      "html": "figures/F6_3d_static/index.html",
+      "html_bytes": 1723,
+      "render_png": "validation/html_render/F6_offline_render.png",
+      "browser": "Microsoft Edge headless (msedge.exe)",
+      "dns": "blocked via --host-resolver-rules=MAP * ~NOTFOUND",
+      "exit_code": 0,
+      "kind": "page",
+      "png_bytes": 100368,
+      "sha256": "59fe0f3ed67b37023bc0100dba3fab00cde828d148b87afc0c4812b4b6afc5a8",
+      "png_shape": [
+        900,
+        1400,
+        3
+      ],
+      "nonwhite_fraction": 0.05139,
+      "pixel_std": 21.297,
+      "unique_colors": 2206,
+      "pass": true
+    }
+  },
+  "failures": [],
+  "pass": true
+}

@@ -12,12 +12,21 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch
 import h5py
 
-ROOT = Path(__file__).resolve().parents[1]          # work/v4
-RES = ROOT / "results_v4"
-FIG = RES / "figures"
+import argparse
+
+_ap = argparse.ArgumentParser(add_help=True)
+_ap.add_argument("--data-root", type=Path, default=Path(__file__).resolve().parents[2],
+                 help="results_v4 package root containing data/, figures/, tables/")
+_ap.add_argument("--out", type=Path, default=None,
+                 help="figure output root (default: <data-root>/figures)")
+_ap.add_argument("--diagnostics-root", type=Path, default=None,
+                 help="folder holding target_Fe3O4_NA145/ and paper_control_NA135/ (default: <data-root>/diagnostics)")
+_a, _unknown = _ap.parse_known_args()
+RES = _a.data_root.resolve()
+FIG = (_a.out or RES / "figures").resolve()
 DATA = RES / "data"
 TAB = RES / "tables"
-RELEASE = ROOT.parents[1] / "outputs" / "release"
+DIAG = (_a.diagnostics_root or RES / "diagnostics").resolve()
 
 CASES = (("D030", 30.0), ("D100", 100.0), ("D200", 200.0))
 ZETA = [-170.0, -128.0, -86.0, -42.0, 0.0, 42.0, 86.0, 128.0, 170.0]
@@ -155,8 +164,8 @@ def f1_geometry():
 
 
 def f7_long():
-    target = RELEASE / "diagnostics/target_long"
-    control = RELEASE / "diagnostics/paper_control_long"
+    target = DIAG / "target_Fe3O4_NA145"
+    control = DIAG / "paper_control_NA135"
     fig, axes = plt.subplots(1, 2, figsize=(10.6, 4.0), gridspec_kw={"width_ratios": [1.25, 1]})
     ax = axes[0]
     for name, lab in (("D030_axis.csv", "D=30 nm"), ("D100_axis.csv", "D=100 nm"),
@@ -215,9 +224,21 @@ def tables_and_metrics():
     with (TAB / "metrics.csv").open("w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0]))
         w.writeheader(); w.writerows(rows)
-    # long-range table (copy)
-    import shutil
-    shutil.copy2(RELEASE / "diagnostics/axis_profiles.csv", TAB / "axis_profiles_long_range.csv")
+    # long-range table: retain the actual target and paper-control diagnostics,
+    # including their zeta grid outside the delivered +/-170 nm window.
+    sources = (
+        ("target_Fe3O4_NA145", "D030", DIAG / "target_Fe3O4_NA145" / "D030_axis.csv"),
+        ("target_Fe3O4_NA145", "D100", DIAG / "target_Fe3O4_NA145" / "D100_axis.csv"),
+        ("target_Fe3O4_NA145", "D200", DIAG / "target_Fe3O4_NA145" / "D200_axis.csv"),
+        ("paper_control_NA135", "D120", DIAG / "paper_control_NA135" / "D120_axis.csv"),
+    )
+    with (TAB / "axis_profiles_long_range.csv").open("w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["case_group", "case", "zeta_nm", "I_ref", "I_scat", "I_cross",
+                    "I_total", "contrast_local", "contrast_fixed_reference"])
+        for group, case, src in sources:
+            for row in np.loadtxt(src, delimiter=",", skiprows=1):
+                w.writerow([group, case, *[repr(float(v)) for v in row]])
     return rows
 
 
@@ -238,7 +259,8 @@ def main():
         fz_shape = zoom_slices(d, "shape", jmax_common, FIG / "F2_xy_slices" / "zoom" / dname)
         fz_common = zoom_slices(d, "common", jmax_common, FIG / "F2_xy_slices" / "zoom" / dname)
         summary["cases"][dname] = {"zoom_shape": fz_shape, "zoom_common": fz_common}
-    (ROOT / "build" / "figure_generation_summary.json").write_text(
+    (FIG.parent / "build" / "figure_generation_summary.json").parent.mkdir(parents=True, exist_ok=True)
+    (FIG.parent / "build" / "figure_generation_summary.json").write_text(
         json.dumps(summary, indent=2), encoding="utf-8")
     print(json.dumps({"jmax_common": jmax_common, "metrics": rows}, indent=2))
 

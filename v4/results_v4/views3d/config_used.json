@@ -1,0 +1,9 @@
+{
+  "axes": "x=241, y=241, zeta=171",
+  "diameters_nm": [
+    30,
+    100,
+    200
+  ],
+  "note": "Verifier-facing minimal config for verify_xdmf.py. Full run configuration is ../../provenance/config.json."
+}

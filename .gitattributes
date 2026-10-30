@@ -1,0 +1,2 @@
+# 逐字节保真：禁止任何 EOL 转换，确保克隆后的文件与 results_v4/SHA256SUMS.txt 一致。
+* -text
