@@ -26,7 +26,9 @@ python .\branch_data\full_package\verify_results_bundle.py .\branch_data\full_pa
 c61f9a3bf7d6d90f0c1746a1e9de104db669cb2e838c84d3d1234f67b8e62a2a
 ```
 
-Release `v4.0.0` 仍作为冗余下载入口保留。
+Release `v4.0.0` 仍作为冗余下载入口保留。分支中的 80 个分片已用无 GitHub 凭据的公开 HTTP 下载逐片复核，并实际重组、复读完整包；证据见 `branch_data/full_package/BRANCH_ACCESS_VERIFICATION.md` 与 `.json`。
+
+GitHub 文件页面不能直接展开或渲染 HDF5 二进制；这不表示分支缺少数据。请按上方命令先重组 ZIP。
 
 - 数据 shape：三组均为 `(171,241,241)`，轴顺序 `(zeta,y,x)`，实际完成 171 层
 - 网格：`zeta=-170:2:170 nm`，`x,y=-1200:10:1200 nm`
@@ -46,3 +48,4 @@ Release `v4.0.0` 仍作为冗余下载入口保留。
 ## 未认证边界
 
 完整 S3 QWP/PBS/Fresnel/物镜 Jones 链、超临界角球—界面物理、相对/绝对复振幅标定仍未核实；出版社最终排版 PDF 未取得；交付的是像面 through-focus 响应，不是样品空间近场；双线性 0.1% 显示插值检查保留失败（约 0.15%–0.22%）。
+

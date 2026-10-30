@@ -6,6 +6,8 @@
 - 三组 shape：`(171,241,241)`，171 层直接计算
 - 完整 ZIP：`v4/branch_data/full_package/` 内 80 个分片
 - ZIP SHA256：`c61f9a3bf7d6d90f0c1746a1e9de104db669cb2e838c84d3d1234f67b8e62a2a`
+- 分支分片实测：80/80 SHA256、重组 ZIP 和 380 条目复读 PASS（`v4/branch_data/full_package/BRANCH_ACCESS_VERIFICATION.md`）
 - 分类：`CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED`
 
 旧的 v1 结果保留在根目录 `release/` 及其 Release `v1.0.0` 中，不属于当前 V4 交付。
+

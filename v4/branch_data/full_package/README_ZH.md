@@ -21,6 +21,8 @@ python .\verify_results_bundle.py .\results_v4_full.zip
 
 第一条命令会逐片检查大小与 SHA256、按数字顺序重组，并核对最终 ZIP 的 SHA256。第二条命令会检查 ZIP CRC、380 个条目、内嵌哈希，并逐层复读三个主 HDF5。
 
+无凭据匿名访问、80/80 逐片哈希、重组和包内复读的实测记录见同目录 `BRANCH_ACCESS_VERIFICATION.md` 与 `BRANCH_ACCESS_VERIFICATION.json`。GitHub 网页不会直接渲染 HDF5，必须下载后重组。
+
 也可以直接下载单个分片，例如：
 
 ```text
@@ -38,3 +40,4 @@ https://raw.githubusercontent.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-2026
 网格为 `zeta=-170:2:170 nm`、`x,y=-1200:10:1200 nm`，数组顺序为 `(zeta,y,x)`。三组主网格均为 171 层直接计算，不是 pilot 插值放大。
 
 状态保持为 `CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED`。
+

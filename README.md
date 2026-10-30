@@ -6,7 +6,7 @@
 
 ## V4 当前交付
 
-V4 是当前结果，位于 [`v4/`](v4/)；分支为 `v4-paper-forward-results`，Commit 为 `49f7f9ac644b6ac59892c3cb31177a2e2b600e16`，Tag 为 `v4.0.0`。
+V4 是当前结果，位于 [`v4/`](v4/)，分支为 `v4-paper-forward-results`。Tag `v4.0.0` 仍指向原始发布提交 `49f7f9ac644b6ac59892c3cb31177a2e2b600e16`；分支后续新增了完整数据分片和无凭据可访问性核验记录。
 
 固定条件：Fe₃O₄，`lambda=532 nm`，`NA=1.45`，30/100/200 nm 单球，球心高度分别为 15/50/100 nm。三组均为 `(171,241,241)`，`zeta=-170:2:170 nm`，`x,y=-1200:10:1200 nm`，数组顺序 `(zeta,y,x)`，实际 171 层直接计算。
 
@@ -30,6 +30,8 @@ python .\v4\branch_data\full_package\reassemble_results_v4.py
 python .\v4\branch_data\full_package\verify_results_bundle.py .\v4\branch_data\full_package\results_v4_full.zip
 ```
 
+GitHub 网页不会直接渲染二进制 HDF5；完整数据需克隆分支或读取分片后重组。实测记录见 [`v4/branch_data/full_package/BRANCH_ACCESS_VERIFICATION.md`](v4/branch_data/full_package/BRANCH_ACCESS_VERIFICATION.md)，机器可读记录见同目录 `BRANCH_ACCESS_VERIFICATION.json`。
+
 ### 三个主数据体
 
 | 粒径 | ZIP 内路径 | shape | 层数 | HDF5 SHA256 |
@@ -44,7 +46,7 @@ python .\v4\branch_data\full_package\verify_results_bundle.py .\v4\branch_data\f
 - legacy 物理：7/7 PASS
 - HDF5 shape、完成层数、逐层复读：PASS
 - 完整 ZIP CRC、380 条目、内嵌哈希：PASS
-- 80 个分片与 Release 匿名下载验证：PASS
+- 分支中 80 个分片的无凭据匿名下载、逐片 SHA256、重组与 380 条目复读：PASS
 - `data_generation=COMPLETE`
 - `numerical_validation=PARTIAL`
 - `formula_fidelity=UNVERIFIED`
@@ -63,3 +65,4 @@ python .\v4\branch_data\full_package\verify_results_bundle.py .\v4\branch_data\f
 ## 旧 v1 内容
 
 根目录 `release/`、`data/`、`verification/` 和旧 `v1.0.0` Release 为历史保留，不是当前 V4 数据。V4 的当前结果以 `v4/` 和 `v4.0.0` 为准。
+

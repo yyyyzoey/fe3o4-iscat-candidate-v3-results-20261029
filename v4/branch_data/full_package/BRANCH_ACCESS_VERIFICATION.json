@@ -1,0 +1,205 @@
+{
+  "schema": "fe3o4-iscat-v4-branch-access-verification-1.0",
+  "generated_at_utc": "2026-10-30T05:11:02.096572+00:00",
+  "repository": {
+    "full_name": "yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
+    "html_url": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
+    "public": true,
+    "visibility": "public",
+    "default_branch": "main"
+  },
+  "branch": "v4-paper-forward-results",
+  "verified_data_commit": "324b4b384ac088b8bba93091fea336a6bfe7597d",
+  "verified_data_commit_date": "2026-10-30T05:01:45Z",
+  "verification_method": {
+    "authentication_used": false,
+    "description": "Fresh anonymous HTTPS GET requests to api.github.com and raw.githubusercontent.com with no Authorization header, GitHub token, or credential helper; all 80 shards were downloaded, hashed locally, reassembled, and verified.",
+    "api_user_agent": "codex-anonymous-branch-verifier/1.0"
+  },
+  "github_api_snapshot": {
+    "branch_head_at_verification": "324b4b384ac088b8bba93091fea336a6bfe7597d",
+    "parts_directory_entries": 81,
+    "part_files": 80,
+    "checksum_files": 1,
+    "part_bytes_reported_by_api": 1326369547
+  },
+  "parts": {
+    "expected": 80,
+    "downloaded": 80,
+    "all_sizes_match_manifest": true,
+    "all_sha256_match_manifest": true,
+    "mismatches": []
+  },
+  "reassembly": {
+    "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4\\anon_branch_verify_20261030\\results_v4_full.zip",
+    "bytes": 1326369547,
+    "sha256": "c61f9a3bf7d6d90f0c1746a1e9de104db669cb2e838c84d3d1234f67b8e62a2a",
+    "expected_sha256": "c61f9a3bf7d6d90f0c1746a1e9de104db669cb2e838c84d3d1234f67b8e62a2a",
+    "sha256_match": true,
+    "expected_bytes": 1326369547,
+    "bytes_match": true
+  },
+  "bundle_verification": {
+    "zip": "results_v4_full.zip",
+    "bytes": 1326369547,
+    "entries": 380,
+    "hdf5_present": true,
+    "expected_light_omissions": [],
+    "failures": [],
+    "pass": true
+  },
+  "main_hdf5_cases": [
+    {
+      "tag": "D030",
+      "zip_member": "results_v4/data/D030nm/cube.h5",
+      "member_bytes": 424882738,
+      "hdf5_sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "expected_hdf5_sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "hdf5_sha256_match": true,
+      "I_cross_shape": [
+        171,
+        241,
+        241
+      ],
+      "I_cross_dtype": "float32",
+      "I_cross_all_finite": true,
+      "completed_slices_attr": 171,
+      "axis_order_attr": "zeta,y,x",
+      "diameter_nm_attr": 30.0,
+      "center_height_nm_attr": 15.0,
+      "expected_diameter_nm": 30.0,
+      "expected_center_height_nm": 15.0,
+      "grid": {
+        "zeta_nm": {
+          "count": 171,
+          "first": -170.0,
+          "last": 170.0,
+          "step": 2.0
+        },
+        "x_nm": {
+          "count": 241,
+          "first": -1200.0,
+          "last": 1200.0,
+          "step": 10.0
+        },
+        "y_nm": {
+          "count": 241,
+          "first": -1200.0,
+          "last": 1200.0,
+          "step": 10.0
+        }
+      },
+      "result_class_attr": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+      "physical_validation_attr": "NOT_ESTABLISHED",
+      "pass": true
+    },
+    {
+      "tag": "D100",
+      "zip_member": "results_v4/data/D100nm/cube.h5",
+      "member_bytes": 424639674,
+      "hdf5_sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "expected_hdf5_sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "hdf5_sha256_match": true,
+      "I_cross_shape": [
+        171,
+        241,
+        241
+      ],
+      "I_cross_dtype": "float32",
+      "I_cross_all_finite": true,
+      "completed_slices_attr": 171,
+      "axis_order_attr": "zeta,y,x",
+      "diameter_nm_attr": 100.0,
+      "center_height_nm_attr": 50.0,
+      "expected_diameter_nm": 100.0,
+      "expected_center_height_nm": 50.0,
+      "grid": {
+        "zeta_nm": {
+          "count": 171,
+          "first": -170.0,
+          "last": 170.0,
+          "step": 2.0
+        },
+        "x_nm": {
+          "count": 241,
+          "first": -1200.0,
+          "last": 1200.0,
+          "step": 10.0
+        },
+        "y_nm": {
+          "count": 241,
+          "first": -1200.0,
+          "last": 1200.0,
+          "step": 10.0
+        }
+      },
+      "result_class_attr": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+      "physical_validation_attr": "NOT_ESTABLISHED",
+      "pass": true
+    },
+    {
+      "tag": "D200",
+      "zip_member": "results_v4/data/D200nm/cube.h5",
+      "member_bytes": 424913287,
+      "hdf5_sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "expected_hdf5_sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "hdf5_sha256_match": true,
+      "I_cross_shape": [
+        171,
+        241,
+        241
+      ],
+      "I_cross_dtype": "float32",
+      "I_cross_all_finite": true,
+      "completed_slices_attr": 171,
+      "axis_order_attr": "zeta,y,x",
+      "diameter_nm_attr": 200.0,
+      "center_height_nm_attr": 100.0,
+      "expected_diameter_nm": 200.0,
+      "expected_center_height_nm": 100.0,
+      "grid": {
+        "zeta_nm": {
+          "count": 171,
+          "first": -170.0,
+          "last": 170.0,
+          "step": 2.0
+        },
+        "x_nm": {
+          "count": 241,
+          "first": -1200.0,
+          "last": 1200.0,
+          "step": 10.0
+        },
+        "y_nm": {
+          "count": 241,
+          "first": -1200.0,
+          "last": 1200.0,
+          "step": 10.0
+        }
+      },
+      "result_class_attr": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+      "physical_validation_attr": "NOT_ESTABLISHED",
+      "pass": true
+    }
+  ],
+  "access_urls": {
+    "branch": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/tree/v4-paper-forward-results",
+    "full_package_tree": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/tree/v4-paper-forward-results/v4/branch_data/full_package",
+    "parts_tree": "https://github.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/tree/v4-paper-forward-results/v4/branch_data/full_package/parts",
+    "readme_raw": "https://raw.githubusercontent.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/v4-paper-forward-results/v4/branch_data/full_package/README_ZH.md",
+    "reassemble_raw": "https://raw.githubusercontent.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/v4-paper-forward-results/v4/branch_data/full_package/reassemble_results_v4.py",
+    "verify_raw": "https://raw.githubusercontent.com/yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029/v4-paper-forward-results/v4/branch_data/full_package/verify_results_bundle.py"
+  },
+  "access_note": "GitHub's HTML file view does not decode/render HDF5 binary files. The branch stores the complete package as 80 ordinary Git blob shards because each cube.h5 is about 425 MB and exceeds GitHub's 100 MB per-file limit. Download the branch or shards, run reassemble_results_v4.py, then verify_results_bundle.py.",
+  "physical_status": {
+    "classification": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+    "complete_s3_jones_chain": "UNVERIFIED",
+    "supercritical_sphere_interface_physics": "UNVERIFIED",
+    "relative_complex_amplitude_calibration": "UNVERIFIED",
+    "absolute_intensity_calibration": false,
+    "sample_space_near_field": false,
+    "publisher_final_pdf": "NOT_OBTAINED",
+    "bilinear_0p1_percent_display_check": "FAILED_KEPT"
+  },
+  "overall_pass": true
+}
