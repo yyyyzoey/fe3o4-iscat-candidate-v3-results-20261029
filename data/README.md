@@ -1,30 +1,10 @@
-# Full HDF5 data
+# Data
 
-The three complete HDF5 cubes are distributed through the GitHub Release `v1.0.0`, not in ordinary Git. The original `results_bundle.zip` is published as 76 lossless parts:
+当前 V4 完整数据位于 [`../v4/branch_data/full_package/`](../v4/branch_data/full_package/)。
 
-```text
-results_bundle.zip.part000
-...
-results_bundle.zip.part075
+该目录包含 80 个 `results_v4_full.zip.partNNN` 分片、逐片 SHA256、重组脚本和三个主 cube 的校验说明。根目录其余 `data/` 和 `release/` 文件属于旧 v1 历史，不是当前 V4 结果。
+
+```powershell
+python ..\v4\branch_data\full_package\reassemble_results_v4.py
+python ..\v4\branch_data\full_package\verify_results_bundle.py ..\v4\branch_data\full_package\results_v4_full.zip
 ```
-
-Reassembled size: `1,273,486,344` bytes.
-
-Reassembled SHA256: `fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7`
-
-See [DOWNLOAD_RESULTS.md](DOWNLOAD_RESULTS.md) for the recommended token-authenticated downloader, manual download, per-part verification, and reassembly commands. The reassembled archive has this layout:
-
-```text
-release/
-  D030nm/cube.h5
-  D100nm/cube.h5
-  D200nm/cube.h5
-  D030_focus_stack.xdmf
-  D100_focus_stack.xdmf
-  D200_focus_stack.xdmf
-  ...
-```
-
-To use an XDMF file, extract the archive without renaming directories, then open the corresponding `D0xx_focus_stack.xdmf` in an XDMF-capable viewer. The XDMF files reference `D0xxnm/cube.h5` by relative path.
-
-The cube axes are `(zeta,y,x)`. These are through-focus image responses, not sample-space near-field volumes.

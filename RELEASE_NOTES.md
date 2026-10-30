@@ -1,45 +1,34 @@
-# v1.0.0 — Fe₃O₄ iSCAT candidate results
+# V4.0.0 — Fe₃O₄ 三粒径前向 through-focus 仿真（候选实现）
 
-This release publishes the complete, direct full-grid results for surface-bound single Fe₃O₄ spheres at 532 nm and target NA=1.45.
+**状态：`CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED`。**
 
-## Assets
+本版本新增 30/100/200 nm 三组完整主数据体。每组 `shape=(171,241,241)`，数组顺序 `(zeta,y,x)`，171 层全部实际计算并逐层复读。固定参数为 Fe₃O₄、532 nm、NA=1.45、球心高度 D/2、`zeta=-170:2:170 nm`、`x,y=-1200:10:1200 nm`。没有用 pilot 插值放大主网格，也没有引入 520 nm、400 Hz、布朗运动或相机条件。
 
-The complete archive is published as **76 lossless 16 MiB parts** whose numeric order reconstructs the original ZIP:
+## 实际修复
 
-- `results_bundle.zip.part000` ... `results_bundle.zip.part075`
-- Reassembled name: `results_bundle.zip`
-- Reassembled bytes: `1,273,486,344` (about 1.19 GiB)
-- Reassembled SHA256: `fd5539a688e9b69bcf1f543518f08e1bbd8818e928f1f2c991ee24260857e1c7`
-- `results_bundle.zip.manifest.json` (SHA256 `07b8d5a19ce260b4f7e57898e16b7a978c82b94cdf384e628f682a08700188df`)
-- `results_bundle.zip.parts.sha256`
-- `download_results.py`, `DOWNLOAD_RESULTS.md`
-- `reassemble_results.ps1`, `reassemble_results.sh`
+- 后向 Mie 角采用 `mu_back=-kz_s/ns`。
+- 候选返回光 p 基链采用 `i(S1*t_s-S2*t_p)`，并保留与论文 S6/S13 印刷式的 `S2` 项差异证据。
+- `S12/S13` 方位项修正为 `J2 sin(2φ)` 正号，并通过直接方位积分与降维积分对照。
+- 保留超临界角解析延拓，但球—界面物理状态仍为 `UNVERIFIED`。
+- 修复交付审计的嵌套 HDF5、JSON/NumPy、CSV、HTML 离线引用与隐私扫描问题；最终图件、HTML、XDMF、隐私、HDF5 五项审计全部通过。
+- 双线性 0.1% 中点重建检查仍失败（约 0.15%–0.22%），按要求保留失败；三次插值通过。
 
-The parts are not independent datasets. Concatenate them in numeric order, then verify the final size and SHA256. The recommended downloader verifies every part and the final archive automatically:
+## 数据
 
-```powershell
-$env:GITHUB_TOKEN = Read-Host "GitHub token"
-python .\download_results.py --tag v1.0.0 --out .\download
-```
+| 粒径 | 球心高度 | shape | 层数 | HDF5 SHA256 |
+|---:|---:|---:|---:|---|
+| 30 nm | 15 nm | 171×241×241 | 171 | `ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46` |
+| 100 nm | 50 nm | 171×241×241 | 171 | `ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49` |
+| 200 nm | 100 nm | 171×241×241 | 171 | `c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2` |
 
-Contents: 139 ZIP members rooted at `release/`, including three complete `(171,241,241)` HDF5 cubes, XDMF files, figures, diagnostics, source/configuration, and SHA256 manifests.
+## 包
 
-## Verification
+- `results_v4_light.zip`：轻量包，不含 HDF5。
+- `results_v4_full.zip`：完整包。
+- `parts/results_v4_full.zip.part001` … `part080`：16 MiB 分片。
+- `package_verification.json`：独立解压、嵌入 SHA、HTML、XDMF、HDF5 复读和分片重组验证。
+- `SHA256SUMS_v4_packages.txt`：本目录发布资产哈希。
 
-- 83 release assets re-read through the GitHub API; all 76 part assets are `uploaded` with server-side size and digest matching the manifest.
-- The published `download_results.py` was run end-to-end: all 76 parts downloaded and verified, the ZIP was reassembled, and the final size/SHA256 plus ZIP integrity test passed.
-- See `verification/github_release_audit.md` and `verification/github_e2e_download.json`.
+## 仍未认证
 
-## Status
-
-- `data_generation=COMPLETE`
-- `numerical_validation=PARTIAL`
-- `source_version_audit=VERIFIED` only for the specified Figshare v3 file and author-preprint locator
-- `formula_fidelity=UNVERIFIED`
-- `high_na_model_validation=UNVERIFIED`
-- `absolute_calibration=false`
-- `result_class=CANDIDATE`
-
-The complete Jones-chain closure, supercritical high-NA physics, relative complex amplitude, and absolute calibration remain unverified. The 10->5 nm bilinear midpoint test remains above the `1e-3` threshold. This is not a claim of strict paper reproduction or complete physical certification.
-
-See the repository `README.md`, `RESULTS.md`, and the bundled `release/review.md` for evidence and limitations.
+完整 S3 QWP/PBS/Fresnel/物镜 Jones 链、超临界角球—界面物理、相对/绝对复振幅标定仍未核实；出版社最终排版 PDF 未取得；交付为像面 through-focus 响应，不是样品空间近场。
