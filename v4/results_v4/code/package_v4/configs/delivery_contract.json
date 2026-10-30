@@ -1,0 +1,98 @@
+{
+  "contract_version": "focused-forward-simulation-v4",
+  "base_repository": "yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
+  "base_commit": "f0f9959db144b01b6e0c6cf82f4a030df6515127",
+  "not_a_solver_config": true,
+  "scope": "single_surface_bound_Fe3O4_forward_through_focus_simulation",
+  "diameters_nm": [
+    30,
+    100,
+    200
+  ],
+  "center_height_rule": "D/2",
+  "wavelength_nm": 532,
+  "NA_target": 1.45,
+  "NA_paper_control": 1.35,
+  "n_sample": 1.33,
+  "n_glass": 1.52,
+  "n_immersion": 1.52,
+  "magnification": 170,
+  "particle_index": [
+    2.3456,
+    0.0926
+  ],
+  "grid": {
+    "zeta_nm": [
+      -170,
+      170,
+      2
+    ],
+    "x_nm": [
+      -1200,
+      1200,
+      10
+    ],
+    "y_nm": [
+      -1200,
+      1200,
+      10
+    ],
+    "shape": [
+      171,
+      241,
+      241
+    ]
+  },
+  "xy_display_zeta_nm": [
+    -170,
+    -128,
+    -86,
+    -42,
+    0,
+    42,
+    86,
+    128,
+    170
+  ],
+  "relative_scale": {
+    "CR": 1,
+    "CS": 0.5,
+    "basis": "eta=asin(min(NA/ns,1))/pi; remaining relative scale explicitly a convention",
+    "not_experimentally_calibrated": true
+  },
+  "primary_signal": "I_cross=2*real(conj(E_ref) dot E_scat)",
+  "shape_normalization": "one max_abs over the entire 3D cube per diameter; never per slice",
+  "signed_iso_levels": [
+    -0.75,
+    -0.5,
+    -0.25,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "true_coordinate_aspect_required": true,
+  "required": [
+    "data_integrity",
+    "paper_symbol_convention_checks",
+    "within_model_numerics",
+    "xy_sections",
+    "xz_yz_sections",
+    "axial_curves_csv",
+    "field_decomposition",
+    "offline_3D_HTML",
+    "rendered_3D_PNG",
+    "clear_normalization_labels"
+  ],
+  "not_required": [
+    "absolute_experimental_calibration",
+    "fullwave_sphere_interface_validation",
+    "noise",
+    "camera_sampling",
+    "tracking",
+    "inverse_size_estimation",
+    "brownian_motion",
+    "magnetic_actuation"
+  ],
+  "no_status_upgrade_by_exporter": true,
+  "reuse_existing_data_when_formulas_unchanged": true
+}

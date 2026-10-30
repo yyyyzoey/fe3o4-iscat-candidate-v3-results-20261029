@@ -4,6 +4,11 @@
 >
 > 数据生成已完成，但完整 QWP/PBS/Fresnel/lens Jones 链、超临界高 NA 物理、相对复振幅和绝对标定仍未核实。横向 10→5 nm 双线性重建测试未达到 `1e-3` 门槛。
 
+
+## V4 新结果
+
+V4 三粒径完整前向 through-focus 结果位于 [`v4/`](v4/)，Release 标签为 `v4.0.0`。V4 状态仍为 `CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED`；完整数据与轻量包均不进入 Git 历史。旧的 `v1.0.0` Release 保持不变。
+
 本仓库发布 532 nm、目标 NA=1.45、表面附着单球 Fe₃O₄ 的 through-focus 计算结果，粒径为 30、100、200 nm；球心高度分别为 15、50、100 nm。三组完整数据体的 shape 均为 `(171, 241, 241)`，对应 `zeta=-170:2:170 nm`、`x,y=-1200:10:1200 nm`。
 
 ## 完整数据下载

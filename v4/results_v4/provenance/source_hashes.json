@@ -1,0 +1,46 @@
+{
+  "generated_utc": "2026-10-30T03:16:52.868739+00:00",
+  "figshare": {
+    "article": "22047950",
+    "file_id": 52761698,
+    "filename_expected": "6288691.pdf",
+    "url": "https://api.figshare.com/v2/file/download/52761698",
+    "landing_page": "https://opticapublishing.figshare.com/articles/journal_contribution/Supplementary_document_for_Axial_Profiling_of_Interferometric_Scattering_Enables_an_Accurate_Determination_of_Nanoparticle_Size_-_6288691_pdf/22047950",
+    "downloaded": true,
+    "bytes": 2821576,
+    "sha256": "62a60e7194230c7ad5ed7635c951dfdab81e6f82e2e0f4772b6b71ef70ffbbfe",
+    "expected_sha256": "62a60e7194230c7ad5ed7635c951dfdab81e6f82e2e0f4772b6b71ef70ffbbfe",
+    "hash_match": true,
+    "status": "VERIFIED_FILE_52761698"
+  },
+  "arxiv_preprint": {
+    "url": "https://arxiv.org/pdf/2209.14508",
+    "downloaded": true,
+    "bytes": 4776448,
+    "sha256": "1e40105aa5f1fe5ad399185f0ec84c400178c94fbdb1c1ea199496b452114358",
+    "status": "VERIFIED_DOWNLOADED",
+    "note": "20-page author preprint including supplement."
+  },
+  "publisher_typeset_pdf": {
+    "doi": "10.1364/OE.480337",
+    "downloaded": false,
+    "status": "NOT_OBTAINED",
+    "note": "The final typeset Optica PDF could not be retrieved without institutional access. All equation references were checked against the Figshare supplement and the arXiv preprint; a final-typeset line-by-line comparison is NOT claimed."
+  },
+  "fe3o4_optical_constants": {
+    "model": "np = 2.3456 + 0.0926i at 532 nm",
+    "source": "Querry 1985 bulk magnetite via refractiveindex.info; linear interpolation of the 530/540 nm bracket",
+    "local_bracket": {
+      "530 nm": [
+        2.346,
+        0.091
+      ],
+      "540 nm": [
+        2.344,
+        0.099
+      ]
+    },
+    "status": "LOCAL_BRACKET_VERIFIED",
+    "note": "Bulk literature value; not a measurement of the specific particles."
+  }
+}

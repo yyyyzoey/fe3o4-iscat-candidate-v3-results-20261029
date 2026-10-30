@@ -1,0 +1,18 @@
+--- a/tools/export_paper_views.py
++++ b/tools/export_paper_views.py
+@@ inspect() signature @@
+-def inspect(path: Path, diameter: int, allow_pilot: bool) -> dict:
++def inspect(path: Path, diameter: int, allow_pilot: bool, data_root: Path | None = None) -> dict:
+@@ record source label instead of absolute path @@
+-        return dict(diameter_nm=diameter, source=str(path.resolve()), sha256=digest(path),
++        source_label = path.relative_to(data_root).as_posix() if data_root is not None else path.name
++        return dict(diameter_nm=diameter, source=source_label, sha256=digest(path),
+@@ pass data_root @@
+-        records.append(inspect(path, d, args.allow_pilot))
++        records.append(inspect(path, d, args.allow_pilot, args.data_root))
+@@ open via data_root @@
+-        with h5py.File(r['source'], 'r') as f:
++        with h5py.File(args.data_root / r['source'], 'r') as f:
+@@ printable out path @@
+-                      'pilot_only': args.allow_pilot, 'out': str(args.out.resolve()),
++                      'pilot_only': args.allow_pilot, 'out': args.out.as_posix(),

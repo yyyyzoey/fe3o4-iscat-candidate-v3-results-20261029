@@ -1,0 +1,201 @@
+{
+  "generated_utc": "2026-10-30T03:36:43+00:00",
+  "root": "results_v4",
+  "file_inventory": {
+    "total_files": 380,
+    "total_bytes": 1326297997,
+    "by_suffix": {
+      ".py": {
+        "count": 37,
+        "bytes": 223707
+      },
+      ".md": {
+        "count": 14,
+        "bytes": 77734
+      },
+      ".json": {
+        "count": 23,
+        "bytes": 373562
+      },
+      ".diff": {
+        "count": 2,
+        "bytes": 5810
+      },
+      ".log": {
+        "count": 8,
+        "bytes": 10995
+      },
+      ".txt": {
+        "count": 6,
+        "bytes": 123651
+      },
+      ".csv": {
+        "count": 10,
+        "bytes": 585551
+      },
+      ".h5": {
+        "count": 7,
+        "bytes": 1286153281
+      },
+      ".png": {
+        "count": 165,
+        "bytes": 16290325
+      },
+      ".svg": {
+        "count": 101,
+        "bytes": 7277676
+      },
+      ".html": {
+        "count": 4,
+        "bytes": 15166940
+      },
+      ".xdmf": {
+        "count": 3,
+        "bytes": 8765
+      }
+    }
+  },
+  "nonempty_and_format": {
+    "checked": 326,
+    "failures": [],
+    "pass": true
+  },
+  "csv_checks": {
+    "axis_D030.csv": {
+      "rows": 171,
+      "header": [
+        "zeta_nm",
+        "J_I_cross",
+        "J_div_max_cube_absJ",
+        "I_ref",
+        "I_scat",
+        "I_total",
+        "contrast_fixed_reference"
+      ],
+      "zeta_first": -170.0,
+      "zeta_last": 170.0,
+      "zeta_step_unique": [
+        2.0
+      ],
+      "all_rows_same_width": true,
+      "finite": true,
+      "pass": true
+    },
+    "axis_D100.csv": {
+      "rows": 171,
+      "header": [
+        "zeta_nm",
+        "J_I_cross",
+        "J_div_max_cube_absJ",
+        "I_ref",
+        "I_scat",
+        "I_total",
+        "contrast_fixed_reference"
+      ],
+      "zeta_first": -170.0,
+      "zeta_last": 170.0,
+      "zeta_step_unique": [
+        2.0
+      ],
+      "all_rows_same_width": true,
+      "finite": true,
+      "pass": true
+    },
+    "axis_D200.csv": {
+      "rows": 171,
+      "header": [
+        "zeta_nm",
+        "J_I_cross",
+        "J_div_max_cube_absJ",
+        "I_ref",
+        "I_scat",
+        "I_total",
+        "contrast_fixed_reference"
+      ],
+      "zeta_first": -170.0,
+      "zeta_last": 170.0,
+      "zeta_step_unique": [
+        2.0
+      ],
+      "all_rows_same_width": true,
+      "finite": true,
+      "pass": true
+    },
+    "metrics.csv": {
+      "rows": 3,
+      "header": [
+        "diameter_nm",
+        "shape",
+        "zeta_layers",
+        "cube_max_abs_J",
+        "cube_min_J",
+        "cube_max_J",
+        "axis_peak_zeta_nm",
+        "axis_peak_J",
+        "axis_valley_zeta_nm",
+        "axis_valley_J",
+        "center_zeta0_J",
+        "I_ref_min",
+        "I_scat_max",
+        "I_total_max",
+        "oil_t_first_nm",
+        "oil_t_last_nm"
+      ],
+      "diameters": [
+        30.0,
+        100.0,
+        200.0
+      ],
+      "pass": true
+    },
+    "axis_profiles_long_range.csv": {
+      "rows": 513,
+      "pass": true
+    },
+    "diagnostics/target_long/D030_axis.csv": {
+      "rows": 601,
+      "pass": true
+    },
+    "diagnostics/target_long/D100_axis.csv": {
+      "rows": 601,
+      "pass": true
+    },
+    "diagnostics/target_long/D200_axis.csv": {
+      "rows": 601,
+      "pass": true
+    },
+    "diagnostics/paper_control_long/D120_axis.csv": {
+      "rows": 601,
+      "pass": true
+    }
+  },
+  "csv_all_pass": true,
+  "required_figures": {
+    "D030": {
+      "required": 58,
+      "missing": [],
+      "too_small": [],
+      "pass": true
+    },
+    "D100": {
+      "required": 58,
+      "missing": [],
+      "too_small": [],
+      "pass": true
+    },
+    "D200": {
+      "required": 58,
+      "missing": [],
+      "too_small": [],
+      "pass": true
+    },
+    "COMMON": {
+      "required": 11,
+      "missing": [],
+      "too_small": [],
+      "pass": true
+    }
+  },
+  "all_required_figures_present": true,
+  "pass": true
+}

@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-10-30T03:36:44+00:00",
+  "files_scanned": 106,
+  "patterns": [
+    "windows_user_path",
+    "posix_home_path",
+    "file_url",
+    "github_token",
+    "aws_key",
+    "private_key",
+    "bearer_token",
+    "basic_auth"
+  ],
+  "hits": [],
+  "note": "HTML vendor <script> bodies are stripped before scanning.",
+  "pass": true
+}

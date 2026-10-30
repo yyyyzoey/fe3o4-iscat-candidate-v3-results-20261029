@@ -1,0 +1,2 @@
+f0f9959db144b01b6e0c6cf82f4a030df6515127
+# Read-only baseline commit of the published V3 repository. V4 is published on branch v4-paper-forward-results.

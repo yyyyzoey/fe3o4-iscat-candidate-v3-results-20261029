@@ -1,0 +1,71 @@
+{
+  "generated_utc": "2026-10-30T03:26:31+00:00",
+  "tooling": "pypdf (text) + pypdfium2 (raster); no OCR",
+  "pdfs": {
+    "figshare_52761698": {
+      "bytes": 2821576,
+      "sha256": "62a60e7194230c7ad5ed7635c951dfdab81e6f82e2e0f4772b6b71ef70ffbbfe",
+      "sha256_matches_expected": true,
+      "pages": 12,
+      "text_chars": 16625,
+      "text_dump": "figshare_52761698_text.txt"
+    },
+    "arxiv_2209.14508": {
+      "bytes": 4776448,
+      "sha256": "1e40105aa5f1fe5ad399185f0ec84c400178c94fbdb1c1ea199496b452114358",
+      "sha256_matches_expected": true,
+      "pages": 20,
+      "text_chars": 57441,
+      "text_dump": "arxiv_2209.14508_text.txt"
+    }
+  },
+  "pages": [
+    {
+      "pdf": "figshare_52761698",
+      "page_index_0based": 4,
+      "png": "supplement_idx04.png",
+      "png_bytes": 463773,
+      "sha256": "a3fdf42d706d18fed630668bef85198eea8cd2b775dc3797bfebc22761f1728e"
+    },
+    {
+      "pdf": "figshare_52761698",
+      "page_index_0based": 5,
+      "png": "supplement_idx05.png",
+      "png_bytes": 331660,
+      "sha256": "5fdd0b25e6272bb8c8fb6601ba1813538c60188fef3927a8a59bb652a7de6499"
+    },
+    {
+      "pdf": "figshare_52761698",
+      "page_index_0based": 6,
+      "png": "supplement_idx06.png",
+      "png_bytes": 462829,
+      "sha256": "49c905339ead809ea4cae86121f142d85a50f6464bc10d20b7f73a7a7733c83d"
+    },
+    {
+      "pdf": "arxiv_2209.14508",
+      "page_index_0based": 3,
+      "png": "preprint_idx03.png",
+      "png_bytes": 781156,
+      "sha256": "cfd05bd68c051ff59b8ed9d0c5576694a720dcd8c6d8c769dfd88f2c7bcaeade"
+    }
+  ],
+  "quotes": {
+    "S2_reference_field": " 2𝜙 (1 + cos 𝜃𝑑) + (1 ― cos 𝜃𝑑)cos 2𝜙 , (S2)\nwhere rp and rs are the Fresnel reflection coefficients for p- and s-polarized light and \nCR is just the overall numerical pre-factor.\nScattered field: In this work, we only deal with scattering by a spherical particle. \nThe scattered field by a spherical",
+    "S6_scattered_pupil": "n 2𝜙(1 + cos 𝜃𝑑) + (1 ― cos 𝜃𝑑)cos 2𝜙 , (S6)\nwhere tp and ts are Fresnel transmission coefficients at the glass and sample/water \ninterface for p- and s-polarized light, and CS is the overall numerical pre-factor \nincluding 𝜂 = (1/𝜋)sin―1(min (NA/𝑛𝑠,1)), collection efficiency of the objective lens \n",
+    "S12_reference_reduced": "𝑑) ― (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃𝑑)cos 2𝜙𝑑 , (S12)\n𝐸𝑎, scat = 12𝐶𝑆 ∙ 𝑖 𝑆2𝑡𝑝 + 𝑆1𝑡𝑠 (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃𝑑)sin 2𝜙𝑑(1 + cos 𝜃𝑑)𝐽0(𝑘𝑟 sin 𝜃𝑑) ― (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃𝑑)cos 2𝜙𝑑 , (S13)\nwhere sin 𝜃𝑑 = (1/𝑀)𝑛𝑖sin 𝜃 and cos 𝜃𝑑 = 1 ― (𝑛𝑖 sin 𝜃 /𝑀)2.\nP a g e 6 | 11\nFig. S3. Stacked axial contrast profile as a ",
+    "S13_scattered_reduced": "𝑑) ― (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃𝑑)cos 2𝜙𝑑 , (S13)\nwhere sin 𝜃𝑑 = (1/𝑀)𝑛𝑖sin 𝜃 and cos 𝜃𝑑 = 1 ― (𝑛𝑖 sin 𝜃 /𝑀)2.\nP a g e 6 | 11\nFig. S3. Stacked axial contrast profile as a function of the particle height (zp). (a) Reference \nfield (|ER|), (b) scattered field (|ES|) and (c) interference term (|ERES* + ER*",
+    "S7_azimuthal_integral": "∞(𝜃𝑑,𝜙)𝑒𝑖𝑘𝑠∙𝑟𝑒𝑖𝑘ΛOPD𝑓(𝜃𝑑)sin 𝜃𝑑 d𝜙d𝜃𝑑 , (S7)\nwhere the apodization function is given by  𝑓(𝜃𝑑) =\n𝑛𝑖 cos 𝜃𝑑\n𝑛𝑎 cos 𝜃 ,𝑠 ∙ 𝑟 =\nsin 𝜃𝑑 cos 𝜙 , sin 𝜃𝑑 sin 𝜙 , cos 𝜃𝑑 ∙ 𝑟 cos 𝜙𝑑 ,𝑟 sin 𝜙𝑑 ,𝑧𝑑 = 𝑟sin 𝜃𝑑 ∙ cos(𝜙 ― 𝜙𝑑) + 𝑧𝑑cos 𝜃𝑑, 𝜃𝑑,max \nthe semi-aperture angle of 𝜃𝑑, 𝑘 = 2𝜋𝑛𝑎𝜆  the angular wavenumber of l",
+    "S10_bessel_identity": "𝜙𝑒𝑖𝑥 cos(𝜙―𝜑)d𝜙 = 2𝜋(𝑖𝑛)𝐽𝑛(𝑥) sin 𝑛𝜑 ,  (S10)\nThe electric field is then simplified as follows:\n𝐸(𝑟) = ― 𝑖𝑘2 𝑛𝑖𝑀 2∫𝜃max0 𝐸𝑎𝑒𝑖𝑘𝑧𝑑 cos 𝜃𝑑𝑒𝑖𝑘ΛOPD 𝑛𝑖 cos 𝜃𝑑𝑛𝑎 cos 𝜃 sin 2𝜃d𝜃 ,  (S11)\nwhere the strength vectors 𝐸𝑎 for reference and scattered fields are\n𝐸𝑎, ref = 12 𝐶𝑅 ∙ 𝑖(𝑟𝑝 + 𝑟𝑠) (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃"
+  },
+  "status": {
+    "figshare_file_52761698": "OBTAINED_AND_HASH_MATCHED",
+    "arxiv_preprint_2209.14508": "OBTAINED_AND_HASH_MATCHED",
+    "publisher_typeset_pdf": "NOT_OBTAINED_NO_INSTITUTIONAL_ACCESS",
+    "equation_map_checked_against": [
+      "supplement S1-S13",
+      "preprint eq. (4)-(10)"
+    ],
+    "s6_prints_s2_term_with_explicit_minus": false,
+    "note": "Text extraction cannot resolve typeset signs reliably; the rasterised pages are the authoritative evidence and are read visually. See validation/model_conventions.md."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "execution_package": "Fe3O4_iSCAT_聚焦目标执行包_v4.zip",
+  "zip_bytes": 29682,
+  "zip_sha256": "7bf97cfeb09710d8179e620feeeb783808610f080f4a4657de221c21c56b7c0c",
+  "manifest_file": "SHA256SUMS.txt",
+  "files_checked": 12,
+  "files_passed": 12,
+  "all_pass": true,
+  "files": [
+    {
+      "file": "CODEX_PROMPT.md",
+      "expected": "175f5b4f0d8c5e7abeb291d44e5af59596076c75707d732451600a69fa38a362",
+      "actual": "175f5b4f0d8c5e7abeb291d44e5af59596076c75707d732451600a69fa38a362",
+      "bytes": 4453,
+      "pass_": true
+    },
+    {
+      "file": "README_START_HERE.md",
+      "expected": "c197e0d335ce0f81d7fe4b217282d616acf3013b13dc3d4d92720608f47273aa",
+      "actual": "c197e0d335ce0f81d7fe4b217282d616acf3013b13dc3d4d92720608f47273aa",
+      "bytes": 2778,
+      "pass_": true
+    },
+    {
+      "file": "configs/delivery_contract.json",
+      "expected": "64b0e5d27a106b468c71ff852ed8268920e1a5a644ca898349c47d4d99568a1c",
+      "actual": "64b0e5d27a106b468c71ff852ed8268920e1a5a644ca898349c47d4d99568a1c",
+      "bytes": 2029,
+      "pass_": true
+    },
+    {
+      "file": "docs/CURRENT_RESULT_REVIEW.md",
+      "expected": "bde821be09acae82bec94ce1bf101f2833a7f38bc450486f114e5029249c77a6",
+      "actual": "bde821be09acae82bec94ce1bf101f2833a7f38bc450486f114e5029249c77a6",
+      "bytes": 3545,
+      "pass_": true
+    },
+    {
+      "file": "docs/EXECUTION_SPEC.md",
+      "expected": "92ef7dba9c29dba3162cefde3d042e5b65d768c00d55c0d1ff7850a5a100cdee",
+      "actual": "92ef7dba9c29dba3162cefde3d042e5b65d768c00d55c0d1ff7850a5a100cdee",
+      "bytes": 14026,
+      "pass_": true
+    },
+    {
+      "file": "docs/SOURCES.md",
+      "expected": "d42bf589b2a4c99f764f1ec398749aefe8fec560d4fb0c2ef4f3e47d88e64976",
+      "actual": "d42bf589b2a4c99f764f1ec398749aefe8fec560d4fb0c2ef4f3e47d88e64976",
+      "bytes": 1382,
+      "pass_": true
+    },
+    {
+      "file": "reports/TOOL_TEST_REPORT.md",
+      "expected": "f731dd68455c7215c68efcc37a1102afca10283f9c7d8a1d1d06e45108bfdff9",
+      "actual": "f731dd68455c7215c68efcc37a1102afca10283f9c7d8a1d1d06e45108bfdff9",
+      "bytes": 1263,
+      "pass_": true
+    },
+    {
+      "file": "reports/tool_test_results.json",
+      "expected": "fc13da205705b2373a626676e58277bee4d1efe9b1e497e9cbbe146f7cbe28dc",
+      "actual": "fc13da205705b2373a626676e58277bee4d1efe9b1e497e9cbbe146f7cbe28dc",
+      "bytes": 1398,
+      "pass_": true
+    },
+    {
+      "file": "reports/tool_unit_tests.log",
+      "expected": "9ab1c11ea51022b6a2d13f5e14034adf3a024ac4511424466be68f9a84d5fd04",
+      "actual": "9ab1c11ea51022b6a2d13f5e14034adf3a024ac4511424466be68f9a84d5fd04",
+      "bytes": 793,
+      "pass_": true
+    },
+    {
+      "file": "requirements.txt",
+      "expected": "0660e862c465eda3066129d61f16f17e3fea6c48e61b83cdefd42838f71f0361",
+      "actual": "0660e862c465eda3066129d61f16f17e3fea6c48e61b83cdefd42838f71f0361",
+      "bytes": 89,
+      "pass_": true
+    },
+    {
+      "file": "tests/test_exporter.py",
+      "expected": "ee27378e931cc0b1f7bc0bd57127ec5c3bde89e821700098265c7043455d1e38",
+      "actual": "ee27378e931cc0b1f7bc0bd57127ec5c3bde89e821700098265c7043455d1e38",
+      "bytes": 3433,
+      "pass_": true
+    },
+    {
+      "file": "tools/export_paper_views.py",
+      "expected": "668b74d8ca652f0b44f66daa11c2bf0b8b364d31115b4c2607f7b61eb889aaed",
+      "actual": "668b74d8ca652f0b44f66daa11c2bf0b8b364d31115b4c2607f7b61eb889aaed",
+      "bytes": 18566,
+      "pass_": true
+    }
+  ],
+  "note": "Pristine extraction of the delivered V4 zip; hashes compared with the package's own SHA256SUMS.txt."
+}

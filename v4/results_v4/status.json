@@ -1,0 +1,225 @@
+{
+  "result_class": "CANDIDATE",
+  "data_generation": "COMPLETE",
+  "data_complete": true,
+  "cases": {
+    "D030": {
+      "diameter_nm": 30,
+      "center_height_nm": 15,
+      "path": "data/D030nm/cube.h5",
+      "bytes": 424882738,
+      "sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "array_order": "zeta,y,x",
+      "completed_slices": 171,
+      "zeta_nm": [
+        -170,
+        2,
+        170
+      ],
+      "x_nm": [
+        -1200,
+        10,
+        1200
+      ],
+      "y_nm": [
+        -1200,
+        10,
+        1200
+      ],
+      "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED"
+    },
+    "D100": {
+      "diameter_nm": 100,
+      "center_height_nm": 50,
+      "path": "data/D100nm/cube.h5",
+      "bytes": 424639674,
+      "sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "array_order": "zeta,y,x",
+      "completed_slices": 171,
+      "zeta_nm": [
+        -170,
+        2,
+        170
+      ],
+      "x_nm": [
+        -1200,
+        10,
+        1200
+      ],
+      "y_nm": [
+        -1200,
+        10,
+        1200
+      ],
+      "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED"
+    },
+    "D200": {
+      "diameter_nm": 200,
+      "center_height_nm": 100,
+      "path": "data/D200nm/cube.h5",
+      "bytes": 424913287,
+      "sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "array_order": "zeta,y,x",
+      "completed_slices": 171,
+      "zeta_nm": [
+        -170,
+        2,
+        170
+      ],
+      "x_nm": [
+        -1200,
+        10,
+        1200
+      ],
+      "y_nm": [
+        -1200,
+        10,
+        1200
+      ],
+      "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED"
+    }
+  },
+  "fixed_parameters": {
+    "material": "Fe3O4",
+    "wavelength_nm": 532,
+    "NA": 1.45,
+    "n_sample": 1.33,
+    "n_glass": 1.52,
+    "n_immersion": 1.52,
+    "magnification": 170,
+    "particle_index": [
+      2.3456,
+      0.0926
+    ],
+    "center_height_rule": "diameter_nm/2",
+    "gamma_real": 0.5,
+    "gamma_imag": 0.0,
+    "CR": 1.0,
+    "CS": 0.5,
+    "reference_field_scale": 9.422632737507974e-08,
+    "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+    "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6"
+  },
+  "source_version_audit": "VERIFIED_FIGSHARE_AND_ARXIV",
+  "publisher_typeset_audit": "UNVERIFIED_NOT_OBTAINED",
+  "paper_convention_checks": "UNVERIFIED",
+  "formula_fidelity": "UNVERIFIED",
+  "within_model_numerics": "PASS_WITH_DISPLAY_INTERPOLATION_FAILURE_KEPT",
+  "numerical_validation": "PARTIAL",
+  "high_na_model_validation": "UNVERIFIED",
+  "figures_complete": true,
+  "absolute_calibration": false,
+  "sample_space_near_field": false,
+  "task_scope": {
+    "included": [
+      "single spherical Fe3O4 particle",
+      "surface-bound center heights 15/50/100 nm",
+      "532 nm",
+      "NA 1.45",
+      "identical full 171x241x241 through-focus grids",
+      "saved-field decomposition",
+      "2D/section/axial/3D offline views",
+      "long-range diagnostic",
+      "traceable validation"
+    ],
+    "excluded": [
+      "520 nm",
+      "400 Hz",
+      "Brownian motion",
+      "camera sampling/exposure",
+      "tracking/inversion",
+      "magnetic actuation",
+      "suspended-height scan",
+      "noise",
+      "absolute intensity calibration",
+      "sample-space near-field output",
+      "full-wave sphere-interface multiple scattering",
+      "larger-than-requested main grid"
+    ]
+  },
+  "checks": {
+    "v4_exporter_tests": {
+      "ran": 9,
+      "failed": 0,
+      "verdict": "PASS"
+    },
+    "optics_io_tests": {
+      "ran": 31,
+      "failed": 0,
+      "verdict": "PASS"
+    },
+    "legacy_physics_tests": {
+      "ran": 7,
+      "failed": 0,
+      "verdict": "PASS"
+    },
+    "numerical_audit_pass": true,
+    "linear_midpoint_reconstruction_all_pass": false,
+    "strict_all_including_linear_reconstruction": false,
+    "figures": "PASS",
+    "html_offline_render": "PASS",
+    "xdmf_structure": "PASS",
+    "hdf5_sampled_layer_reread": "PASS",
+    "privacy_scan": "PASS",
+    "implementation_hash_reproduced": true
+  },
+  "blockers": [
+    {
+      "id": "jones_chain_not_fully_certified",
+      "status": "UNVERIFIED",
+      "reason": "S2-term sign difference between printed S6/S13 and candidate return-basis chain; scalar/basis evidence exists but the complete S3 matrix chain is not independently reconstructable."
+    },
+    {
+      "id": "supercritical_angle_physics",
+      "status": "UNVERIFIED",
+      "reason": "Analytic continuation is numerically stable but not validated against a sphere-interface full-wave solution."
+    },
+    {
+      "id": "absolute_relative_amplitude",
+      "status": "UNVERIFIED",
+      "reason": "Gamma and overall relative scale are modeling conventions, not experimental calibration."
+    },
+    {
+      "id": "publisher_typeset_pdf",
+      "status": "NOT_OBTAINED",
+      "reason": "No institutional access; Figshare v3 supplement and arXiv preprint were checked instead."
+    },
+    {
+      "id": "linear_midpoint_display_reconstruction",
+      "status": "FAILED_KEPT",
+      "reason": "0.15%-0.22% relative error exceeds 0.1%; main-grid coordinates are direct evaluations and cubic reconstruction passes."
+    }
+  ],
+  "evidence_paths": {
+    "summary": "summary_zh.md",
+    "start_here": "START_HERE.html",
+    "conventions": "validation/model_conventions.md",
+    "jones_numbers": "validation/jones_chain_numbers.json",
+    "tests": "validation/tests.json",
+    "numerics": "validation/numerics.json",
+    "data_audit": "validation/data_audit.json",
+    "hdf5_check": "validation/data_hdf5_check.json",
+    "figures": "validation/figure_checks.json",
+    "html": "validation/html_audit.json",
+    "html_render": "validation/html_render_audit.json",
+    "xdmf": "validation/xdmf_audit.json",
+    "sources": "validation/sources/source_check.json",
+    "provenance": "provenance/run_identity.json"
+  },
+  "status_statement": "The requested full three-cube data generation and local deliverables are complete. Physical/formula certification is not claimed; unresolved items remain CANDIDATE/UNVERIFIED as listed."
+}

@@ -1,0 +1,271 @@
+{
+  "generated_utc": "2026-10-30T03:27:22+00:00",
+  "how_run": "python -m unittest <module> -v, executed inside work/v4/venv (CPython 3.11.7) for this delivery; verbatim console output is stored in logs/.",
+  "tests_were_not_modified_to_pass": true,
+  "suites": {
+    "v4_exporter": {
+      "target": "tests/test_exporter.py",
+      "purpose": "Saved-cube exporter: axis handling, diameter-vs-radius, gamma invariance, algebra identities, pilot rejection.",
+      "log": "logs/unit_tests_final.log",
+      "log_sha256": "eeaa7db84bd9bf7f1ad0320596ae5b04e4e7aef85e7fcce9cd862f920eaa6bc3",
+      "log_bytes": 809,
+      "ran": 9,
+      "seconds": 0.064,
+      "verdict": "OK",
+      "cases": [
+        {
+          "test": "test_axis",
+          "qualname": "test_exporter.Tests.test_axis",
+          "result": "ok"
+        },
+        {
+          "test": "test_axis_not_centered",
+          "qualname": "test_exporter.Tests.test_axis_not_centered",
+          "result": "ok"
+        },
+        {
+          "test": "test_axis_not_uniform",
+          "qualname": "test_exporter.Tests.test_axis_not_uniform",
+          "result": "ok"
+        },
+        {
+          "test": "test_corrupt_signal_rejected",
+          "qualname": "test_exporter.Tests.test_corrupt_signal_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_diameter_not_radius",
+          "qualname": "test_exporter.Tests.test_diameter_not_radius",
+          "result": "ok"
+        },
+        {
+          "test": "test_gamma_phase_not_cancelled",
+          "qualname": "test_exporter.Tests.test_gamma_phase_not_cancelled",
+          "result": "ok"
+        },
+        {
+          "test": "test_gamma_positive_shape_invariance",
+          "qualname": "test_exporter.Tests.test_gamma_positive_shape_invariance",
+          "result": "ok"
+        },
+        {
+          "test": "test_pilot_not_final",
+          "qualname": "test_exporter.Tests.test_pilot_not_final",
+          "result": "ok"
+        },
+        {
+          "test": "test_saved_algebra",
+          "qualname": "test_exporter.Tests.test_saved_algebra",
+          "result": "ok"
+        }
+      ],
+      "n_cases_parsed": 9,
+      "n_not_ok": 0
+    },
+    "v4_optics_io": {
+      "target": "src/tests (test_handoff, test_jones_chain, test_robustness)",
+      "purpose": "Mie/Bessel oracles, Fresnel, OPD, pupil basis, direct azimuthal integral, Jones-chain algebra, IO resume/refusal.",
+      "log": "logs/v3_optical_tests_final.log",
+      "log_sha256": "52398ae2af7c714443c1a6f9eaeec3abbdc0cc8a8b8f7355d59b8a332f113911",
+      "log_bytes": 4198,
+      "ran": 31,
+      "seconds": 0.422,
+      "verdict": "OK",
+      "cases": [
+        {
+          "test": "test_axis_rejects_invalid_endpoints",
+          "qualname": "test_handoff.CoreChecks.test_axis_rejects_invalid_endpoints",
+          "result": "ok"
+        },
+        {
+          "test": "test_azimuthal_direct_integral_sign",
+          "qualname": "test_handoff.CoreChecks.test_azimuthal_direct_integral_sign",
+          "result": "ok"
+        },
+        {
+          "test": "test_backscatter_returning_p_basis",
+          "qualname": "test_handoff.CoreChecks.test_backscatter_returning_p_basis",
+          "result": "ok"
+        },
+        {
+          "test": "test_branch_passive_decay",
+          "qualname": "test_handoff.CoreChecks.test_branch_passive_decay",
+          "result": "ok"
+        },
+        {
+          "test": "test_complex_amplitude_basis_identity",
+          "qualname": "test_handoff.CoreChecks.test_complex_amplitude_basis_identity",
+          "result": "ok"
+        },
+        {
+          "test": "test_fresnel_normal",
+          "qualname": "test_handoff.CoreChecks.test_fresnel_normal",
+          "result": "ok"
+        },
+        {
+          "test": "test_fresnel_s_power_conservation_below_critical",
+          "qualname": "test_handoff.CoreChecks.test_fresnel_s_power_conservation_below_critical",
+          "result": "ok"
+        },
+        {
+          "test": "test_homogeneous_OPD_identity",
+          "qualname": "test_handoff.CoreChecks.test_homogeneous_OPD_identity",
+          "result": "ok"
+        },
+        {
+          "test": "test_material_interpolation",
+          "qualname": "test_handoff.CoreChecks.test_material_interpolation",
+          "result": "ok"
+        },
+        {
+          "test": "test_mie_angular_legendre_polynomial_oracle",
+          "qualname": "test_handoff.CoreChecks.test_mie_angular_legendre_polynomial_oracle",
+          "result": "ok"
+        },
+        {
+          "test": "test_mie_high_precision_cylindrical_bessel_oracle",
+          "qualname": "test_handoff.CoreChecks.test_mie_high_precision_cylindrical_bessel_oracle",
+          "result": "ok"
+        },
+        {
+          "test": "test_mie_passivity_and_lossless",
+          "qualname": "test_handoff.CoreChecks.test_mie_passivity_and_lossless",
+          "result": "ok"
+        },
+        {
+          "test": "test_mie_rayleigh_amplitude_phase",
+          "qualname": "test_handoff.CoreChecks.test_mie_rayleigh_amplitude_phase",
+          "result": "ok"
+        },
+        {
+          "test": "test_phase_flip_only_cross_changes",
+          "qualname": "test_handoff.CoreChecks.test_phase_flip_only_cross_changes",
+          "result": "ok"
+        },
+        {
+          "test": "test_pupil_candidate_uses_returning_p_basis",
+          "qualname": "test_handoff.CoreChecks.test_pupil_candidate_uses_returning_p_basis",
+          "result": "ok"
+        },
+        {
+          "test": "test_reduced_RW_against_direct_phi",
+          "qualname": "test_handoff.CoreChecks.test_reduced_RW_against_direct_phi",
+          "result": "ok"
+        },
+        {
+          "test": "test_reference_magnitude_scan_invariant",
+          "qualname": "test_handoff.CoreChecks.test_reference_magnitude_scan_invariant",
+          "result": "ok"
+        },
+        {
+          "test": "test_reference_null_mask",
+          "qualname": "test_handoff.CoreChecks.test_reference_null_mask",
+          "result": "ok"
+        },
+        {
+          "test": "test_target_parameters_locked",
+          "qualname": "test_handoff.CoreChecks.test_target_parameters_locked",
+          "result": "ok"
+        },
+        {
+          "test": "test_zero_scattering_matched_index",
+          "qualname": "test_handoff.CoreChecks.test_zero_scattering_matched_index",
+          "result": "ok"
+        },
+        {
+          "test": "test_tiny_roundtrip_resume_and_refusal",
+          "qualname": "test_handoff.IOChecks.test_tiny_roundtrip_resume_and_refusal",
+          "result": "ok"
+        },
+        {
+          "test": "test_candidate_pupil_matches_chain_result",
+          "qualname": "test_jones_chain.JonesChainConsistency.test_candidate_pupil_matches_chain_result",
+          "result": "ok"
+        },
+        {
+          "test": "test_scattered_ps_content_is_minus_S2_and_iS1",
+          "qualname": "test_jones_chain.JonesChainConsistency.test_scattered_ps_content_is_minus_S2_and_iS1",
+          "result": "ok"
+        },
+        {
+          "test": "test_config_hash_mismatch_is_rejected",
+          "qualname": "test_robustness.Robustness.test_config_hash_mismatch_is_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_diameter_order_invariance",
+          "qualname": "test_robustness.Robustness.test_diameter_order_invariance",
+          "result": "ok"
+        },
+        {
+          "test": "test_truncated_and_tampered_cubes_are_rejected",
+          "qualname": "test_robustness.Robustness.test_truncated_and_tampered_cubes_are_rejected",
+          "result": "ok"
+        },
+        {
+          "test": "test_truncated_file_is_rejected",
+          "qualname": "test_robustness.Robustness.test_truncated_file_is_rejected",
+          "result": "ok"
+        }
+      ],
+      "n_cases_parsed": 27,
+      "n_not_ok": 0
+    },
+    "legacy_physics": {
+      "target": "legacy physics numerics",
+      "purpose": "Original 7-test physics suite kept unchanged as a regression baseline.",
+      "log": "logs/legacy_tests_final.log",
+      "log_sha256": "44fe97c86b7a1f327e52e4eda45b431a49bc4fe7bd4e646902499b90ab826f7c",
+      "log_bytes": 924,
+      "ran": 7,
+      "seconds": 0.019,
+      "verdict": "OK",
+      "cases": [
+        {
+          "test": "test_Mie_angular_recurrence_dipole",
+          "qualname": "test_physics_numerics.TestForwardModel.test_Mie_angular_recurrence_dipole",
+          "result": "ok"
+        },
+        {
+          "test": "test_Mie_angular_recurrence_n2",
+          "qualname": "test_physics_numerics.TestForwardModel.test_Mie_angular_recurrence_n2",
+          "result": "ok"
+        },
+        {
+          "test": "test_Mie_no_index_contrast",
+          "qualname": "test_physics_numerics.TestForwardModel.test_Mie_no_index_contrast",
+          "result": "ok"
+        },
+        {
+          "test": "test_axial_symmetry_and_oil_height",
+          "qualname": "test_physics_numerics.TestForwardModel.test_axial_symmetry_and_oil_height",
+          "result": "ok"
+        },
+        {
+          "test": "test_fresnel_normal_incidence",
+          "qualname": "test_physics_numerics.TestForwardModel.test_fresnel_normal_incidence",
+          "result": "ok"
+        },
+        {
+          "test": "test_gauss_legendre_quadrature_convergence",
+          "qualname": "test_physics_numerics.TestForwardModel.test_gauss_legendre_quadrature_convergence",
+          "result": "ok"
+        },
+        {
+          "test": "test_pupil_highNA_non_nan_and_branch",
+          "qualname": "test_physics_numerics.TestForwardModel.test_pupil_highNA_non_nan_and_branch",
+          "result": "ok"
+        }
+      ],
+      "n_cases_parsed": 7,
+      "n_not_ok": 0
+    }
+  },
+  "totals": {
+    "tests": 47,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "all_suites_pass": true
+}

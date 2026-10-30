@@ -1,0 +1,15 @@
+{
+  "source_commit": "f0f9959db144b01b6e0c6cf82f4a030df6515127",
+  "base_tag_not_modified": "v1.0.0",
+  "cube_config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+  "cube_implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+  "archived_src_files_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "iscat_core.py": "2a3da61ce5a45081b6fa7ae3a9c3b8e249c4faecd434224048d2fc1f3ca04e09",
+    "run_dataset.py": "013ac65468214f9c9dee809add084fd60bba767a5ee19ae2fc123fb8765dc10a"
+  },
+  "archived_src_canonical_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+  "implementation_hash_reproduced": true,
+  "generated_utc": "2026-10-30T03:16:52.882052+00:00",
+  "note": "implementation_sha256 is sha256 of canonical JSON {filename: file_sha256} over src/*.py, reproduced from the archived source tree."
+}

@@ -1,0 +1,60 @@
+{
+  "tool_only": true,
+  "unit_tests": {
+    "run": 9,
+    "passed": 9,
+    "optical_tests": false
+  },
+  "actual_smoke_test": {
+    "input": "candidate_pilot extracted from prior handoff v3 ZIP; not current Release full data",
+    "cases": [
+      {
+        "D_nm": 30,
+        "shape": [
+          35,
+          61,
+          61
+        ],
+        "sha256": "b20d62212e075a027f89fe04418d1eae906c6e454d5052b48a5a412e7f397a01"
+      },
+      {
+        "D_nm": 100,
+        "shape": [
+          35,
+          61,
+          61
+        ],
+        "sha256": "b58f605886e73edc543e42ba4b0ca7353578f5ef19bc405a66d9161252120473"
+      },
+      {
+        "D_nm": 200,
+        "shape": [
+          35,
+          61,
+          61
+        ],
+        "sha256": "7c3a47b72583df6ef070d56af77f86cfebc427a2043961e8cd22d6094b265863"
+      }
+    ],
+    "data_algebra_pass": true,
+    "html_relative_references_checked": 91,
+    "missing_references": 0,
+    "offline_3d_html_files": 3,
+    "static_3d_png_files": 3,
+    "source_status_preserved": true,
+    "optical_model_certified": false
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "h5py": "3.15.1",
+    "matplotlib": "3.10.8",
+    "plotly": "6.5.2",
+    "scikit-image": "0.26.0"
+  },
+  "not_performed": [
+    "full release HDF5 re-read this turn",
+    "browser WebGL interaction test",
+    "new optical forward model validation"
+  ]
+}

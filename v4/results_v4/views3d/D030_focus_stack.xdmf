@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Xdmf Version="3.0">
+  <Domain>
+    <Grid Name="Fe3O4_D30nm_through_focus_CANDIDATE" GridType="Uniform">
+      <Information Name="warning" Value="third axis is the through-focus scan coordinate zeta, not a sample-space near-field z; not absolutely calibrated"/>
+      <Information Name="status" Value="CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED"/>
+      <Topology TopologyType="3DRectMesh" Dimensions="171 241 241"/>
+      <Geometry GeometryType="VXVYVZ">
+        <DataItem Dimensions="241" NumberType="Float" Precision="8" Format="HDF">../data/D030nm/cube.h5:/coords/x_object_nm</DataItem>
+        <DataItem Dimensions="241" NumberType="Float" Precision="8" Format="HDF">../data/D030nm/cube.h5:/coords/y_object_nm</DataItem>
+        <DataItem Dimensions="171" NumberType="Float" Precision="8" Format="HDF">../data/D030nm/cube.h5:/coords/zeta_nm</DataItem>
+      </Geometry>
+      <Attribute Name="I_cross" AttributeType="Scalar" Center="Node">
+        <Information Name="meaning" Value="J = 2 Re(conj(E_ref).E_scat); signed interference term"/>
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">../data/D030nm/cube.h5:/signals/I_cross</DataItem>
+      </Attribute>
+      <Attribute Name="I_total" AttributeType="Scalar" Center="Node">
+        <Information Name="meaning" Value="I_ref + I_scat + I_cross"/>
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">../data/D030nm/cube.h5:/signals/I_total</DataItem>
+      </Attribute>
+      <Attribute Name="I_ref" AttributeType="Scalar" Center="Node">
+        <Information Name="meaning" Value="reference intensity"/>
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">../data/D030nm/cube.h5:/signals/I_ref</DataItem>
+      </Attribute>
+      <Attribute Name="I_scat" AttributeType="Scalar" Center="Node">
+        <Information Name="meaning" Value="scattered intensity (gamma=0.5 applied)"/>
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">../data/D030nm/cube.h5:/signals/I_scat</DataItem>
+      </Attribute>
+      <Attribute Name="contrast_fixed_reference" AttributeType="Scalar" Center="Node">
+        <Information Name="meaning" Value="(I_scat+J)/I_ref0 with shared reference scale"/>
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">../data/D030nm/cube.h5:/signals/contrast_fixed_reference</DataItem>
+      </Attribute>
+      <Attribute Name="contrast_local" AttributeType="Scalar" Center="Node">
+        <Information Name="meaning" Value="(I_scat+J)/I_ref; NaN where reference is near zero"/>
+        <DataItem Dimensions="171 241 241" NumberType="Float" Precision="4" Format="HDF">../data/D030nm/cube.h5:/signals/contrast_local</DataItem>
+      </Attribute>
+    </Grid>
+  </Domain>
+</Xdmf>

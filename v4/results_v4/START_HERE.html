@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Fe3O4 iSCAT V4 — CANDIDATE results</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:1120px;margin:32px auto;padding:0 20px;color:#18212b;line-height:1.65;background:#fbfcfd}
+h1{line-height:1.25;margin-bottom:.25em}h2{margin-top:2em;border-bottom:1px solid #d8dee5;padding-bottom:.25em}
+.badge{display:inline-block;background:#fff3cd;color:#6b4d00;border:1px solid #e0b84c;border-radius:999px;padding:.22em .75em;font-weight:700}
+.warn{background:#fff8e6;border-left:5px solid #d69e2e;padding:12px 16px;margin:16px 0}.ok{background:#eef8f1;border-left:5px solid #2f855a;padding:12px 16px;margin:16px 0}
+code{background:#eef1f4;padding:.1em .3em;border-radius:4px}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{border:1px solid #d8dee5;padding:8px 10px;text-align:left}th{background:#f0f3f6}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}.card{border:1px solid #d8dee5;border-radius:8px;padding:12px;background:#fff}.card img{width:100%;height:auto;display:block}.small{color:#53606d;font-size:.92em}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<h1>Fe₃O₄ 表面附着单球 iSCAT 前向仿真 V4</h1>
+<p><span class="badge">CANDIDATE · 论文启发候选实现 · 非严格复现/非物理认证</span></p>
+<div class="ok"><strong>主数据已完成：</strong>30/100/200 nm 三组均为 171×241×241，171 层均已实际计算并逐层复读；zeta=−170:2:170 nm，x,y=−1200:10:1200 nm。</div>
+<div class="warn"><strong>必须先读边界：</strong>这里交付的是像面 through-focus 响应 <code>F(x,y,zeta)</code>，不是样品空间近场；<code>zeta</code> 是焦点扫描量。没有绝对强度标定，没有相机、噪声、布朗运动、悬浮高度扫描或完整球—界面多次散射。超临界角、完整 S3 Jones 链和出版社最终排版版的逐式一致性仍未认证。</div>
+
+<h2>三组数据</h2>
+<table><thead><tr><th>粒径</th><th>球心高度</th><th>shape / 层数</th><th>文件</th></tr></thead><tbody>
+<tr><td>30 nm</td><td>15 nm</td><td>171×241×241 / 171</td><td><code>data/D030nm/cube.h5</code></td></tr>
+<tr><td>100 nm</td><td>50 nm</td><td>171×241×241 / 171</td><td><code>data/D100nm/cube.h5</code></td></tr>
+<tr><td>200 nm</td><td>100 nm</td><td>171×241×241 / 171</td><td><code>data/D200nm/cube.h5</code></td></tr>
+</tbody></table>
+<p>轴顺序 <code>(zeta,y,x)</code>。三组共用参考场尺度和同一正实演示 <code>gamma=0.5+0i</code>；生产散射前因子 <code>CS=eta=0.5</code>。总演示相对幅度为 <code>eta*gamma=0.25</code>，不是实验标定。</p>
+
+<h2>先看什么</h2>
+<div class="gallery">
+<div class="card"><h3>几何与方法</h3><img src="figures/F1_geometry_method/F1_geometry_method.png" alt="geometry and method"><p><a href="figures/F1_geometry_method/F1_geometry_method.png">打开原图</a></p></div>
+<div class="card"><h3>30 nm：形态归一化九层</h3><img src="figures/F2_xy_slices/montage/D030_shape_montage.png" alt="D030 shape montage"><p><a href="figures/F2_xy_slices/montage/D030_shape_montage.png">打开原图</a></p></div>
+<div class="card"><h3>100 nm：形态归一化九层</h3><img src="figures/F2_xy_slices/montage/D100_shape_montage.png" alt="D100 shape montage"><p><a href="figures/F2_xy_slices/montage/D100_shape_montage.png">打开原图</a></p></div>
+<div class="card"><h3>200 nm：形态归一化九层</h3><img src="figures/F2_xy_slices/montage/D200_shape_montage.png" alt="D200 shape montage"><p><a href="figures/F2_xy_slices/montage/D200_shape_montage.png">打开原图</a></p></div>
+</div>
+<p>共同色标图在 <code>figures/F2_xy_slices/montage/*_common_full_montage.png</code>；30 nm 在共同色标下较弱是量级差异，不是数据缺失。纵剖面在 <code>figures/F3_sections/</code>，轴向曲线在 <code>figures/F4_axial/</code>。</p>
+
+<h2>三维与原始数据查看</h2>
+<ul>
+<li><a href="views3d/D030_signed_interference_3d.html">30 nm 离线 3D HTML</a> · <a href="views3d/D030_focus_stack.xdmf">XDMF</a></li>
+<li><a href="views3d/D100_signed_interference_3d.html">100 nm 离线 3D HTML</a> · <a href="views3d/D100_focus_stack.xdmf">XDMF</a></li>
+<li><a href="views3d/D200_signed_interference_3d.html">200 nm 离线 3D HTML</a> · <a href="views3d/D200_focus_stack.xdmf">XDMF</a></li>
+</ul>
+<p>三个 HTML 内嵌运行代码，无外部 CDN 依赖，并已经在断网 Edge 中实际渲染。静态概览位于 <code>figures/F6_3d_static/</code>。</p>
+
+<h2>验证与未认证项</h2>
+<ul>
+<li><a href="validation/tests.json">测试总表</a>：V4 导出 9/9、光学/IO 31/31、legacy 7/7 通过。</li>
+<li><a href="validation/numerics.json">数值收敛</a>：<code>numerical_audit_pass=true</code>；保留双线性中点 0.1% 检查失败，实测约 0.15%–0.22%，三次插值通过。</li>
+<li><a href="validation/model_conventions.md">符号、Mie 角、返回光基与超临界角</a>；<a href="validation/jones_chain_numbers.json">直接 Jones/投影数值</a>。</li>
+<li><a href="validation/data_hdf5_check.json">HDF5 复读</a>、<a href="validation/figure_checks.json">图件</a>、<a href="validation/html_render_audit.json">离线渲染</a>、<a href="validation/xdmf_audit.json">XDMF</a>。</li>
+<li><a href="validation/sources/source_check.json">来源核对</a>：Figshare 52761698 与 arXiv 已哈希核对；出版社最终 PDF 未取得。</li>
+</ul>
+<p><strong>仍未认证：</strong>完整 S3 Jones 矩阵链、超临界角球—界面物理、相对/绝对复振幅标定、与出版社最终排版版的逐式一致性。</p>
+
+<h2>复现与说明</h2>
+<p>见 <a href="summary_zh.md">中文完整摘要</a>、<a href="status.json">机器可读 status.json</a>、<a href="code/README.md">代码说明</a>、<a href="SHA256SUMS.txt">SHA256 清单</a>。主网格不是插值放大；数据体等值面不要求呈球形。</p>
+</body></html>

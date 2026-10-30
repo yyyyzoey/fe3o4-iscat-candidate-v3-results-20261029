@@ -1,0 +1,316 @@
+{
+  "generated_utc": "2026-10-30T03:36:44+00:00",
+  "cases": {
+    "D030": {
+      "file": "data/D030nm/cube.h5",
+      "bytes": 424882738,
+      "sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "datasets": {
+        "I_cross": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_ref": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_scat": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_total": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "contrast_fixed_reference": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "contrast_local": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        }
+      },
+      "attrs": {
+        "NA": 1.45,
+        "absolute_calibration": false,
+        "axis_order": "zeta,y,x",
+        "center_height_nm": 15.0,
+        "completed_slices": 171,
+        "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+        "configuration_json": "{\"project\": \"Fe3O4_surface_bound_through_focus_CANDIDATE_V3\", \"diameters_nm\": [30, 100, 200], \"material\": {\"material_name\": \"Fe3O4\", \"n_real\": 2.3456, \"k_imag\": 0.0926, \"dispersion_reference\": \"Querry 1985 bulk magnetite via refractiveindex.info; 530-540 nm linear interpolation\", \"optical_index_is_experimental\": false}, \"optics\": {\"wavelength_nm\": 532, \"NA\": 1.45, \"n_sample\": 1.33, \"n_glass\": 1.52, \"n_immersion\": 1.52, \"n_detector\": 1.0, \"n_immersion_design\": 1.52, \"n_glass_design\": 1.52, \"glass_thickness_nm\": 170000, \"glass_thickness_design_nm\": 170000, \"immersion_thickness_design_nm\": 100000, \"magnification\": 170}, \"model\": {\"model_name\": \"PAPER_INSPIRED_CANDIDATE_WITH_EXPLICIT_BASIS_REPAIRS\", \"angle_scattering_convention\": \"backward_mu=-kzs/ns; complex angle analytical continuation for high NA\", \"supercritical_model\": \"UNVALIDATED analytic continuation of homogeneous-sphere far-field Mie/Fresnel; fails rigorous sphere-near-interface Maxwell claim\", \"particle_interface_multiple_scattering\": false, \"magneto_optical_tensor\": false, \"camera_sampling\": false, \"background_stray_light\": false, \"brownian_motion\": false, \"n_particles_per_case\": 1, \"particle_center_height_nm\": \"diameter_nm/2 (surface-bound sphere)\", \"data_is\": \"image-plane through-focus (zeta,y,x), not electromagnetic field in sample volume\", \"nominal_DOF_nm\": 336.5, \"DOF_warning\": \"+-170 nm is only a fixed nominal sampling window, not validated high-NA depth of field.\", \"basis_scale_gamma\": [0.5, 0.0], \"absolute_calibration\": false, \"formula_audit_status\": \"OPEN\", \"high_NA_validation_status\": \"OPEN\", \"scattering_basis\": \"Mie theta from incident +Z; returning-ray p coefficient=-S2_Mie\", \"gamma_assumed_not_calibrated\": true}, \"grid_full\": {\"xy_min_nm\": -1200, \"xy_max_nm\": 1200, \"xy_step_nm\": 10, \"zeta_min_nm\": -170, \"zeta_max_nm\": 170, \"zeta_step_nm\": 2, \"radial_points\": 1601, \"quadrature_below_critical\": 512, \"quadrature_above_critical\": 256}, \"grid_pilot\": {\"xy_min_nm\": -600, \"xy_max_nm\": 600, \"xy_step_nm\": 20, \"zeta_min_nm\": -170, \"zeta_max_nm\": 170, \"zeta_step_nm\": 10, \"radial_points\": 501, \"quadrature_below_critical\": 128, \"quadrature_above_critical\": 64}, \"source\": {\"paper\": \"https://doi.org/10.1364/OE.480337\", \"author_preprint_including_supplement\": \"https://arxiv.org/pdf/2209.14508\", \"user_figshare_supplement\": \"https://opticapublishing.figshare.com/articles/journal_contribution/Supplementary_document_for_Axial_Profiling_of_Interferometric_Scattering_Enables_an_Accurate_Determination_of_Nanoparticle_Size_-_6288691_pdf/22047950?file=52761698\", \"Fe3O4_nk\": \"https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml\", \"version_difference_audit\": \"Not yet verified against direct Figshare supplement download (version 3)\"}, \"storage\": {\"float_dtype\": \"float32\", \"complex_calculation\": \"complex128\", \"intensity_calculation\": \"float64\", \"compression\": \"gzip\", \"compression_level\": 1, \"chunk_z\": 1, \"save_basis\": true, \"contrast_stable_Iref_fraction\": 0.005, \"disk_safety_factor\": 1.5, \"reserve_disk_bytes\": 268435456}}",
+        "diameter_nm": 30.0,
+        "field_component_order": "Ex,Ey",
+        "gamma_imag": 0.0,
+        "gamma_real": 0.5,
+        "grid_mode": "full",
+        "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+        "is_sample_space_field": false,
+        "material": "Fe3O4",
+        "particle_radius_nm": 15.0,
+        "physical_validation": "NOT_ESTABLISHED",
+        "reference_field_scale": 9.422632737507974e-08,
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "surface_gap_nm": 0.0,
+        "time_convention": "exp(-i omega t)",
+        "units": "dimensionless field relative to shared on-axis reference; no V/m or W/m^2",
+        "wavelength_nm": 532.0
+      },
+      "completed_slices": 171,
+      "layers": 171,
+      "sampled_layer_failures": [],
+      "axes": {
+        "zeta": [
+          -170.0,
+          170.0,
+          171
+        ],
+        "x": [
+          -1200.0,
+          1200.0,
+          241
+        ]
+      },
+      "pass": true
+    },
+    "D100": {
+      "file": "data/D100nm/cube.h5",
+      "bytes": 424639674,
+      "sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "datasets": {
+        "I_cross": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_ref": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_scat": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_total": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "contrast_fixed_reference": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "contrast_local": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        }
+      },
+      "attrs": {
+        "NA": 1.45,
+        "absolute_calibration": false,
+        "axis_order": "zeta,y,x",
+        "center_height_nm": 50.0,
+        "completed_slices": 171,
+        "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+        "configuration_json": "{\"project\": \"Fe3O4_surface_bound_through_focus_CANDIDATE_V3\", \"diameters_nm\": [30, 100, 200], \"material\": {\"material_name\": \"Fe3O4\", \"n_real\": 2.3456, \"k_imag\": 0.0926, \"dispersion_reference\": \"Querry 1985 bulk magnetite via refractiveindex.info; 530-540 nm linear interpolation\", \"optical_index_is_experimental\": false}, \"optics\": {\"wavelength_nm\": 532, \"NA\": 1.45, \"n_sample\": 1.33, \"n_glass\": 1.52, \"n_immersion\": 1.52, \"n_detector\": 1.0, \"n_immersion_design\": 1.52, \"n_glass_design\": 1.52, \"glass_thickness_nm\": 170000, \"glass_thickness_design_nm\": 170000, \"immersion_thickness_design_nm\": 100000, \"magnification\": 170}, \"model\": {\"model_name\": \"PAPER_INSPIRED_CANDIDATE_WITH_EXPLICIT_BASIS_REPAIRS\", \"angle_scattering_convention\": \"backward_mu=-kzs/ns; complex angle analytical continuation for high NA\", \"supercritical_model\": \"UNVALIDATED analytic continuation of homogeneous-sphere far-field Mie/Fresnel; fails rigorous sphere-near-interface Maxwell claim\", \"particle_interface_multiple_scattering\": false, \"magneto_optical_tensor\": false, \"camera_sampling\": false, \"background_stray_light\": false, \"brownian_motion\": false, \"n_particles_per_case\": 1, \"particle_center_height_nm\": \"diameter_nm/2 (surface-bound sphere)\", \"data_is\": \"image-plane through-focus (zeta,y,x), not electromagnetic field in sample volume\", \"nominal_DOF_nm\": 336.5, \"DOF_warning\": \"+-170 nm is only a fixed nominal sampling window, not validated high-NA depth of field.\", \"basis_scale_gamma\": [0.5, 0.0], \"absolute_calibration\": false, \"formula_audit_status\": \"OPEN\", \"high_NA_validation_status\": \"OPEN\", \"scattering_basis\": \"Mie theta from incident +Z; returning-ray p coefficient=-S2_Mie\", \"gamma_assumed_not_calibrated\": true}, \"grid_full\": {\"xy_min_nm\": -1200, \"xy_max_nm\": 1200, \"xy_step_nm\": 10, \"zeta_min_nm\": -170, \"zeta_max_nm\": 170, \"zeta_step_nm\": 2, \"radial_points\": 1601, \"quadrature_below_critical\": 512, \"quadrature_above_critical\": 256}, \"grid_pilot\": {\"xy_min_nm\": -600, \"xy_max_nm\": 600, \"xy_step_nm\": 20, \"zeta_min_nm\": -170, \"zeta_max_nm\": 170, \"zeta_step_nm\": 10, \"radial_points\": 501, \"quadrature_below_critical\": 128, \"quadrature_above_critical\": 64}, \"source\": {\"paper\": \"https://doi.org/10.1364/OE.480337\", \"author_preprint_including_supplement\": \"https://arxiv.org/pdf/2209.14508\", \"user_figshare_supplement\": \"https://opticapublishing.figshare.com/articles/journal_contribution/Supplementary_document_for_Axial_Profiling_of_Interferometric_Scattering_Enables_an_Accurate_Determination_of_Nanoparticle_Size_-_6288691_pdf/22047950?file=52761698\", \"Fe3O4_nk\": \"https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml\", \"version_difference_audit\": \"Not yet verified against direct Figshare supplement download (version 3)\"}, \"storage\": {\"float_dtype\": \"float32\", \"complex_calculation\": \"complex128\", \"intensity_calculation\": \"float64\", \"compression\": \"gzip\", \"compression_level\": 1, \"chunk_z\": 1, \"save_basis\": true, \"contrast_stable_Iref_fraction\": 0.005, \"disk_safety_factor\": 1.5, \"reserve_disk_bytes\": 268435456}}",
+        "diameter_nm": 100.0,
+        "field_component_order": "Ex,Ey",
+        "gamma_imag": 0.0,
+        "gamma_real": 0.5,
+        "grid_mode": "full",
+        "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+        "is_sample_space_field": false,
+        "material": "Fe3O4",
+        "particle_radius_nm": 50.0,
+        "physical_validation": "NOT_ESTABLISHED",
+        "reference_field_scale": 9.422632737507974e-08,
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "surface_gap_nm": 0.0,
+        "time_convention": "exp(-i omega t)",
+        "units": "dimensionless field relative to shared on-axis reference; no V/m or W/m^2",
+        "wavelength_nm": 532.0
+      },
+      "completed_slices": 171,
+      "layers": 171,
+      "sampled_layer_failures": [],
+      "axes": {
+        "zeta": [
+          -170.0,
+          170.0,
+          171
+        ],
+        "x": [
+          -1200.0,
+          1200.0,
+          241
+        ]
+      },
+      "pass": true
+    },
+    "D200": {
+      "file": "data/D200nm/cube.h5",
+      "bytes": 424913287,
+      "sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "shape": [
+        171,
+        241,
+        241
+      ],
+      "datasets": {
+        "I_cross": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_ref": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_scat": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "I_total": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "contrast_fixed_reference": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        },
+        "contrast_local": {
+          "shape": [
+            171,
+            241,
+            241
+          ],
+          "dtype": "float32"
+        }
+      },
+      "attrs": {
+        "NA": 1.45,
+        "absolute_calibration": false,
+        "axis_order": "zeta,y,x",
+        "center_height_nm": 100.0,
+        "completed_slices": 171,
+        "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+        "configuration_json": "{\"project\": \"Fe3O4_surface_bound_through_focus_CANDIDATE_V3\", \"diameters_nm\": [30, 100, 200], \"material\": {\"material_name\": \"Fe3O4\", \"n_real\": 2.3456, \"k_imag\": 0.0926, \"dispersion_reference\": \"Querry 1985 bulk magnetite via refractiveindex.info; 530-540 nm linear interpolation\", \"optical_index_is_experimental\": false}, \"optics\": {\"wavelength_nm\": 532, \"NA\": 1.45, \"n_sample\": 1.33, \"n_glass\": 1.52, \"n_immersion\": 1.52, \"n_detector\": 1.0, \"n_immersion_design\": 1.52, \"n_glass_design\": 1.52, \"glass_thickness_nm\": 170000, \"glass_thickness_design_nm\": 170000, \"immersion_thickness_design_nm\": 100000, \"magnification\": 170}, \"model\": {\"model_name\": \"PAPER_INSPIRED_CANDIDATE_WITH_EXPLICIT_BASIS_REPAIRS\", \"angle_scattering_convention\": \"backward_mu=-kzs/ns; complex angle analytical continuation for high NA\", \"supercritical_model\": \"UNVALIDATED analytic continuation of homogeneous-sphere far-field Mie/Fresnel; fails rigorous sphere-near-interface Maxwell claim\", \"particle_interface_multiple_scattering\": false, \"magneto_optical_tensor\": false, \"camera_sampling\": false, \"background_stray_light\": false, \"brownian_motion\": false, \"n_particles_per_case\": 1, \"particle_center_height_nm\": \"diameter_nm/2 (surface-bound sphere)\", \"data_is\": \"image-plane through-focus (zeta,y,x), not electromagnetic field in sample volume\", \"nominal_DOF_nm\": 336.5, \"DOF_warning\": \"+-170 nm is only a fixed nominal sampling window, not validated high-NA depth of field.\", \"basis_scale_gamma\": [0.5, 0.0], \"absolute_calibration\": false, \"formula_audit_status\": \"OPEN\", \"high_NA_validation_status\": \"OPEN\", \"scattering_basis\": \"Mie theta from incident +Z; returning-ray p coefficient=-S2_Mie\", \"gamma_assumed_not_calibrated\": true}, \"grid_full\": {\"xy_min_nm\": -1200, \"xy_max_nm\": 1200, \"xy_step_nm\": 10, \"zeta_min_nm\": -170, \"zeta_max_nm\": 170, \"zeta_step_nm\": 2, \"radial_points\": 1601, \"quadrature_below_critical\": 512, \"quadrature_above_critical\": 256}, \"grid_pilot\": {\"xy_min_nm\": -600, \"xy_max_nm\": 600, \"xy_step_nm\": 20, \"zeta_min_nm\": -170, \"zeta_max_nm\": 170, \"zeta_step_nm\": 10, \"radial_points\": 501, \"quadrature_below_critical\": 128, \"quadrature_above_critical\": 64}, \"source\": {\"paper\": \"https://doi.org/10.1364/OE.480337\", \"author_preprint_including_supplement\": \"https://arxiv.org/pdf/2209.14508\", \"user_figshare_supplement\": \"https://opticapublishing.figshare.com/articles/journal_contribution/Supplementary_document_for_Axial_Profiling_of_Interferometric_Scattering_Enables_an_Accurate_Determination_of_Nanoparticle_Size_-_6288691_pdf/22047950?file=52761698\", \"Fe3O4_nk\": \"https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Fe3O4/nk/Querry.yml\", \"version_difference_audit\": \"Not yet verified against direct Figshare supplement download (version 3)\"}, \"storage\": {\"float_dtype\": \"float32\", \"complex_calculation\": \"complex128\", \"intensity_calculation\": \"float64\", \"compression\": \"gzip\", \"compression_level\": 1, \"chunk_z\": 1, \"save_basis\": true, \"contrast_stable_Iref_fraction\": 0.005, \"disk_safety_factor\": 1.5, \"reserve_disk_bytes\": 268435456}}",
+        "diameter_nm": 200.0,
+        "field_component_order": "Ex,Ey",
+        "gamma_imag": 0.0,
+        "gamma_real": 0.5,
+        "grid_mode": "full",
+        "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+        "is_sample_space_field": false,
+        "material": "Fe3O4",
+        "particle_radius_nm": 100.0,
+        "physical_validation": "NOT_ESTABLISHED",
+        "reference_field_scale": 9.422632737507974e-08,
+        "schema": "iscat-through-focus-v3.0",
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "surface_gap_nm": 0.0,
+        "time_convention": "exp(-i omega t)",
+        "units": "dimensionless field relative to shared on-axis reference; no V/m or W/m^2",
+        "wavelength_nm": 532.0
+      },
+      "completed_slices": 171,
+      "layers": 171,
+      "sampled_layer_failures": [],
+      "axes": {
+        "zeta": [
+          -170.0,
+          170.0,
+          171
+        ],
+        "x": [
+          -1200.0,
+          1200.0,
+          241
+        ]
+      },
+      "pass": true
+    }
+  },
+  "failures": [],
+  "pass": true
+}

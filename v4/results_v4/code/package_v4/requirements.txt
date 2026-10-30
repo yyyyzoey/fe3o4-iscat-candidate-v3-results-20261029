@@ -1,0 +1,5 @@
+numpy>=1.26,<3
+h5py>=3.10,<4
+matplotlib>=3.8,<4
+plotly>=5.20,<7
+scikit-image>=0.22,<0.27

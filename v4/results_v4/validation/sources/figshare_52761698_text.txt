@@ -1,0 +1,233 @@
+Supplemental Document
+Axial profiling of interferometric scattering
+enables an accurate determination of
+nanoparticle size: supplement
+KATE ˇRINA ŽAMBOCHOVÁ ,1,2 IL-B UEM LEE,1 JIN-S UNG PARK ,1
+SEOK -C HEOL HONG ,1,3,5
+ AND MINHAENG CHO 1,4,6,
+1Center for Molecular Spectroscopy and Dynamics, Institute for Basic Science (IBS), Seoul 02841,
+Republic of Korea
+2Department of Natural Sciences, Faculty of Biomedical Engineering, Czech Technical University in
+Prague, Kladno, 272 01, Czech Republic
+3Department of Physics, Korea University, Seoul 02841, Republic of Korea
+4Department of Chemistry, Korea University, Seoul 02841, Republic of Korea
+5hongsc@korea.ac.kr
+6mcho@korea.ac.kr
+This supplement published with Optica Publishing Group on 6 March 2023 by The Authors
+under the terms of the Creative Commons Attribution 4.0 License in the format provided by the
+authors and unedited. Further distribution of this work must maintain attribution to the author(s)
+and the published article’s title, journal citation, and DOI.
+Supplement DOI: https://doi.org/10.6084/m9.figshare.22047950
+Parent Article DOI: https://doi.org/10.1364/OE.480337
+SUPPLEMENTARY INFORMATION
+SI contents
+Fig. S1. Schematic diagram of the F-iSCAT setup and data acquisition by z-scanning.....2
+Vectorial point spread function modeling of nanoparticle image by iSCAT microscopy..3
+Fig. S2. Illustration of the optical components of the iSCAT microscopy.........................3
+A. Derivation of the reference and scattered fields in the pupil region of the imaging lens
+............................................................................................................................................3
+B. Electric fields at the focal region of the imaging lens derived from the Richards-Wolf 
+integral................................................................................................................................4
+Figs. S3-4. Simulations of the axial intensity profile..........................................................6
+Fig. S5. Finding the best fit to an experimental axial profile with given ni and zp via RMSE 
+evaluation...........................................................................................................................7
+Fig. S6. RMSE evaluation to determine the model parameters, ni and zp...........................8
+Fig. S7. Representative results of PSF modeling analysis for PS and latex NPs................9
+Fig. S8. Representative results of PSF modeling analysis for fNDs................................10
+References........................................................................................................................11
+P a g e 2 | 11
+Fig. S1. Schematic diagrams of the F-iSCAT setup and data acquisition by z-scanning. (a) 
+Fluorescence combined iSCAT microscope. The outlined and dashed-outlined green beams 
+mark the scattered and illuminating lights, respectively, and the red beam shows 
+fluorescence from NPs. Optical elements in the setup are acousto-optic deflector (AOD), 
+lenses (L1, L2, TL1, TL2), polarizing beam splitter (PBS), quarter-wave plate (QWP), 
+objective (O), dichroic mirror (DM), notch filter (F1), and emission filter (F2). (b-c) 
+Illustration of z-scanning and representative axial variation of iSCAT image by an NP (dia.: 
+120 nm). (b) Sample is scanned along the z-axis (red arrow) over a range of 5 μm around 
+the focal plane by moving the sample stage. (c) Experimental SHIP image by stacking the 
+cross-sectional intensity profile (guided on the orange dashed lines) along the diameter of 
+the NP image (indicated by orange-dashed lines in (i-iv)).
+
+P a g e 3 | 11
+Vectorial point spread function modeling of nanoparticle image by iSCAT 
+microscopy
+Fig. S2. Illustration of the optical components of the iSCAT microscopy.
+A generalized Jones matrix describes the effect of an optical element on ray 
+propagation. Our system consists of a polarizing beam splitter (PBS), a quarter-wave 
+plate (QWP), several lenses, and transmitting/reflecting interfaces for which we used 
+the relevant Jones matrices [1]. The matrices were applied in order to trace the 
+polarization state of light. We consider the incident beam that impinges on the PBS. 
+By the PBS, the beam becomes 45o linearly polarized with respect to the optic axis 
+of the subsequent QWP and circularly polarized at the back focal plane of the 
+objective by the QWP. The beam shines at the sample through the objective lens, 
+and the reflected and scattered fields propagate all the way to the dotted line after 
+the imaging lens as illustrated in Figure S2, passing through the objective lens, 
+QWP, PBS, and the imaging lens. The Richards-Wolf integral is then applied to 
+those fields to find out the field at the focal region (detector).
+A. Derivation of the reference and scattered fields in the pupil region of the 
+imaging lens
+Reference field: The reference field ER is the light reflected at the glass and 
+water/sample interface. The reference field at the pupil of the imaging lens (𝐸𝑅,∞) is 
+given as:
+𝐸𝑅,∞(𝜃𝑑,𝜙) = ℝ―1𝑧 (𝜙) ∙ 𝕃(𝜃𝑑) ∙ ℝ𝑧(𝜙) ∙ ℙ(0°) ∙ 𝕎(90°,45°) ∙ ℝ―1𝑧 (𝜙)
+∙ 𝔽𝑅 ∙ ℝ𝑧(𝜙) ∙ 𝕎(90°,45°) ∙ ℙ(90°) ∙ 𝐸𝑖 , (S1)
+where ℙ(0°), ℙ(90°), 𝕎(90°,45°), ℝ𝑧(𝜙), 𝕃(𝜃𝑑), and 𝔽𝑅 are the Jones matrices for 
+polarizing beam splitters for transmission and reflection, quarter-wave plate, coordinates 
+rotation by ϕ about the optic axis for local p-/s-wave decomposition, imaging lens with the 
+zenith angle θ d, and Fresnel field transformation by reflection, respectively. The incident 
+field is given by 𝐸𝑖 = 𝐸𝑥,𝐸𝑦 = (0,1).
+𝐸𝑅,∞(𝜃𝑑,𝜙) = 𝐶𝑅 ∙ 𝑖(𝑟𝑝 + 𝑟𝑠) ― (1 ― cos 𝜃𝑑)cos 𝜙 sin 𝜙cos2 𝜙 + sin2 𝜙 cos 𝜃𝑑                                             
+      = 12 𝐶𝑅 ∙ 𝑖(𝑟𝑝 + 𝑟𝑠) ― (1 ― cos 𝜃𝑑)sin 2𝜙 (1 + cos 𝜃𝑑) + (1 ― cos 𝜃𝑑)cos 2𝜙 , (S2)
+where rp and rs are the Fresnel reflection coefficients for p- and s-polarized light and 
+CR is just the overall numerical pre-factor.
+Scattered field: In this work, we only deal with scattering by a spherical particle. 
+The scattered field by a spherical scatterer (𝐸𝑠) takes a complex form, as shown 
+
+P a g e 4 | 11
+below. The scattered field at the pupil of the imaging lens (𝐸𝑆,∞) is expressed in 
+terms of 𝐸𝑠 defined in local spherical coordinates:
+𝐸𝑆,∞(𝜃𝑑,𝜙) =  ℝ―1𝑧 (𝜙).𝕃(𝜃𝑑).ℝ𝑧(𝜙).ℙ(0°).𝕎(90°,45°).ℝ―1𝑧 (𝜙).𝔽𝑇.𝐸𝑠 , (S3)
+where 𝔽𝑇 is the Fresnel transmission matrix at the interface. If the incident field at the 
+sample is circularly polarized, the scattered field is given by 𝐸𝑆 = 𝜃𝐸𝑆𝜃 +𝑖𝜙𝐸𝑆𝜙. 𝐸𝑆 is 
+described in terms of the spherical coordinates (r,θ,ϕ) defined in the sample chamber with 
+the origin at the center of the spherical particle. θ is the angle of a ray made with respect to 
+the optic axis, and thus, it defines the polar direction of a ray in the sample space 
+(immersion oil). The scattered field from a spherical scatterer is acquired by the Mie-
+scattering theory; 𝐸𝑆𝜃 and 𝐸𝑆𝜙, the polar and azimuthal components of the scattered 
+electric field, respectively, shall be expanded as a linear combination of 𝜋𝑛 = 𝑃1𝑛sin 𝜃 and 𝜏𝑛
+= 𝑑𝑃1𝑛
+𝑑𝜃
+𝐸𝑆𝜃 =
+1
+2
+𝑒𝑖𝑘𝑟
+―𝑖𝑘𝑟𝑒𝑖𝜙𝑆2(𝜃,𝜙) ∝  𝑒𝑖𝜙∑ 2𝑛 + 1𝑛(𝑛 + 1) (𝑎𝑛𝜏𝑛 + 𝑏𝑛𝜋𝑛) , (S4)
+𝐸𝑆𝜙 =
+1
+2
+𝑒𝑖𝑘𝑟
+―𝑖𝑘𝑟𝑒𝑖𝜙𝑆1(𝜃,𝜙) ∝ 𝑒𝑖𝜙∑ 2𝑛 + 1𝑛(𝑛 + 1) (𝑎𝑛𝜋𝑛 + 𝑏𝑛𝜏𝑛), (S5)
+where S1 and S2 are some functions defined in terms of πn and τn, and an and bn are 
+the coefficients of 𝜋𝑛 and 𝜏𝑛 [2].
+The final form of the scattered field is simplified as follows:
+𝐸𝑆, ∞(𝜃𝑑,𝜙) = 𝐶𝑆 ∙ 𝑖 𝑆2𝑡𝑝 + 𝑆1𝑡𝑠
+― (1 ― cos 𝜃𝑑)cos 𝜙 sin 𝜙
+cos2 𝜙 + sin2 𝜙 cos 𝜃𝑑                                          
+         = 12𝐶𝑆 ∙ 𝑖 𝑆2𝑡𝑝 + 𝑆1𝑡𝑠 ― (1 ― cos 𝜃𝑑)sin 2𝜙(1 + cos 𝜃𝑑) + (1 ― cos 𝜃𝑑)cos 2𝜙 , (S6)
+where tp and ts are Fresnel transmission coefficients at the glass and sample/water 
+interface for p- and s-polarized light, and CS is the overall numerical pre-factor 
+including 𝜂 = (1/𝜋)sin―1(min (NA/𝑛𝑠,1)), collection efficiency of the objective lens 
+along the angular extent of aperture.
+B. Electric fields at the focal region of the imaging lens derived from the 
+Richards-Wolf integral
+The electric field at the focal region of an imaging lens is calculated by the R-W integral:
+𝐸 𝑟 = ― 𝑖𝑘2𝜋∫𝜃𝑑,max0 ∫2𝜋0 𝐸∞(𝜃𝑑,𝜙)𝑒𝑖𝑘𝑠∙𝑟𝑒𝑖𝑘ΛOPD𝑓(𝜃𝑑)sin 𝜃𝑑 d𝜙d𝜃𝑑 , (S7)
+where the apodization function is given by  𝑓(𝜃𝑑) =
+𝑛𝑖 cos 𝜃𝑑
+𝑛𝑎 cos 𝜃 ,𝑠 ∙ 𝑟 =
+sin 𝜃𝑑 cos 𝜙 , sin 𝜃𝑑 sin 𝜙 , cos 𝜃𝑑 ∙ 𝑟 cos 𝜙𝑑 ,𝑟 sin 𝜙𝑑 ,𝑧𝑑 = 𝑟sin 𝜃𝑑 ∙ cos(𝜙 ― 𝜙𝑑) + 𝑧𝑑cos 𝜃𝑑, 𝜃𝑑,max 
+the semi-aperture angle of 𝜃𝑑, 𝑘 = 2𝜋𝑛𝑎𝜆  the angular wavenumber of light, na the refractive 
+index of air, 𝑟 = 𝑥2 + 𝑦2 the distance from the focus to an observation point, and 𝜙𝑑 =
+tan―1(𝑠𝑦/𝑠𝑥) the azimuthal angle of an imaging ray. 𝐸𝑅,∞(𝜃𝑑,𝜙) and 𝐸𝑆,∞(𝜃𝑑,𝜙) are 
+inserted in Eq. (S7) in the place of 𝐸∞(𝜃𝑑,𝜙) to get 𝐸𝑅 and 𝐸𝑆, respectively. As a ray 
+propagates through a series of optical systems, the (polar) angle made by the ray with 
+respect to the optic axis changes. To compute the electric field via the R-W integral, the 
+P a g e 5 | 11
+polar angle (θ d) defined with respect to the focus of the imaging lens is converted to the 
+polar angle (θ) defined with respect to the focus of the objective lens by using Snell’s law 
+and equation of magnification, 𝑛𝑖sin 𝜃 = 𝑀𝑛𝑎sin 𝜃𝑑, where M is the effective 
+magnification of a microscope [3]. For an imaging system with large M, sin 𝜃𝑑 can be 
+approximated to θd because the semi-aperture angle of the imaging lens in such a system is 
+very small. Thus, the following angular relations are useful in the above equation:  𝑑𝜃𝑑
+= (𝑛𝑖/M)cos 𝜃𝑑𝜃 and sin 𝜃𝑑𝑑𝜃𝑑 = (𝑛𝑖/M)2(sin 2𝜃/2)𝑑𝜃 where n a is set to be 1 [4]. In 
+our microscope setup, the magnification of the objective lens is 62 if the tube lens with a 
+focal length of 180 mm is used as recommended. In fact, we used a tube lens with a focal 
+length of 500 mm and thus, the effective magnification of our microscope is 170.
+𝐸(𝑟) = ― 𝑖𝑘2𝜋 𝜃max0 2𝜋0 𝐸∞(𝜃𝑑,𝜙)𝑒𝑖𝑘𝑧𝑑 cos 𝜃𝑑𝑒𝑖𝑘𝑟 sin 𝜃𝑑cos (𝜙―𝜙𝑑)𝑒𝑖𝑘ΛOPD 𝑛𝑖 cos 𝜃𝑑𝑛𝑎 cos 𝜃 𝑛𝑖𝑀 2 sin 2𝜃2 d𝜙d𝜃 , (S8)
+Where θ max is the semi-aperture angle of θ and related to θ d,max by 𝑛𝑖sin 𝜃max = 𝑀𝑛𝑎
+sin 𝜃𝑑,max. 
+To simplify this integral, the azimuthal angle (ϕ) is integrated first by using the 
+following relations:
+∫2𝜋0 cos 𝑛𝜙𝑒𝑖𝑥 cos(𝜙―𝜑)d𝜙 = 2𝜋(𝑖𝑛)𝐽𝑛(𝑥) cos 𝑛𝜑 , (S9)
+∫2𝜋0 sin 𝑛𝜙𝑒𝑖𝑥 cos(𝜙―𝜑)d𝜙 = 2𝜋(𝑖𝑛)𝐽𝑛(𝑥) sin 𝑛𝜑 ,  (S10)
+The electric field is then simplified as follows:
+𝐸(𝑟) = ― 𝑖𝑘2 𝑛𝑖𝑀 2∫𝜃max0 𝐸𝑎𝑒𝑖𝑘𝑧𝑑 cos 𝜃𝑑𝑒𝑖𝑘ΛOPD 𝑛𝑖 cos 𝜃𝑑𝑛𝑎 cos 𝜃 sin 2𝜃d𝜃 ,  (S11)
+where the strength vectors 𝐸𝑎 for reference and scattered fields are
+𝐸𝑎, ref = 12 𝐶𝑅 ∙ 𝑖(𝑟𝑝 + 𝑟𝑠) (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃𝑑)sin 2𝜙𝑑(1 + cos 𝜃𝑑)𝐽0(𝑘𝑟 sin 𝜃𝑑) ― (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃𝑑)cos 2𝜙𝑑 , (S12)
+𝐸𝑎, scat = 12𝐶𝑆 ∙ 𝑖 𝑆2𝑡𝑝 + 𝑆1𝑡𝑠 (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃𝑑)sin 2𝜙𝑑(1 + cos 𝜃𝑑)𝐽0(𝑘𝑟 sin 𝜃𝑑) ― (1 ― cos 𝜃𝑑)𝐽2(𝑘𝑟 sin 𝜃𝑑)cos 2𝜙𝑑 , (S13)
+where sin 𝜃𝑑 = (1/𝑀)𝑛𝑖sin 𝜃 and cos 𝜃𝑑 = 1 ― (𝑛𝑖 sin 𝜃 /𝑀)2.
+P a g e 6 | 11
+Fig. S3. Stacked axial contrast profile as a function of the particle height (zp). (a) Reference 
+field (|ER|), (b) scattered field (|ES|) and (c) interference term (|ERES* + ER*ES|) calculated in 
+the range of zp = 0 ~ 100 nm with n i = 1.51. All calculated values are scaled to fit to [0,1] 
+and displayed in a gray scale. The blue, green, and red colored lines indicate zp = 0, 50, and 
+100 nm, respectively. (d-f) Cross-sections of the reference field (d), the scattered field (e), 
+and the interference term (f). Insets in (d) and (e) show the phase variation of the fields and 
+highlight the sensitivity of the fields to different values of zp. The axial intensity profile by 
+the interference term exhibits more pronounced variation with z p accounting for sensitive 
+detection of the size of nano-objects by iSCAT. In this figure (a-f), z f is the computational 
+input parameter before the offset (δz) is adjusted (see main text for details).
+Fig. S4. Simulations performed and results displayed identically to Fig. S3 except for n i = 
+1.53. 
+ 
+
+P a g e 7 | 11
+Fig. S5. Root-mean-squared-error (RMSE) estimation to find the best theoretical axial 
+intensity profile (Isim) with a given set of ni and zp as a function of the relative focal position 
+(z) that matches the experimental (I exp) profile with the highest similarity. (a) 
+Demonstration of the profile matching procedure via translation of the simulated profile 
+(Isim) along z f by δz. The RMSE value is computed from I exp (blue line with dots) and I sim 
+(red line with dots) over the shaded region with good overlap. (b) RMSE values as a 
+function of δz, which is the offset applied to I sim. Once the value of δz to yield the least 
+RMSE is found, the offset is denoted as δz *. (i) δz = 0.27 μm, (ii) δz = 0.54 μm = δz *, and 
+(iii) δz = 0.81 μm with respect to the δz = 0 μm (green solid line in (a)). We fitted the RMSE 
+values to a 4th polynomial function to determine the representative RMSE for the given set 
+of ni an zp.
+
+P a g e 8 | 11
+Fig. S6. RMSE estimation to determine the model parameters, n i and zp for a 60-nm latex 
+bead. (a) Illustration of the parameter-finding procedure by minimizing the RMSE between 
+the measured axial contrast profile (blue line: experimental) and the computed axial 
+contrast profile over the whole parameter space of n i and z p (red line: simulated). (b) 
+Pseudo-color maps of RMSE re-scaled to fit to [0,1] for various n i and z p. The minimum 
+RMSE marked by a red box represents the best fit of the PSF modeling for the measured 
+axial contrast profile. The n i and z p at the minimum RMSE are used as the parameters to 
+generate the PSF with the highest similarity.
+
+P a g e 9 | 11
+Fig. S7. Representative results of PSF modeling analysis for different-sized dielectric nanoparticles ((a) R nom = 
+20 nm, (b) 50 nm, (c) 60 nm, and (d) 100 nm). First column: The RMSE map shows the representative RMSE 
+values for the whole parameter space of n i and z p, trying to find the best fit (marked by a red arrow). Second 
+column: Real part of the electric field of the scattered light, E S. Third column: Phase of the electric field of the 
+scattered light, E S. Fourth column: Amplitude of the scattered light, |E S|. The SHIP images, one by simulation 
+(fifth column) and one by experiment (sixth column) with the best parameter values [(a) (n i, zp) = (1.538, 0.022 
+μm), (b) (ni, zp) = (1.519, 0.039 μm), (c) (n i, zp) = (1.515, 0.052 μm), (d) (n i, zp) = (1.503, 0.093 μm) with design 
+parameters (ns, np, ni*, ng*, ti*, tg*) = (1.33, 1.59, 1.52, 1.52, 100 μm, 170 μm)], exhibit clear similarity, indicating 
+the reliability of the parameters obtained here. The axial contrast profile in the seventh column shows the best 
+simulation curve (red line with dots) for each experimental curve (blue line with dots). Green highlighted area 
+defines the iSCAT features for final fitting and error calculation.
+
+P a g e 10 | 11
+Fig. S8. Representative results of PSF modeling analysis for different-sized fluorescent nanodiamonds (fND) 
+particles from the same product number (900172, Sigma-Aldrich). This figure is presented in the same manner as 
+Figure S7. First column: The RMSE map shows the representative RMSE values for the whole parameter space 
+of ni and zp, trying to find the best fit (marked by a red arrow). Second column: Real part of the electric field of 
+the scattered light, ES. Third column: Phase of the electric field of the scattered light, ES. Fourth column: Amplitude 
+of the scattered light, |E S|. The SHIP images, one by simulation (fifth column) and one by experiment (sixth 
+column) with the best parameter values [(a) (n i, zp) = (1.521, 0.012 μm), (b) (n i, zp) = (1.518, 0.045 μm), (c) (n i, 
+zp) = (1.516, 0.055 μm), with design parameters (ns, np, ni*, ng*, ti*, tg*) = (1.33, 2.4, 1.52, 1.52, 100 μm, 170 μm)], 
+exhibit clear similarity, indicating the reliability of the parameters obtained here. It is also notable that the size of 
+fND is highly heterogeneous. The axial contrast profile in the seventh column shows the best simulation curve 
+(red line with dots) for each experimental curve (blue line with dots). Green highlighted area defines the iSCAT 
+features for final fitting and error calculation.
+
+P a g e 11 | 11
+References
+1. J. Kim, Y. Wang, and X. Zhang, “Calculation of vectorial diffraction in optical systems”, J. Opt. Soc. 
+Am., 35(4), 526-535 (2018).
+2. C. F. Bohren and D. R. Huffman, Absorption and Scattering of Light by Small Particles (Wiley, 1983).
+3. J. Dong, D. Maestre, C. Conrad-Billroth and T. Juffmann, “Fundamental bounds on the precision of 
+iSCAT, COBRI and dark-field microscopy for 3D localization and mass photometry”, Appl. Phys., 54, 
+394002 (2021).
+4. L. Novotny, R. D. Grober, and K. Karrai, “Reflected image of a strongly focused spot”, Opt. Lett., 26(11), 
+789-791 (2001).
