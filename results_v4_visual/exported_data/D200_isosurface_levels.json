@@ -1,0 +1,48 @@
+{
+  "tag": "D200",
+  "diameter_nm": 200,
+  "max_abs_I_cross": 1.04482901096344,
+  "levels": [
+    {
+      "level_fraction": -0.75,
+      "level": -0.78362175822258,
+      "present": false,
+      "note": "not present (level outside data range)"
+    },
+    {
+      "level_fraction": -0.5,
+      "level": -0.52241450548172,
+      "present": false,
+      "note": "not present (level outside data range)"
+    },
+    {
+      "level_fraction": -0.25,
+      "level": -0.26120725274086,
+      "present": true,
+      "n_vertices": 1013,
+      "n_faces": 1996
+    },
+    {
+      "level_fraction": 0.25,
+      "level": 0.26120725274086,
+      "present": true,
+      "n_vertices": 6757,
+      "n_faces": 13420
+    },
+    {
+      "level_fraction": 0.5,
+      "level": 0.52241450548172,
+      "present": true,
+      "n_vertices": 3469,
+      "n_faces": 6868
+    },
+    {
+      "level_fraction": 0.75,
+      "level": 0.78362175822258,
+      "present": true,
+      "n_vertices": 1409,
+      "n_faces": 2772
+    }
+  ],
+  "note": "iso-surfaces of the defocus stack; a display object, not a physical surface"
+}

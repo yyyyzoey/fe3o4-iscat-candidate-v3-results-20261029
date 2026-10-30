@@ -1,0 +1,53 @@
+{"step": "step3_3d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:31:49Z"}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 38.519, "utc": "2026-10-30T09:32:27Z", "file": "D100_3d_stack_common.png", "bytes": 699660, "kz": 1.0, "alpha": "uniform"}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 76.345, "utc": "2026-10-30T09:33:05Z", "file": "D100_3d_stack_normalized.png", "bytes": 705572, "kz": 1.0, "alpha": "uniform"}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 116.66, "utc": "2026-10-30T09:33:46Z", "file": "D100_3d_stack_common_zexag3.png", "bytes": 1631886, "kz": 3.0, "alpha": "uniform"}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 156.277, "utc": "2026-10-30T09:34:25Z", "file": "D100_3d_stack_normalized_zexag3.png", "bytes": 1638210, "kz": 3.0, "alpha": "uniform"}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 201.029, "utc": "2026-10-30T09:35:10Z", "file": "D100_3d_volume_render.png", "bytes": 1038515, "kz": 1.0, "alpha": "value"}
+{"step": "step3_3d", "event": "orthoview", "t_rel_s": 201.502, "utc": "2026-10-30T09:35:10Z", "file": "D100_orthoview.png", "bytes": 198726}
+{"step": "step3_3d", "event": "isosurface", "t_rel_s": 206.403, "utc": "2026-10-30T09:35:15Z", "file": "D100_isosurface.png", "n_present": 3}
+{"step": "step3_3d", "event": "case_done", "t_rel_s": 206.404, "utc": "2026-10-30T09:35:15Z", "tag": "D100"}
+{"step": "step3_3d", "event": "done", "t_rel_s": 206.404, "utc": "2026-10-30T09:35:15Z"}
+{"step": "step3_3d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:37:12Z"}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 9.777, "utc": "2026-10-30T09:37:22Z", "file": "D100_3d_stack_common.png", "bytes": 2111633, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 19.059, "utc": "2026-10-30T09:37:31Z", "file": "D100_3d_stack_normalized.png", "bytes": 2115344, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "case_done", "t_rel_s": 19.059, "utc": "2026-10-30T09:37:31Z", "tag": "D100", "kz_list": [1.0]}
+{"step": "step3_3d", "event": "done", "t_rel_s": 19.059, "utc": "2026-10-30T09:37:31Z"}
+{"step": "step3_3d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:37:59Z"}
+{"step": "step3_3d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:38:11Z"}
+{"step": "step3_3d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:38:16Z"}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 6.024, "utc": "2026-10-30T09:38:22Z", "file": "D100_3d_stack_common.png", "bytes": 1442569, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 11.382, "utc": "2026-10-30T09:38:27Z", "file": "D100_3d_stack_normalized.png", "bytes": 1443889, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "case_done", "t_rel_s": 11.382, "utc": "2026-10-30T09:38:27Z", "tag": "D100", "kz_list": [1.0]}
+{"step": "step3_3d", "event": "done", "t_rel_s": 11.382, "utc": "2026-10-30T09:38:27Z"}
+{"step": "step3_3d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:39:57Z"}
+{"step": "step3_3d", "event": "done", "t_rel_s": 0.265, "utc": "2026-10-30T09:39:57Z"}
+{"step": "step3_3d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:40:02Z"}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 5.685, "utc": "2026-10-30T09:40:08Z", "file": "D030_3d_stack_common.png", "bytes": 667534, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 10.895, "utc": "2026-10-30T09:40:13Z", "file": "D030_3d_stack_normalized.png", "bytes": 1166100, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 15.821, "utc": "2026-10-30T09:40:18Z", "file": "D030_3d_stack_common_zexag3.png", "bytes": 583915, "kz": 3.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 20.912, "utc": "2026-10-30T09:40:23Z", "file": "D030_3d_stack_normalized_zexag3.png", "bytes": 1272569, "kz": 3.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 26.137, "utc": "2026-10-30T09:40:28Z", "file": "D030_3d_volume_render.png", "bytes": 1196065, "kz": 1.0, "alpha": "value", "elev": 20.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 31.286, "utc": "2026-10-30T09:40:34Z", "file": "D030_3d_stack_cutaway.png", "bytes": 995757, "kz": 1.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "orthoview", "t_rel_s": 31.783, "utc": "2026-10-30T09:40:34Z", "file": "D030_orthoview.png", "bytes": 196397}
+{"step": "step3_3d", "event": "isosurface", "t_rel_s": 35.236, "utc": "2026-10-30T09:40:38Z", "file": "D030_isosurface.png", "n_present": 3}
+{"step": "step3_3d", "event": "case_done", "t_rel_s": 35.238, "utc": "2026-10-30T09:40:38Z", "tag": "D030", "kz_list": [1.0, 3.0]}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 40.751, "utc": "2026-10-30T09:40:43Z", "file": "D100_3d_stack_common.png", "bytes": 1257113, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 46.096, "utc": "2026-10-30T09:40:48Z", "file": "D100_3d_stack_normalized.png", "bytes": 1259552, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 51.303, "utc": "2026-10-30T09:40:54Z", "file": "D100_3d_stack_common_zexag3.png", "bytes": 1405672, "kz": 3.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 56.452, "utc": "2026-10-30T09:40:59Z", "file": "D100_3d_stack_normalized_zexag3.png", "bytes": 1410217, "kz": 3.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 61.794, "utc": "2026-10-30T09:41:04Z", "file": "D100_3d_volume_render.png", "bytes": 1219785, "kz": 1.0, "alpha": "value", "elev": 20.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 66.94, "utc": "2026-10-30T09:41:09Z", "file": "D100_3d_stack_cutaway.png", "bytes": 1059670, "kz": 1.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "orthoview", "t_rel_s": 67.423, "utc": "2026-10-30T09:41:10Z", "file": "D100_orthoview.png", "bytes": 191491}
+{"step": "step3_3d", "event": "isosurface", "t_rel_s": 71.588, "utc": "2026-10-30T09:41:14Z", "file": "D100_isosurface.png", "n_present": 3}
+{"step": "step3_3d", "event": "case_done", "t_rel_s": 71.589, "utc": "2026-10-30T09:41:14Z", "tag": "D100", "kz_list": [1.0, 3.0]}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 77.011, "utc": "2026-10-30T09:41:19Z", "file": "D200_3d_stack_common.png", "bytes": 972589, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 82.248, "utc": "2026-10-30T09:41:25Z", "file": "D200_3d_stack_normalized.png", "bytes": 1066741, "kz": 1.0, "alpha": "value", "elev": 26.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 87.231, "utc": "2026-10-30T09:41:30Z", "file": "D200_3d_stack_common_zexag3.png", "bytes": 924036, "kz": 3.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 92.312, "utc": "2026-10-30T09:41:35Z", "file": "D200_3d_stack_normalized_zexag3.png", "bytes": 1060461, "kz": 3.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 97.619, "utc": "2026-10-30T09:41:40Z", "file": "D200_3d_volume_render.png", "bytes": 1319034, "kz": 1.0, "alpha": "value", "elev": 20.0, "azim": -58.0}
+{"step": "step3_3d", "event": "render3d", "t_rel_s": 102.739, "utc": "2026-10-30T09:41:45Z", "file": "D200_3d_stack_cutaway.png", "bytes": 910151, "kz": 1.0, "alpha": "value", "elev": 22.0, "azim": -58.0}
+{"step": "step3_3d", "event": "orthoview", "t_rel_s": 103.238, "utc": "2026-10-30T09:41:46Z", "file": "D200_orthoview.png", "bytes": 183462}
+{"step": "step3_3d", "event": "isosurface", "t_rel_s": 105.662, "utc": "2026-10-30T09:41:48Z", "file": "D200_isosurface.png", "n_present": 4}
+{"step": "step3_3d", "event": "case_done", "t_rel_s": 105.663, "utc": "2026-10-30T09:41:48Z", "tag": "D200", "kz_list": [1.0, 3.0]}
+{"step": "step3_3d", "event": "done", "t_rel_s": 105.663, "utc": "2026-10-30T09:41:48Z"}

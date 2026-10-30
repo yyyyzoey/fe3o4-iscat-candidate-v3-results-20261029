@@ -1,0 +1,44 @@
+{"step": "step2_2d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:28:52Z"}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 2.518, "utc": "2026-10-30T09:28:54Z", "file": "D030_50slice_montage_common.png", "bytes": 365753, "layers": 50, "vlim": 1.5476553440093994}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 4.858, "utc": "2026-10-30T09:28:57Z", "file": "D030_50slice_montage_normalized.png", "bytes": 937667, "layers": 50, "vlim": 0.03255653753876686}
+{"step": "step2_2d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:29:06Z"}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 2.5, "utc": "2026-10-30T09:29:08Z", "file": "D030_50slice_montage_common.png", "bytes": 365753, "layers": 50, "vlim": 1.5476553440093994}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 4.833, "utc": "2026-10-30T09:29:10Z", "file": "D030_50slice_montage_normalized.png", "bytes": 937667, "layers": 50, "vlim": 0.03255653753876686}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 6.374, "utc": "2026-10-30T09:29:12Z", "file": "D030_50slice_atlas_common.pdf", "bytes": 90662, "pages": 6}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 7.886, "utc": "2026-10-30T09:29:13Z", "file": "D030_50slice_atlas_normalized.pdf", "bytes": 91454, "pages": 6}
+{"step": "step2_2d", "event": "decomposition", "t_rel_s": 9.338, "utc": "2026-10-30T09:29:15Z", "file": "D030_signal_decomposition.png", "bytes": 593302}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 11.643, "utc": "2026-10-30T09:29:17Z", "file": "D100_50slice_montage_common.png", "bytes": 982732, "layers": 50, "vlim": 1.5476553440093994}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 13.971, "utc": "2026-10-30T09:29:20Z", "file": "D100_50slice_montage_normalized.png", "bytes": 977024, "layers": 50, "vlim": 1.5476553440093994}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 15.558, "utc": "2026-10-30T09:29:21Z", "file": "D100_50slice_atlas_common.pdf", "bytes": 242991, "pages": 6}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 17.161, "utc": "2026-10-30T09:29:23Z", "file": "D100_50slice_atlas_normalized.pdf", "bytes": 243797, "pages": 6}
+{"step": "step2_2d", "event": "decomposition", "t_rel_s": 18.588, "utc": "2026-10-30T09:29:24Z", "file": "D100_signal_decomposition.png", "bytes": 594970}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 20.805, "utc": "2026-10-30T09:29:26Z", "file": "D200_50slice_montage_common.png", "bytes": 793331, "layers": 50, "vlim": 1.5476553440093994}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 23.096, "utc": "2026-10-30T09:29:29Z", "file": "D200_50slice_montage_normalized.png", "bytes": 956259, "layers": 50, "vlim": 1.04482901096344}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 24.691, "utc": "2026-10-30T09:29:30Z", "file": "D200_50slice_atlas_common.pdf", "bytes": 176083, "pages": 6}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 26.251, "utc": "2026-10-30T09:29:32Z", "file": "D200_50slice_atlas_normalized.pdf", "bytes": 176892, "pages": 6}
+{"step": "step2_2d", "event": "decomposition", "t_rel_s": 27.737, "utc": "2026-10-30T09:29:33Z", "file": "D200_signal_decomposition.png", "bytes": 735180}
+{"step": "step2_2d", "event": "compare_slices", "t_rel_s": 29.784, "utc": "2026-10-30T09:29:35Z", "file": "compare_three_sizes_key_slices", "mode": "normalized"}
+{"step": "step2_2d", "event": "compare_slices", "t_rel_s": 30.791, "utc": "2026-10-30T09:29:36Z", "file": "compare_three_sizes_key_slices_common", "mode": "common"}
+{"step": "step2_2d", "event": "done", "t_rel_s": 30.793, "utc": "2026-10-30T09:29:36Z", "files": 28}
+{"step": "step2_2d", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:30:29Z"}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 2.438, "utc": "2026-10-30T09:30:31Z", "file": "D030_50slice_montage_common.png", "bytes": 357262, "layers": 50, "vlim": 1.5476553440093994, "mode": "common", "asinh": false}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 4.691, "utc": "2026-10-30T09:30:33Z", "file": "D030_50slice_montage_normalized.png", "bytes": 901455, "layers": 50, "vlim": 1.5476553440093994, "mode": "normalized", "asinh": false}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 6.895, "utc": "2026-10-30T09:30:35Z", "file": "D030_50slice_montage_common_asinh.png", "bytes": 665267, "layers": 50, "vlim": 1.5476553440093994, "mode": "common", "asinh": true}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 8.411, "utc": "2026-10-30T09:30:37Z", "file": "D030_50slice_atlas_common.pdf", "bytes": 91674, "pages": 6}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 9.996, "utc": "2026-10-30T09:30:39Z", "file": "D030_50slice_atlas_normalized.pdf", "bytes": 219478, "pages": 6}
+{"step": "step2_2d", "event": "decomposition", "t_rel_s": 11.172, "utc": "2026-10-30T09:30:40Z", "file": "D030_signal_decomposition.png", "bytes": 617189}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 13.376, "utc": "2026-10-30T09:30:42Z", "file": "D100_50slice_montage_common.png", "bytes": 940890, "layers": 50, "vlim": 1.5476553440093994, "mode": "common", "asinh": false}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 15.645, "utc": "2026-10-30T09:30:44Z", "file": "D100_50slice_montage_normalized.png", "bytes": 936977, "layers": 50, "vlim": 1.5476553440093994, "mode": "normalized", "asinh": false}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 18.321, "utc": "2026-10-30T09:30:47Z", "file": "D100_50slice_montage_common_asinh.png", "bytes": 2747427, "layers": 50, "vlim": 1.5476553440093994, "mode": "common", "asinh": true}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 19.913, "utc": "2026-10-30T09:30:48Z", "file": "D100_50slice_atlas_common.pdf", "bytes": 244000, "pages": 6}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 21.443, "utc": "2026-10-30T09:30:50Z", "file": "D100_50slice_atlas_normalized.pdf", "bytes": 243933, "pages": 6}
+{"step": "step2_2d", "event": "decomposition", "t_rel_s": 22.618, "utc": "2026-10-30T09:30:51Z", "file": "D100_signal_decomposition.png", "bytes": 623755}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 24.807, "utc": "2026-10-30T09:30:53Z", "file": "D200_50slice_montage_common.png", "bytes": 763387, "layers": 50, "vlim": 1.5476553440093994, "mode": "common", "asinh": false}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 27.036, "utc": "2026-10-30T09:30:56Z", "file": "D200_50slice_montage_normalized.png", "bytes": 919112, "layers": 50, "vlim": 1.5476553440093994, "mode": "normalized", "asinh": false}
+{"step": "step2_2d", "event": "montage", "t_rel_s": 29.751, "utc": "2026-10-30T09:30:58Z", "file": "D200_50slice_montage_common_asinh.png", "bytes": 2743993, "layers": 50, "vlim": 1.5476553440093994, "mode": "common", "asinh": true}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 31.283, "utc": "2026-10-30T09:31:00Z", "file": "D200_50slice_atlas_common.pdf", "bytes": 177092, "pages": 6}
+{"step": "step2_2d", "event": "atlas", "t_rel_s": 32.861, "utc": "2026-10-30T09:31:01Z", "file": "D200_50slice_atlas_normalized.pdf", "bytes": 206182, "pages": 6}
+{"step": "step2_2d", "event": "decomposition", "t_rel_s": 34.045, "utc": "2026-10-30T09:31:03Z", "file": "D200_signal_decomposition.png", "bytes": 782894}
+{"step": "step2_2d", "event": "compare_slices", "t_rel_s": 35.97, "utc": "2026-10-30T09:31:05Z", "file": "compare_three_sizes_key_slices", "mode": "normalized"}
+{"step": "step2_2d", "event": "compare_slices", "t_rel_s": 36.877, "utc": "2026-10-30T09:31:05Z", "file": "compare_three_sizes_key_slices_common", "mode": "common"}
+{"step": "step2_2d", "event": "done", "t_rel_s": 36.879, "utc": "2026-10-30T09:31:05Z", "files": 34}

@@ -1,0 +1,6 @@
+{"step": "step4_axis", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:42:28Z"}
+{"step": "step4_axis", "event": "axis_curves", "t_rel_s": 1.504, "utc": "2026-10-30T09:42:29Z", "file": "compare_three_sizes_axis_curves.png", "bytes": 311219, "n_rows": 513}
+{"step": "step4_axis", "event": "done", "t_rel_s": 1.504, "utc": "2026-10-30T09:42:29Z", "csv": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_visual\\out\\results_v4_visual\\exported_data\\axis_curves_center.csv"}
+{"step": "step4_axis", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:42:45Z"}
+{"step": "step4_axis", "event": "axis_curves", "t_rel_s": 1.537, "utc": "2026-10-30T09:42:46Z", "file": "compare_three_sizes_axis_curves.png", "bytes": 328806, "n_rows": 513}
+{"step": "step4_axis", "event": "done", "t_rel_s": 1.538, "utc": "2026-10-30T09:42:46Z", "csv": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_visual\\out\\results_v4_visual\\exported_data\\axis_curves_center.csv"}

@@ -1,0 +1,39 @@
+{
+  "note": "x = y = 0 nm axis of the saved through-focus cubes; zeta is defocus, not sample depth",
+  "n_layers": 171,
+  "series": {
+    "D030": {
+      "diameter_nm": 30,
+      "centre_point_nm": [
+        0.0,
+        0.0
+      ],
+      "max_abs_I_cross_on_axis": 0.03255653753876686,
+      "zeta_of_max": 92.0,
+      "zeta_of_min": -170.0,
+      "I_cross_at_zeta_0": 0.02698148973286152
+    },
+    "D100": {
+      "diameter_nm": 100,
+      "centre_point_nm": [
+        0.0,
+        0.0
+      ],
+      "max_abs_I_cross_on_axis": 1.5476553440093994,
+      "zeta_of_max": -68.0,
+      "zeta_of_min": 170.0,
+      "I_cross_at_zeta_0": 1.4304639101028442
+    },
+    "D200": {
+      "diameter_nm": 200,
+      "centre_point_nm": [
+        0.0,
+        0.0
+      ],
+      "max_abs_I_cross_on_axis": 1.04482901096344,
+      "zeta_of_max": -170.0,
+      "zeta_of_min": 144.0,
+      "I_cross_at_zeta_0": 0.18403400480747223
+    }
+  }
+}

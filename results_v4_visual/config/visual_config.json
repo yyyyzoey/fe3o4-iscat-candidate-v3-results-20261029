@@ -1,0 +1,528 @@
+{
+  "schema": "v4-visual-config-1.0",
+  "generated_utc": "2026-10-30T09:54:09Z",
+  "purpose": "read-only 50-layer 2D/3D re-visualisation of the accepted V4.1 candidate cubes",
+  "physics_unchanged": true,
+  "physics_rerun": false,
+  "baseline": {
+    "repository": "yyyyzoey/fe3o4-iscat-candidate-v3-results-20261029",
+    "worktree": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4\\repo",
+    "branch": "v4-audit-final-candidate",
+    "commit": "0a58aff466d053bbd3f82fe9fc77fb57511edd2c",
+    "commit_date": "2026-10-30T16:08:14+08:00",
+    "commit_subject": "Finalize V4.1 candidate audit and reproducible results",
+    "ancestor_commit": "e96d8b13a7410af5e864d09f22f1bf6e8bbc70a7",
+    "worktree_clean": true
+  },
+  "environment": {
+    "python": "3.11.7",
+    "python_executable": "C:\\ProgramData\\anaconda3\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "h5py": "3.9.0",
+    "matplotlib": "3.8.0",
+    "scipy": "1.11.4",
+    "pandas": "2.1.4",
+    "scikit_image": "0.22.0",
+    "plotly": "5.9.0"
+  },
+  "source_data": [
+    {
+      "tag": "D030",
+      "diameter_nm": 30,
+      "centre_height_nm": 15.0,
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_final_20261030\\final_tree\\results_v4\\data\\D030nm\\cube.h5",
+      "path_relative_to_workspace": "work/v4_final_20261030/final_tree/results_v4/data/D030nm/cube.h5",
+      "bytes": 424882738,
+      "mtime_utc": "2026-10-30T06:10:51Z",
+      "sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "shape_zeta_y_x": [
+        171,
+        241,
+        241
+      ],
+      "dtype": "float32",
+      "grid": {
+        "zeta_nm": {
+          "min": -170.0,
+          "max": 170.0,
+          "step": 2.0,
+          "n": 171
+        },
+        "x_nm": {
+          "min": -1200.0,
+          "max": 1200.0,
+          "step": 10.0,
+          "n": 241
+        },
+        "y_nm": {
+          "min": -1200.0,
+          "max": 1200.0,
+          "step": 10.0,
+          "n": 241
+        },
+        "axis_order": "zeta,y,x"
+      },
+      "hdf5_attrs_subset": {
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "center_height_nm": 15.0,
+        "diameter_nm": 30.0,
+        "particle_radius_nm": 15.0,
+        "surface_gap_nm": 0.0,
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "grid_mode": "full",
+        "completed_slices": 171.0,
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "physical_validation": "NOT_ESTABLISHED",
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "time_convention": "exp(-i omega t)",
+        "units": "dimensionless field relative to shared on-axis reference; no V/m or W/m^2",
+        "gamma_real": 0.5,
+        "gamma_imag": 0.0,
+        "schema": "iscat-through-focus-v3.0",
+        "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+        "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+        "reference_field_scale": 9.422632737507974e-08
+      }
+    },
+    {
+      "tag": "D100",
+      "diameter_nm": 100,
+      "centre_height_nm": 50.0,
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_final_20261030\\final_tree\\results_v4\\data\\D100nm\\cube.h5",
+      "path_relative_to_workspace": "work/v4_final_20261030/final_tree/results_v4/data/D100nm/cube.h5",
+      "bytes": 424639674,
+      "mtime_utc": "2026-10-30T06:10:51Z",
+      "sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "shape_zeta_y_x": [
+        171,
+        241,
+        241
+      ],
+      "dtype": "float32",
+      "grid": {
+        "zeta_nm": {
+          "min": -170.0,
+          "max": 170.0,
+          "step": 2.0,
+          "n": 171
+        },
+        "x_nm": {
+          "min": -1200.0,
+          "max": 1200.0,
+          "step": 10.0,
+          "n": 241
+        },
+        "y_nm": {
+          "min": -1200.0,
+          "max": 1200.0,
+          "step": 10.0,
+          "n": 241
+        },
+        "axis_order": "zeta,y,x"
+      },
+      "hdf5_attrs_subset": {
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "center_height_nm": 50.0,
+        "diameter_nm": 100.0,
+        "particle_radius_nm": 50.0,
+        "surface_gap_nm": 0.0,
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "grid_mode": "full",
+        "completed_slices": 171.0,
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "physical_validation": "NOT_ESTABLISHED",
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "time_convention": "exp(-i omega t)",
+        "units": "dimensionless field relative to shared on-axis reference; no V/m or W/m^2",
+        "gamma_real": 0.5,
+        "gamma_imag": 0.0,
+        "schema": "iscat-through-focus-v3.0",
+        "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+        "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+        "reference_field_scale": 9.422632737507974e-08
+      }
+    },
+    {
+      "tag": "D200",
+      "diameter_nm": 200,
+      "centre_height_nm": 100.0,
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_final_20261030\\final_tree\\results_v4\\data\\D200nm\\cube.h5",
+      "path_relative_to_workspace": "work/v4_final_20261030/final_tree/results_v4/data/D200nm/cube.h5",
+      "bytes": 424913287,
+      "mtime_utc": "2026-10-30T06:10:51Z",
+      "sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "shape_zeta_y_x": [
+        171,
+        241,
+        241
+      ],
+      "dtype": "float32",
+      "grid": {
+        "zeta_nm": {
+          "min": -170.0,
+          "max": 170.0,
+          "step": 2.0,
+          "n": 171
+        },
+        "x_nm": {
+          "min": -1200.0,
+          "max": 1200.0,
+          "step": 10.0,
+          "n": 241
+        },
+        "y_nm": {
+          "min": -1200.0,
+          "max": 1200.0,
+          "step": 10.0,
+          "n": 241
+        },
+        "axis_order": "zeta,y,x"
+      },
+      "hdf5_attrs_subset": {
+        "NA": 1.45,
+        "wavelength_nm": 532.0,
+        "center_height_nm": 100.0,
+        "diameter_nm": 200.0,
+        "particle_radius_nm": 100.0,
+        "surface_gap_nm": 0.0,
+        "axis_order": "zeta,y,x",
+        "field_component_order": "Ex,Ey",
+        "grid_mode": "full",
+        "completed_slices": 171.0,
+        "status": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+        "physical_validation": "NOT_ESTABLISHED",
+        "supercritical_sector": "ANALYTIC_CONTINUATION_UNVALIDATED",
+        "absolute_calibration": false,
+        "is_sample_space_field": false,
+        "time_convention": "exp(-i omega t)",
+        "units": "dimensionless field relative to shared on-axis reference; no V/m or W/m^2",
+        "gamma_real": 0.5,
+        "gamma_imag": 0.0,
+        "schema": "iscat-through-focus-v3.0",
+        "implementation_sha256": "1a170ab6124d6283f72d445d3d9b0dbeb841e6fad76cc0ac3eb544d5ac044bc6",
+        "config_sha256": "01e910c0a9cf1d3e2be0befe13de2b8bedcdebe502264ef36e4809e51d367815",
+        "reference_field_scale": 9.422632737507974e-08
+      }
+    }
+  ],
+  "physical_parameters": {
+    "wavelength_nm": 532.0,
+    "target_NA": 1.45,
+    "n_sample": 1.33,
+    "n_glass": 1.52,
+    "n_immersion": 1.52,
+    "particles": [
+      {
+        "diameter_nm": 30,
+        "centre_height_nm": 15.0,
+        "geometry": "surface-bound single sphere (gap = 0 nm)",
+        "tag": "D030"
+      },
+      {
+        "diameter_nm": 100,
+        "centre_height_nm": 50.0,
+        "geometry": "surface-bound single sphere (gap = 0 nm)",
+        "tag": "D100"
+      },
+      {
+        "diameter_nm": 200,
+        "centre_height_nm": 100.0,
+        "geometry": "surface-bound single sphere (gap = 0 nm)",
+        "tag": "D200"
+      }
+    ],
+    "zeta_nm": {
+      "min": -170.0,
+      "max": 170.0,
+      "step": 2.0,
+      "n": 171
+    },
+    "x_y_nm": {
+      "min": -1200.0,
+      "max": 1200.0,
+      "step": 10.0,
+      "n": 241
+    },
+    "array_order": "zeta,y,x",
+    "excluded_conditions": [
+      "520 nm illumination",
+      "400 Hz frame rate",
+      "Brownian motion",
+      "camera sampling / shot noise",
+      "tracking / inversion",
+      "multi-particle"
+    ]
+  },
+  "display": {
+    "main_quantity": "I_cross = 2 Re(E_ref * conj(E_scat))",
+    "sign_convention": "signed, never abs() for display",
+    "colormap_signed": "RdBu_r (blue negative, white zero, red positive)",
+    "colormap_positive": "viridis (I_total) / magma (I_scat, I_ref)",
+    "common_scale": {
+      "vmin": -1.5476553440093994,
+      "vmax": 1.5476553440093994,
+      "rule": "symmetric linear scale, vmin=-vmax, vmax=+vmax with vmax = max over the three cubes of max|I_cross|",
+      "per_diameter_vmax": {
+        "D030": 0.03255653753876686,
+        "D100": 1.5476553440093994,
+        "D200": 1.04482901096344
+      }
+    },
+    "normalized_rule": "I_cross / max|I_cross| of the same cube",
+    "display_window_nm": {
+      "x": [
+        -400.0,
+        400.0
+      ],
+      "y": [
+        -400.0,
+        400.0
+      ],
+      "note": "cropped view of the full 241-point grid; no resampling"
+    },
+    "units": "dimensionless, relative to the shared on-axis reference"
+  },
+  "layer_selection": {
+    "n_layers": 50,
+    "method": "np.linspace(-170, 170, 50) targets snapped to nearest unused real layer index; collisions resolved by walking to the nearest still-unused index",
+    "max_snap_offset_nm": 0.979592,
+    "identical_for_all_diameters": true,
+    "targets_nm": [
+      -170.0,
+      -163.061224,
+      -156.122449,
+      -149.183673,
+      -142.244898,
+      -135.306122,
+      -128.367347,
+      -121.428571,
+      -114.489796,
+      -107.55102,
+      -100.612245,
+      -93.673469,
+      -86.734694,
+      -79.795918,
+      -72.857143,
+      -65.918367,
+      -58.979592,
+      -52.040816,
+      -45.102041,
+      -38.163265,
+      -31.22449,
+      -24.285714,
+      -17.346939,
+      -10.408163,
+      -3.469388,
+      3.469388,
+      10.408163,
+      17.346939,
+      24.285714,
+      31.22449,
+      38.163265,
+      45.102041,
+      52.040816,
+      58.979592,
+      65.918367,
+      72.857143,
+      79.795918,
+      86.734694,
+      93.673469,
+      100.612245,
+      107.55102,
+      114.489796,
+      121.428571,
+      128.367347,
+      135.306122,
+      142.244898,
+      149.183673,
+      156.122449,
+      163.061224,
+      170.0
+    ],
+    "indices": [
+      0,
+      3,
+      7,
+      10,
+      14,
+      17,
+      21,
+      24,
+      28,
+      31,
+      35,
+      38,
+      42,
+      45,
+      49,
+      52,
+      56,
+      59,
+      62,
+      66,
+      69,
+      73,
+      76,
+      80,
+      83,
+      87,
+      90,
+      94,
+      97,
+      101,
+      104,
+      108,
+      111,
+      114,
+      118,
+      121,
+      125,
+      128,
+      132,
+      135,
+      139,
+      142,
+      146,
+      149,
+      153,
+      156,
+      160,
+      163,
+      167,
+      170
+    ],
+    "actual_zeta_nm": [
+      -170.0,
+      -164.0,
+      -156.0,
+      -150.0,
+      -142.0,
+      -136.0,
+      -128.0,
+      -122.0,
+      -114.0,
+      -108.0,
+      -100.0,
+      -94.0,
+      -86.0,
+      -80.0,
+      -72.0,
+      -66.0,
+      -58.0,
+      -52.0,
+      -46.0,
+      -38.0,
+      -32.0,
+      -24.0,
+      -18.0,
+      -10.0,
+      -4.0,
+      4.0,
+      10.0,
+      18.0,
+      24.0,
+      32.0,
+      38.0,
+      46.0,
+      52.0,
+      58.0,
+      66.0,
+      72.0,
+      80.0,
+      86.0,
+      94.0,
+      100.0,
+      108.0,
+      114.0,
+      122.0,
+      128.0,
+      136.0,
+      142.0,
+      150.0,
+      156.0,
+      164.0,
+      170.0
+    ],
+    "table": "exported_data/selected_50_zeta_layers.csv"
+  },
+  "code": {
+    "files": [
+      {
+        "file": "vis_common.py",
+        "bytes": 6803,
+        "sha256": "d7efba80de8ffc03d1b7e8e2ab1c6ba5d9e032a421c8f3d9019fde3e8b76c0da"
+      },
+      {
+        "file": "step1_layers.py",
+        "bytes": 3915,
+        "sha256": "4ca09030c54a208bc8c338484ff571e7c7028e4279d4920445cba4e93f3a4433"
+      },
+      {
+        "file": "step2_2d.py",
+        "bytes": 12628,
+        "sha256": "893c664a7490282e7e1a2a1f7cc392a96230c46176288ba8252c33113bf775d4"
+      },
+      {
+        "file": "step3_3d.py",
+        "bytes": 15954,
+        "sha256": "1a52b976b2785624d654b7c2d7badffe9db05c5d06d82b9533bcd4944f16b632"
+      },
+      {
+        "file": "step4_axis.py",
+        "bytes": 6063,
+        "sha256": "d9a6298a0109c1c918acf0c9f6ece112dbadd599842488f0e0bf002ac528f050"
+      },
+      {
+        "file": "step5_html.py",
+        "bytes": 6442,
+        "sha256": "1b5e30629beb1290ffd68b93bf5b4549f65a6b89c60deb7e4b6b5df92f705e42"
+      },
+      {
+        "file": "mk_report1.py",
+        "bytes": 10577,
+        "sha256": "fd4e915b91d50d142fd2ca5f06f1074be64772913b3510b578d8262745beec1a"
+      },
+      {
+        "file": "mk_report2.py",
+        "bytes": 7223,
+        "sha256": "89a718fd3df77559954c80e2c217e53fee941d4670004aa956c94d55e34d64a5"
+      },
+      {
+        "file": "mk_report3.py",
+        "bytes": 6237,
+        "sha256": "e81a659bdbc5a9a9b7eac13cf0aa2a1a20c088af3204b9820715fe761809ec4f"
+      },
+      {
+        "file": "mk_report4.py",
+        "bytes": 53395,
+        "sha256": "d4b725b4d49f37323b20793f7a746d9228f4b5488cdad3d9ac9012d9f3044062"
+      },
+      {
+        "file": "mk_package.py",
+        "bytes": 9811,
+        "sha256": "1da733b3364dfb7f8fa1bb2f2363f81e18571386bde31ee04bb6d09dc796564b"
+      }
+    ],
+    "note": "scripts read the HDF5 cubes only; no solver entry point is imported"
+  },
+  "boundary": {
+    "result_class": "CANDIDATE_PAPER_INSPIRED_NOT_PHYSICALLY_CERTIFIED",
+    "through_focus": true,
+    "sample_space_near_field": false,
+    "full_jones_chain": "UNVERIFIED",
+    "high_na_model_validation": "UNVERIFIED",
+    "paper_convention_checks": "UNVERIFIED",
+    "absolute_calibration": false,
+    "publisher_typeset_pdf": "NOT_OBTAINED",
+    "linear_midpoint_reconstruction": "FAILED_KEPT"
+  }
+}

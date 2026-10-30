@@ -1,0 +1,47 @@
+{
+  "tag": "D030",
+  "diameter_nm": 30,
+  "max_abs_I_cross": 0.03255653753876686,
+  "levels": [
+    {
+      "level_fraction": -0.75,
+      "level": -0.024417403154075146,
+      "present": false,
+      "note": "not present (level outside data range)"
+    },
+    {
+      "level_fraction": -0.5,
+      "level": -0.01627826876938343,
+      "present": false,
+      "note": "not present (level outside data range)"
+    },
+    {
+      "level_fraction": -0.25,
+      "level": -0.008139134384691715,
+      "present": false,
+      "note": "not present (level outside data range)"
+    },
+    {
+      "level_fraction": 0.25,
+      "level": 0.008139134384691715,
+      "present": true,
+      "n_vertices": 12737,
+      "n_faces": 25372
+    },
+    {
+      "level_fraction": 0.5,
+      "level": 0.01627826876938343,
+      "present": true,
+      "n_vertices": 7949,
+      "n_faces": 15820
+    },
+    {
+      "level_fraction": 0.75,
+      "level": 0.024417403154075146,
+      "present": true,
+      "n_vertices": 4037,
+      "n_faces": 8028
+    }
+  ],
+  "note": "iso-surfaces of the defocus stack; a display object, not a physical surface"
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "v4-visual-package-verification-1.1",
+  "generated_utc": "2026-10-30T09:54:30Z",
+  "workspace": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents",
+  "source_tree": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_visual\\out\\results_v4_visual",
+  "root_member_name": "results_v4_visual",
+  "acceptance": {
+    "overall": "PASS",
+    "n_checks": 14,
+    "n_fail": 0,
+    "table": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_visual\\out\\results_v4_visual\\ACCEPTANCE.md"
+  },
+  "sha256_table": {
+    "n_files": 135,
+    "total_bytes": 96722017,
+    "table": "SHA256SUMS.txt"
+  },
+  "packages": {
+    "REPORT": {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\v4_visual_20261030\\Fe3O4_iSCAT_V4_1_VISUAL_REPORT.zip",
+      "bytes": 53282880,
+      "sha256": "77b8d938e4ae3b123f84f94a7694c30fdad9600d86cdf565a1a65bd0e63d4b9a",
+      "members": 136,
+      "uncompressed_bytes": 96736365,
+      "crc_check": "ok",
+      "contains_hdf5": false,
+      "hdf5_members": [],
+      "created_utc": "2026-10-30T09:54:23Z"
+    },
+    "FULL": {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\v4_visual_20261030\\Fe3O4_iSCAT_V4_1_VISUAL_FULL.zip",
+      "bytes": 1327719029,
+      "sha256": "ae92e0e273dc00165274975cbab3a31f3abb5c5a3e770c7f563d678145425f95",
+      "members": 139,
+      "uncompressed_bytes": 1371172064,
+      "crc_check": "ok",
+      "contains_hdf5": true,
+      "hdf5_members": [
+        "results_v4_visual/data/D030nm/cube.h5",
+        "results_v4_visual/data/D100nm/cube.h5",
+        "results_v4_visual/data/D200nm/cube.h5"
+      ],
+      "created_utc": "2026-10-30T09:54:27Z"
+    }
+  },
+  "member_hash_spot_check": {
+    "ok": true,
+    "members": {
+      "README.md": "bd1752f5cb7af32302550db71b3b28a441ec9a780ce40c42537c80c4c28e2d28",
+      "ACCEPTANCE.md": "8ca2563e20608ebbaa7a95d04744dcafc63a17c1bde02399a44647db9c8b5515",
+      "SHA256SUMS.txt": "5e59e85cb5e81ff62a9b89d2a87170c6f753f175282821bdbca64ed04937b77c",
+      "exported_data/selected_50_zeta_layers.csv": "8b7cd5a2abfc7e6c7f2f88456fc1913839c75e918ecbd69c46598e2804d608c9"
+    }
+  },
+  "hdf5_members": {
+    "expected": {
+      "results_v4_visual/data/D030nm/cube.h5": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "results_v4_visual/data/D100nm/cube.h5": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "results_v4_visual/data/D200nm/cube.h5": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2"
+    },
+    "observed_in_full_zip": {
+      "results_v4_visual/data/D030nm/cube.h5": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "results_v4_visual/data/D100nm/cube.h5": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "results_v4_visual/data/D200nm/cube.h5": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2"
+    },
+    "report_has_no_hdf5": true,
+    "full_has_exactly_expected_hdf5": true,
+    "sha256_match": true
+  },
+  "zip_member_sets": {
+    "full_equals_report_plus_three_hdf5": true,
+    "report_members": 136,
+    "full_members": 139
+  },
+  "hdf5": [
+    {
+      "tag": "D030",
+      "sha256": "ecbbea68c663246f1404acc7dc588164f1f89d6f7d9e6ac082a359d35473ad46",
+      "bytes": 424882738,
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_final_20261030\\final_tree\\results_v4\\data\\D030nm\\cube.h5"
+    },
+    {
+      "tag": "D100",
+      "sha256": "ffca89836461eae774e3d7917fc02f5aa64c5bd507d33979170abb1b4d919c49",
+      "bytes": 424639674,
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_final_20261030\\final_tree\\results_v4\\data\\D100nm\\cube.h5"
+    },
+    {
+      "tag": "D200",
+      "sha256": "c94e7be2d5550fbe3173d4f5eacdc611e95c1edcf28e5814943f9e54b86de9d2",
+      "bytes": 424913287,
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_final_20261030\\final_tree\\results_v4\\data\\D200nm\\cube.h5"
+    }
+  ],
+  "final_log": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\v4_visual_20261030\\step7_package_final.jsonl",
+  "verification_file": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\outputs\\v4_visual_20261030\\package_verification.json",
+  "notes": [
+    "REPORT zip = figures + html + report + exported_data + code + logs + config; no HDF5.",
+    "FULL zip = REPORT content + data/<TAG>nm/cube.h5 read-only copies.",
+    "HDF5 are already gzip-compressed inside, so they are stored (not re-deflated).",
+    "ZIP SHA256 values above are computed after writing, from the file on disk.",
+    "The package-internal step7 log intentionally stops at build_started; completion hashes are external to avoid a self-referential ZIP hash."
+  ],
+  "checks": {
+    "report_crc": true,
+    "full_crc": true,
+    "report_has_no_hdf5": true,
+    "full_has_exactly_expected_hdf5": true,
+    "hdf5_sha256_match": true,
+    "full_equals_report_plus_three_hdf5": true,
+    "member_spot_hashes_match": true
+  }
+}

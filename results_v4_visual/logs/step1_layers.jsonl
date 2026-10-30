@@ -1,0 +1,6 @@
+{"step": "step1_layers", "event": "start", "t_rel_s": 0.0, "utc": "2026-10-30T09:28:20Z"}
+{"step": "step1_layers", "event": "layers", "t_rel_s": 0.002, "utc": "2026-10-30T09:28:20Z", "tag": "D030", "n": 50, "z_first": -170.0, "z_last": 170.0, "max_offset_nm": 0.9795918367346985}
+{"step": "step1_layers", "event": "layers", "t_rel_s": 0.003, "utc": "2026-10-30T09:28:20Z", "tag": "D100", "n": 50, "z_first": -170.0, "z_last": 170.0, "max_offset_nm": 0.9795918367346985}
+{"step": "step1_layers", "event": "layers", "t_rel_s": 0.005, "utc": "2026-10-30T09:28:20Z", "tag": "D200", "n": 50, "z_first": -170.0, "z_last": 170.0, "max_offset_nm": 0.9795918367346985}
+{"step": "step1_layers", "event": "identical_selection_all_cases", "t_rel_s": 0.005, "utc": "2026-10-30T09:28:20Z", "value": true}
+{"step": "step1_layers", "event": "done", "t_rel_s": 0.838, "utc": "2026-10-30T09:28:21Z", "csv": "C:\\Users\\PC\\Documents\\Codex\\2026-10-29\\fe3o4-iscat-codex-handoff-v3-agents\\work\\v4_visual\\out\\results_v4_visual\\exported_data\\selected_50_zeta_layers.csv", "common_vmax": 1.5476553440093994}

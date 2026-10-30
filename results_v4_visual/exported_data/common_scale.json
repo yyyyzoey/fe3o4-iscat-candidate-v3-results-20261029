@@ -1,0 +1,13 @@
+{
+  "schema": "v4-visual-common-scale-1.0",
+  "quantity": "I_cross = 2 Re(E_ref * conj(E_scat))",
+  "rule": "symmetric linear scale, vmin=-vmax, vmax=+vmax with vmax = max over the three cubes of max|I_cross|",
+  "common_vmax": 1.5476553440093994,
+  "per_diameter_vmax": {
+    "D030": 0.03255653753876686,
+    "D100": 1.5476553440093994,
+    "D200": 1.04482901096344
+  },
+  "normalization": "normalized panels use I_cross / max|I_cross| of the same cube",
+  "units": "dimensionless, relative to the shared on-axis reference; absolute_calibration=false"
+}
